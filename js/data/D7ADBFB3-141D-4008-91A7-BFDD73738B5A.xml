@@ -1,0 +1,10 @@
+tocTab[tocTab.length] = new Array("0.4.4.9:1", "", "ESTA.MA.02: Parte de queja", "EARoot/EA4/EA4/EA9/EA1209.htm", "183.png", "698", "0", "", "Statechart diagram0","{A55974DF-F2E8-4ed5-985C-A0A37AC6D606}");
+tocTab[tocTab.length] = new Array("0.4.4.9:2", "", "Tramitado a Subdirector", "EARoot/EA4/EA4/EA9/EA1212.htm", "20.png", "E5457", "0", "", "State0","{2D7D7644-9855-4ffc-BB11-0B5F95CC0F5C}");
+tocTab[tocTab.length] = new Array("0.4.4.9:3", "", "Tramitado a Director", "EARoot/EA4/EA4/EA9/EA1213.htm", "20.png", "E5455", "0", "", "State0","{B7EB0906-872A-4e13-87F2-C650DAD173AE}");
+tocTab[tocTab.length] = new Array("0.4.4.9:4", "", "Pendiente resolución empresa", "EARoot/EA4/EA4/EA9/EA1214.htm", "20.png", "E5450", "0", "", "State0","{31A12BF5-89CE-4b3a-B33C-3AE8B99A727F}");
+tocTab[tocTab.length] = new Array("0.4.4.9:5", "", "Resuelto por empresa", "EARoot/EA4/EA4/EA9/EA1215.htm", "20.png", "E5453", "0", "", "State0","{85D34583-94D2-487c-90D8-4CB28F9E1B0F}");
+tocTab[tocTab.length] = new Array("0.4.4.9:6", "", "Nuevo", "EARoot/EA4/EA4/EA9/EA1216.htm", "68.png", "E5454", "0", "", "StateNode0","{07617CB5-B3D1-43db-BDA6-6E86761C7B0A}");
+tocTab[tocTab.length] = new Array("0.4.4.9:7", "", "Resuelto por OACISE", "EARoot/EA4/EA4/EA9/EA1217.htm", "69.png", "E5452", "0", "", "StateNode0","{A5FC3F7E-DC38-48a0-BBE9-B9B07231FADD}");
+tocTab[tocTab.length] = new Array("0.4.4.9:8", "", "Resuelto por Subdirector", "EARoot/EA4/EA4/EA9/EA1218.htm", "69.png", "E5451", "0", "", "StateNode0","{7E0D8A85-8FD2-48fc-8923-CBD729508861}");
+tocTab[tocTab.length] = new Array("0.4.4.9:9", "", "Resuelto por Director", "EARoot/EA4/EA4/EA9/EA1219.htm", "69.png", "E5458", "0", "", "StateNode0","{F007B118-7490-4bdf-B8FD-4917BAFDA426}");
+tocTab[tocTab.length] = new Array("0.4.4.9:10", "", "Cerrado por Director", "EARoot/EA4/EA4/EA9/EA1220.htm", "69.png", "E5456", "0", "", "StateNode0","{2E5A55D1-06D2-423b-8CB9-A31E48A29FC8}");

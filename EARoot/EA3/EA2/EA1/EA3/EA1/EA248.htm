@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CU.SEAPO.HW.003: Alta individual de datos de recursos en el expediente</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.SEAPO.HW.003: Alta individual de datos de recursos en el expediente", " : "))</script>  : Public   UseCase</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">07/04/2017 11:14:56</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">18/04/2017 17:14:03</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">mgutca1</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Prototipo_UI</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{64259FF1-CCA8-4400-8D45-169D78390A49}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA240.htm">Proceso de alta de recursos HW</a>, <a href="../../../../../EA7/EA2/EA1928.htm">Expedientes de adquisición HW</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Desde la vista de detalle de un expediente de adquisición, el usuario SEAPO podrá agregar un recurso a la lista de recursos HW del expediente. &lt;br/&gt;&lt;br/&gt;Para el alta del nuevo recurso, el sistema solicitará la siguiente información:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;NCAT (id): del artículo al que corresponda el recurso. Se permitirá la introducción directa de un Número de Catálogo (NCAT), o bien se mostrará una vista del Catálogo de artículos para la búsqueda y selección de un artículo.&lt;/li&gt;&lt;li&gt;Descripción (*A200): Por defecto tomará la combinación del nombre, marca y modelo del artículo&lt;/li&gt;&lt;li&gt;Número de serie (*A50)&lt;/li&gt;&lt;li&gt;Marca (*Id): Se deberá seleccionar un valor de la lista de marcas guardadas en el sistema. Se permitirá añadir una marca no existente. No se permitirá el valor &quot;NO ASIGNADO&quot; (este se reserva para los recursos migrados desde ARIET)&lt;/li&gt;&lt;li&gt;Modelo (*Id): Se deberá seleccionar un valor de la lista de modelos guardados en el sistema. Se permitirá añadir un modelo no existente. Se permite el valor &quot;No Asignado&quot; (por defecto).&lt;/li&gt;&lt;li&gt;Importe de adquisición (*CUR)&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Fecha de contratación (*F)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;Fecha de fin de garantía (*F)&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;UCO a cargo (*id): Por defecto toma el valor del dato incluido en el expediente, pero el usuario puede modificarlo, especificando un CIU directamente o seleccionando una UCO o Almacén en la &lt;u&gt;vista de Estructura Orgánica&lt;/u&gt;.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Mantenimiento centralizado (L): Indica si el mantenimiento del recurso está cubierto por el contrato de mantenimiento centralizado (actualmente GISMI). Por defecto &quot;SI&quot;&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Distribuidor (*): Por defecto toma el valor del dato incluido en el expediente, pero el usuario puede modificarlo, seleccionando una empresa en la &lt;u&gt;vista de empresas&lt;/u&gt;. Permite añadir una empresa no existente.&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Soporte Técnico (*): Por defecto toma el valor del dato incluido en el expediente, pero el usuario puede modificarlo, seleccionando una empresa en la &lt;u&gt;vista de empresas&lt;/u&gt;. Permite añadir una empresa no existente.&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;En función de la categoría a la que pertenece el nuevo recurso, el sistema también solicitará los atributos específicos para dicha categoría, tomando los valores por defecto que tiene el artículo asociado al recurso.&lt;br/&gt;&lt;br/&gt;Validaciones:&lt;br/&gt;- El sistema no permitirá que se repita la combinación Fabricante + Nº de serie.&lt;br/&gt;&lt;br/&gt;El sistema dará de alta el recurso en el inventario en estado &quot;Alta provisional&quot;, asociado al expediente de adquisición. Se le asignará un número de inventario (NI) provisional, con el formato &quot;PROV00000&quot;. El NI definitivo será asignado cuando se incorporen los recursos al inventario (estado &quot;Alta&quot;) y se finalice el expediente (ver CU.SEAPO.HW.009: Finalizar expediente de adquisición)&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('LinkedDocument');" id="LinkedDocumentTitle">Linked Document</li>
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="LinkedDocumentTable">
+			<iframe src="../../../../../../linkdocs/EAID_64259FF1_CCA8_4400_8D45_169D78390A49.htm" frameborder="0" id="linkDocIFrame"></iframe>
+		</div>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA5/EA1/EA2/EA4/EA2/EA1540.htm">FormNuevoRecursoHw - Creación de un recurso HW</a></td>
+					<td width="10%" class="TableRow" valign="top">Screen</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA1/EA193.htm">«Gestor» SEAPO</a></td>
+					<td width="10%" class="TableRow" valign="top">Actor</td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

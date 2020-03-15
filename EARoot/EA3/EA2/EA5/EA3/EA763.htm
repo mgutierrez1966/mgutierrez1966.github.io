@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CU.GESTALM.ALMACEN.01: Dar de alta un prestamo de recursos</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.GESTALM.ALMACEN.01: Dar de alta un prestamo de recursos", " : "))</script>  : Public   UseCase</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">13/03/2017 14:18:59</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">13/03/2017 14:18:59</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">mgutca1</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Prototipo_UI</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{CBB97EFD-8D1F-4b51-8B8D-CA29B25DE4A7}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA759.htm">Gestión de préstamos de material en stock</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">El usuario GESTOR ALMACEN puede dar de alta un préstamo de material en stock.&lt;br/&gt;&lt;br/&gt;El sistema solicita los siguientes datos:&lt;br/&gt;- Datos de la persona a quien se presta el material&lt;br/&gt;&#160;&#160;- Nombre completo (A200)&lt;br/&gt;&#160;&#160;- Empleo o cargo (A100)&lt;br/&gt;&#160;&#160;- Teléfono de contacto (A20)&lt;br/&gt;- Motivo del préstamo (A200)&lt;br/&gt;- Fecha de préstamo: por defecto la del sistema&lt;br/&gt;- Fecha máxima de devolución (opcional)&lt;br/&gt;- Marcar recursos como &quot;comprometidos&quot;: (lógico, por defecto cierto) Indica si el material debe ser marcado como &quot;comprometido&quot; mientras se encuentre prestado.&lt;br/&gt;- Relación de material prestado: El usuario podrá especificar la relación de recursos prestados: &lt;br/&gt;&#160;&#160;&#160;&#160;- Individualmente, especificando el NI de un recurso, si lo conoce. En este caso el NI debe corresponder a un recurso en stock.&lt;br/&gt;&#160;&#160;&#160;&#160;- De forma masiva, seleccionando uno o varios recursos en la vista &quot;Recursos en stock&quot;&lt;br/&gt;&lt;br/&gt;Restricciones:&lt;br/&gt;- No será posible el préstamo de recursos marcados como &quot;comprometidos&quot; o &quot;reservados&quot;&lt;br/&gt;- No será posible el préstamo de material incluido en otros préstamos en vigor.&lt;br/&gt;- Solo se permitirá el préstamo de recursos en estado de inventario &quot;Alta&quot; y en ubicación &quot;Almacén&quot;.&lt;br/&gt;&lt;br/&gt;El sistema registrará los datos del préstamo, dando la opción al usuario a generar un vale de entrega/recepción. Si se ha especificado la correspondiente opción, se marcará el material como &quot;comprometido&quot;. El estado del préstamo será inicialmente &quot;En vigor&quot;. &lt;br/&gt;&lt;br/&gt;El sistema asigna un código de préstamo formado por: Código de almacén, año, mes, día y nº de orden correlativo de 2 dígitos.&lt;br/&gt;&lt;br/&gt;El sistema guarda los datos del usuario que ha creado el préstamo, que será quién figure en el dato &quot;Entregué&quot; del vale que se genere.&lt;br/&gt;&lt;br/&gt;El sistema actualiza el histórico de los recursos con los datos del préstamo.&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA767.htm">CU.GESTALM.ALMACEN.05: Consultar prestamos realizados</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Includes</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

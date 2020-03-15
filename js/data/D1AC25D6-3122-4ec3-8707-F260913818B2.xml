@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0.3.2.1.3.2.2.1:1", "", "Estados de RI según inventario", "EARoot/EA3/EA2/EA1/EA3/EA2/EA2/EA1/EA268.htm", "183.png", "719", "0", "", "Statechart diagram0","{FF6280E4-EC86-4c5d-9FCC-3D0B2EE12A9C}");
+tocTab[tocTab.length] = new Array("0.3.2.1.3.2.2.1:2", "", "Alta provisional", "EARoot/EA3/EA2/EA1/EA3/EA2/EA2/EA1/EA277.htm", "20.png", "E5643", "0", "", "State0","{7A7688B6-3A1A-4617-B1CA-BC03CAEA4022}");
+tocTab[tocTab.length] = new Array("0.3.2.1.3.2.2.1:3", "", "Alta", "EARoot/EA3/EA2/EA1/EA3/EA2/EA2/EA1/EA278.htm", "20.png", "E5640", "0", "", "State0","{A2E9FE42-83A1-4dc2-AF6D-EEBFA4D568DA}");
+tocTab[tocTab.length] = new Array("0.3.2.1.3.2.2.1:4", "", "Propuesta baja", "EARoot/EA3/EA2/EA1/EA3/EA2/EA2/EA1/EA279.htm", "20.png", "E5646", "0", "", "State0","{BE7CFBA3-BD38-46b5-B2C9-29F1BADDAB8C}");
+tocTab[tocTab.length] = new Array("0.3.2.1.3.2.2.1:5", "", "Retirado para baja", "EARoot/EA3/EA2/EA1/EA3/EA2/EA2/EA1/EA280.htm", "20.png", "E5645", "0", "", "State0","{69DCD20E-A319-49e7-84B6-1B4E4A4335A3}");
+tocTab[tocTab.length] = new Array("0.3.2.1.3.2.2.1:6", "", "Pendiente baja", "EARoot/EA3/EA2/EA1/EA3/EA2/EA2/EA1/EA281.htm", "20.png", "E5647", "0", "", "State0","{A84BA7DD-1BC6-4f07-9F42-488E69C2479B}");
+tocTab[tocTab.length] = new Array("0.3.2.1.3.2.2.1:7", "", "Baja definitiva", "EARoot/EA3/EA2/EA1/EA3/EA2/EA2/EA1/EA282.htm", "20.png", "E5644", "0", "", "State0","{DDE38928-C3BB-4270-AA2D-2F6A3933656C}");
+tocTab[tocTab.length] = new Array("0.3.2.1.3.2.2.1:8", "", "Nuevo", "EARoot/EA3/EA2/EA1/EA3/EA2/EA2/EA1/EA283.htm", "68.png", "E5641", "0", "", "StateNode0","{9DC65C73-5B5A-43ba-A332-2B405E50E55B}");
+tocTab[tocTab.length] = new Array("0.3.2.1.3.2.2.1:9", "", "Final", "EARoot/EA3/EA2/EA1/EA3/EA2/EA2/EA1/EA284.htm", "69.png", "E5642", "0", "", "StateNode0","{3BD15FF6-5E14-4f7c-997B-7341C7FA2CEA}");

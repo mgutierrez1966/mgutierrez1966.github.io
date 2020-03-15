@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CU.DIRECTOR.MANTO.19: Creación de solicitud de transporte por Director</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.DIRECTOR.MANTO.19: Creación de solicitud de transporte por Director", " : "))</script>  : Public   UseCase</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">30/01/2019 13:09:26</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">30/01/2019 13:43:18</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">mgutca1</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{7FBF4806-87E6-4932-85E8-E709D2A0B818}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA569.htm">Solicitudes de transporte de material entre UCOs</a>, <a href="../../../../EA7/EA3/EA1953.htm">Mantenimiento HW - Transporte material entre UCOs</a>, Mantenimiento HW - Transporte material entre UCOs</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Un usuario DIRECTOR, puede crear una nueva solicitud de transporte entre UCOs, desde la opción del menú de mantenimiento hardware.&lt;br/&gt;&lt;br/&gt;El sistema solicita los siguientes datos:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Motivo del transporte: indica la justificación que motiva la solicitud de transporte.&lt;/li&gt;&lt;li&gt;Material a transportar: descripción, volumen y peso aproximados.&lt;/li&gt;&lt;li&gt;Ubicación de origen y destino: Nombre, dirección, CP, localidad y provincia. Se permitirá seleccionar ubicaciones de la estructura orgánica del ET, pero se podrán modificar los datos finales.&lt;/li&gt;&lt;li&gt;POC en origen y destino: el POC de origen, por defecto, se establece con los datos del usuario que crea la solicitud. El sistema permitirá seleccionar los datos de la lista de CISPOC en las ubicaciones de origen y destino.&lt;/li&gt;&lt;li&gt;Observaciones para la empresa (A200)&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Posteriormente el sistema realiza las siguientes acciones:&lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;El sistema creará una nueva solicitud de transporte con los datos suministrados, directamente en estado &#39;Tramitada a Director por Subdirector&#39;, ya que no debe de pasar por la revisión del OACISE ni del Subdirector.&lt;/li&gt;&lt;li&gt;El atributo &#39;cecomOacise&#39; de la solicitud se deja con valor nulo, ya que el CECOM no interviene en esta solicitud.&lt;/li&gt;&lt;li&gt;Como &#39;cispocCreador&#39; de la solicitud, se asigna el usuario con rol DIRECTOR que crea la solicitud.&lt;/li&gt;&lt;li&gt;Como &#39;nodoCispoc&#39; se establece la ubicación de origen.&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Una vez creada la solicitud, la misma queda aprobada directamente por el Director, y se tramita directamente a la empresa para su resolución, según lo indicado en el caso de uso &#39;CU.DIRECTOR.MANTO.01: Valoración solicitud de mantenimiento&#39; en el caso &#39;Aprobar solicitud&#39;.&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA5/EA1/EA2/EA5/EA7/EA1672.htm">FormSolicitudTransporteHW - Creación o modificación solicitud de transporte de material entre UCOs</a></td>
+					<td width="10%" class="TableRow" valign="top">Screen</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

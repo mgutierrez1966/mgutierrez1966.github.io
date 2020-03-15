@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Descripción del módulo</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Descripción del módulo", " : "))</script>  : Public   Package</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">13/03/2017 14:18:58</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">13/03/2017 14:18:58</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">mgutca1</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{CD2C4C77-4674-4343-9F06-D370F5FD5D5B}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">El módulo de Inventario de Software tiene como objeto la gestión de licencias software en el Ejército de Tierra, y el control de su renovación y mantenimiento.&lt;br/&gt;&lt;br/&gt;Las funciones del módulo se distribuyen en los siguientes grupos:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;u&gt;Mantenimiento del Catálogo de Productos Software&lt;/u&gt;: Los usuarios de perfil SEAPO pueden mantener el Catálogo de Productos Software, cuya misión es la tipificación y normalización de las licencias de software incluidas en el inventario del ET.&lt;/li&gt;&lt;li&gt;&lt;u&gt;Gestión de licencias software&lt;/u&gt;: Este grupo de funciones permite el alta, baja y reasignación de licencias software. Al igual que en el caso del material hardware y ESYL, el alta y baja es realizada únicamente por parte de la SEAPO de JCISAT, mientras que la reasignación puede ser realizada también por los mandos orgánicos a su respectivo nivel. La gestión de licencias diferencia la adquisición de licencias nuevas, y la renovación o mantenimiento de las mismas a posteriori. Usa para ello los expedientes de adquisición o de mantenimiento, respectivamente. Los CISPOC pueden conocer y gestionar a su nivel las licencias software de las que disponen en sus UCOs.&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los perfiles implicados en este módulo son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;u&gt;SEAPO&lt;/u&gt;: Es responsable de los procesos de alta y de baja de recursos del inventario. Puede reasignar recursos entre cualquier UCO del ET. Mantiene el Catálogo de Productos Software.&lt;/li&gt;&lt;li&gt;&lt;u&gt;Mando Orgánico&lt;/u&gt;: Representa a los mandos de primer nivel y a cualquier mando intermedio (niveles 1 a 4 de la estructura orgánica del ET). Este perfil, en su ámbito de la jerarquía orgánica, puede controlar el inventario de responsabilidad de sus UCO,s., así como ordenar reasignaciones de licencias software entre las mismas.&lt;/li&gt;&lt;li&gt;&lt;u&gt;CISPOC&lt;/u&gt;: Representa a los usuarios de las UCO,s. (nivel 5 de la estructura orgánica) con recursos a cargo. Realiza las tareas administrativas y de control de los medios CIS a cargo de su Unidad que le encomienda la normativa vigente y los que le encomiende su Jefe de UCO.&lt;/li&gt;&lt;/ul&gt;&lt;p/&gt;</div>
+
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

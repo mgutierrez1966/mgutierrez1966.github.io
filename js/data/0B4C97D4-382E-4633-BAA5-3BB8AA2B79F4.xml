@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.3.2.6.4:1", "", "Gestionar estructura de dependencias de las UCOs", "EARoot/EA3/EA2/EA6/EA4/EA796.htm", "180.png", "633", "0", "", "Use Case diagram0","{91F1697B-AC38-4381-A367-C3A260BBF1AC}");
+tocTab[tocTab.length] = new Array("0.3.2.6.4:2", "", "CU.CISPOC.HW.003: Crear dependencia interna de una UCO", "EARoot/EA3/EA2/EA6/EA4/EA800.htm", "7.png", "E4597", "0", "", "UseCase0","{41007755-4FA8-4d83-A08B-6EDA11C30176}");
+tocTab[tocTab.length] = new Array("0.3.2.6.4:3", "", "CU.CISPOC.HW.004: Modificar dependencia interna de una UCO", "EARoot/EA3/EA2/EA6/EA4/EA801.htm", "7.png", "E4599", "0", "", "UseCase0","{A33AEF58-0F96-45a6-8B5C-05EA9957E1A5}");
+tocTab[tocTab.length] = new Array("0.3.2.6.4:4", "", "CU.CISPOC.HW.005: Borrar dependencia interna de una UCO", "EARoot/EA3/EA2/EA6/EA4/EA802.htm", "7.png", "E4598", "0", "", "UseCase0","{A3003875-797F-4a88-B99C-58C7F47A45CC}");
+tocTab[tocTab.length] = new Array("0.3.2.6.4:5", "", "CU.CISPOC.HW.006: Visualizar estructura de dependencias de una UCO", "EARoot/EA3/EA2/EA6/EA4/EA803.htm", "7.png", "E4596", "0", "", "UseCase0","{83C39CB6-5338-45cc-A580-4CA0B3D4F889}");

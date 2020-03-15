@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<title></title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<meta http-equiv="Content-Style-Type" content="text/css"/>
+</head>
+<body>
+<div align="left"><font size="2"><br /></font></div><div align="left"><font size="2"><br /></font></div><div align="left"><font face="Arial Narrow"><b><u>DATOS GENERALES </u></b></font></div>
+<div align="left"><br/>&nbsp;</div>
+<table width="564" cellpadding="3" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 0px; border-color: #010101; ">
+    <colgroup>
+        <col width="120"></col>
+        <col width="48"></col>
+        <col width="102"></col>
+        <col width="84"></col>
+        <col width="210"></col>
+    </colgroup>
+    <tr>
+    <td align="left" valign="top" width="113" height="52" style="border: solid #010101 1px;"><font face="Arial Narrow"><b>NOMBRE</b></font>
+    <div align="left"><font face="Arial Narrow"><b><br /></b></font></div><div align="left">&nbsp;</div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="143" height="52" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">FormMantenimientoDiccionario</font></div>
+    </td>
+    <td align="left" valign="top" width="77" height="52" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>VERSION</b></font></div>
+    </td>
+    <td align="left" valign="top" width="203" height="52" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" size="2">2 (ARIGIS-260)</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" height="253" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>OBSERVACIONES</b></font></div>
+    </td>
+    <td colspan="4" align="left" valign="top" width="437" height="253" style="border: solid #010101 1px;"><font face="Arial Narrow">Vista gen&#233;rica que permite el mantenimiento de los datos de una entidad de tipo 
+    diccionario. </font>
+    <div align="left"><font face="Arial Narrow">Permite realizar consultas, modificaci&#243;n, creaci&#243;n y eliminaci&#243;n de valores en el 
+    diccionario.</font></div>
+    <div align="left"><font face="Arial Narrow">La entidad a gestionar se establece en la propiedad &quot;ModeloDiccionario&quot;. Dicho 
+    modelo debe de tener asociado un servicio REST estandar.</font></div>
+    <div align="left"><font face="Arial Narrow"><br /></font></div><div align="left"><font face="Arial Narrow">El comportamiento de la vista se especifica con las propiedades:</font></div>
+    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
+    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow">&quot;PermiteEdicion&quot;: indica si se permite a&#241;adir, modificar o eliminar valores del 
+    diccionario</font></li>
+    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow">&quot;PermiteSeleccion&quot;: indica si se muestra un bot&#243;n adicional &quot;Seleccionar&quot;, 
+    habilitado si hay alg&#250;n valor seleccionado en la lista. </font></li>
+    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow">&quot;OcultarInactivos&quot;: indica si se deben ocultar o no los valores inactivos del 
+    diccionario.</font></li>
+    </ul>
+    <div align="left">&nbsp;</div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>REQ. AUTENTIC</b></font></div>
+    </td>
+    <td align="left" valign="top" width="41" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">SI</font></div>
+    </td>
+    <td colspan="3" align="left" valign="top" width="389" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>REQ. AUTORIZAC.</b></font></div>
+    </td>
+    <td align="left" valign="top" width="41" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">SI</font></div>
+    </td>
+    <td colspan="3" align="left" valign="top" width="389" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Requiere rol de administraci&#243;n (SEAPO o ADMINISTRADOR) para 
+    permitir edici&#243;n. </font></div>
+    </td></tr>
+</table>
+<div align="left"><font face="Arial Narrow"><b><u><br /></u></b></font></div><div align="left"><font face="Arial Narrow"><b><u>ELEMENTOS VISUALES </u></b></font></div>
+<div align="left"><br/>&nbsp;</div>
+<table width="576" cellpadding="3" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 0px; border-color: #010101; ">
+    <colgroup>
+        <col width="132"></col>
+        <col width="66"></col>
+        <col width="378"></col>
+    </colgroup>
+    <tr>
+    <td align="left" valign="top" width="125" height="17" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>FUNCION</b></font></div>
+    </td>
+    <td align="left" valign="top" width="59" height="17" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>TIPO</b></font></div>
+    </td>
+    <td align="left" valign="top" width="371" height="17" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>OBSERVACIONES</b></font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Nuevo valor</font></div>
+    </td>
+    <td align="left" valign="top" width="59" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Bot&#243;n</font></div>
+    </td>
+    <td align="left" valign="top" width="371" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Se muestra solo con &quot;PermiteEdicion&quot;</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" height="17" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Eliminar seleccionado</font></div>
+    </td>
+    <td align="left" valign="top" width="59" height="17" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Bot&#243;n</font></div>
+    </td>
+    <td align="left" valign="top" width="371" height="17" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Se muestra solo con &quot;PermiteEdicion&quot;</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" height="51" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Exportar lista</font></div>
+    </td>
+    <td align="left" valign="top" width="59" height="51" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Bot&#243;n</font></div>
+    </td>
+    <td align="left" valign="top" width="371" height="51" style="border: solid #010101 1px;"><font face="Arial Narrow">** INICIO ARIGIS-260</font>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Se muestra siempre</font></div>
+    <div align="left"><font face="Arial Narrow">** FIN ARIGIS-260</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" height="34" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Buscar</font></div>
+    </td>
+    <td align="left" valign="top" width="59" height="34" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Caja de 
+    b&#250;squeda</font></div>
+    </td>
+    <td align="left" valign="top" width="371" height="34" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" height="101" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Lista de valores</font></div>
+    </td>
+    <td align="left" valign="top" width="59" height="101" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Grid</font></div>
+    </td>
+    <td align="left" valign="top" width="371" height="101" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Muestra los valores de la entidad diccionario. Inicialmente se ordena 
+    por el campo &quot;nombreLargo&quot;. Se incluyen primero los campos: 
+    activo, id, nombreLargo (nombre), y a continuaci&#243;n el resto de 
+    campos de la entidad.</font>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Los valores inactivos se muestran con fuente de color rojo.</font></div>
+    <div align="left">&nbsp;</div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" height="51" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Aplicar cambios / 
+    Descartar cambios</font></div>
+    </td>
+    <td align="left" valign="top" width="59" height="51" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Toolbar</font></div>
+    </td>
+    <td align="left" valign="top" width="371" height="51" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Se muestra solo con &quot;PermiteEdicion&quot;. Habilitados solo si existen 
+    cambios en el almac&#233;n de valores, pendientes de sincronizar con la 
+    BBDD.</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" height="68" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Panel de detalle</font></div>
+    </td>
+    <td align="left" valign="top" width="59" height="68" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Form</font></div>
+    </td>
+    <td align="left" valign="top" width="371" height="68" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Formulario para editar&#160; o consultar el valor seleccionado en la lista. </font>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Si no se permite la edici&#243;n, los campos se muestran en modo display 
+    o deshabilitado.</font></div>
+    <div align="left">&nbsp;</div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" height="34" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Seleccionar</font></div>
+    </td>
+    <td align="left" valign="top" width="59" height="34" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Bot&#243;n</font></div>
+    </td>
+    <td align="left" valign="top" width="371" height="34" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Se muestra solo con PermiteSeleccion. </font>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Habilitado solo si hay alg&#250;n registro seleccionado en la lista.</font></div>
+    </td></tr>
+</table>
+<div align="left"><br/>&nbsp;</div>
+<table width="576" cellpadding="3" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 0px; border-color: #010101; ">
+    <colgroup>
+        <col width="132"></col>
+        <col width="78"></col>
+        <col width="366"></col>
+    </colgroup>
+    <tr>
+    <td colspan="2" align="left" valign="top" width="203" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>VISTA DIFERENCIADA POR 
+    ROLES</b></font></div>
+    </td>
+    <td align="left" valign="top" width="359" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">SI</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Todos</font></div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="437" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Las opciones mostradas dependen de las propiedades &quot;PermiteEdicion&quot; y 
+    &quot;PermiteSeleccion&quot;, independientemente del rol del usuario.</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="437" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="437" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+</table>
+<div align="left"><b><u><br /></u></b></div><div align="left"><b><u><br /></u></b></div><div align="left"><b><u><br /></u></b></div><div align="left"><b><u><br /></u></b></div><div align="left"><b><u><br /></u></b></div><div align="left"><b><u><br /></u></b></div><div align="left"><b><u><br /></u></b></div><div align="left"><b><u><br /></u></b></div><div align="left"><font face="Arial Narrow"><b><u>PROCESOS Y ELEMENTOS FUNCIONALES</u></b></font></div>
+<div align="left"><br/>&nbsp;</div>
+<table width="576" cellpadding="3" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 0px; border-color: #010101; ">
+    <colgroup>
+        <col width="78"></col>
+        <col width="90"></col>
+        <col width="408"></col>
+    </colgroup>
+    <tr>
+    <td align="center" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="center"><font face="Arial Narrow"><b>TIPO</b></font></div>
+    </td>
+    <td align="center" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="center"><font face="Arial Narrow"><b>NOMBRE</b></font></div>
+    </td>
+    <td align="center" valign="top" width="401" style="border: solid #010101 1px;">
+    <div align="center"><font face="Arial Narrow"><b>&#160;DESCRIPCION DEL PROCESO A EJECUTAR</b></font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" height="101" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Mostrar</font></div>
+    </td>
+    <td align="left" valign="top" width="83" height="101" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Vista</font></div>
+    </td>
+    <td align="left" valign="top" width="401" height="101" style="border: solid #010101 1px;"><font face="Arial Narrow">Se deben de agregar los campos de la entidad especificada en 
+    &quot;ModeloDiccionario&quot; al grid y al formulario del panel de detalle.</font>
+    <div align="left"><font face="Arial Narrow">Debe de mostrar un error si el modelo especificado no dispone de los 
+    atributos &quot;nombreLargo&quot; y &quot;activo&quot;.</font></div>
+    <div align="left"><font face="Arial Narrow">Si &quot;OcultarInactivos&quot; es cierto, se debe aplicar un filtro al almac&#233;n de datos 
+    para mostrar solo los valores con atributo &quot;activo&quot; a cierto.</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Cambio</font></div>
+    </td>
+    <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Caja de 
+    busqueda</font></div>
+    </td>
+    <td align="left" valign="top" width="401" style="border: solid #010101 1px;"><font face="Arial Narrow">Si se ha especificado un texto, filtra la entidad mediante el par&#225;metro 
+    &quot;query&quot; del servicio REST asociado al modelo.</font>
+    <div align="left"><font face="Arial Narrow">Si no se ha especificado un texto, se elimina el filtro por query.</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Cambio de 
+    seleccion</font></div>
+    </td>
+    <td align="left" valign="top" width="83" style="border: solid #010101 1px;"><font face="Arial Narrow">Lista de </font>
+    <div align="left"><font face="Arial Narrow">valores</font></div>
+    </td>
+    <td align="left" valign="top" width="401" style="border: solid #010101 1px;"><font face="Arial Narrow">Se actualiza el formulario del panel de detalle con los datos del registro 
+    seleccionado. </font>
+    <div align="left"><font face="Arial Narrow">Si no hay registro seleccionado, se deshabilita el formulario.</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Clic</font></div>
+    </td>
+    <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Aplicar 
+    cambios</font></div>
+    </td>
+    <td align="left" valign="top" width="401" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Se sincroniza el almac&#233;n con el servicio REST del modelo.</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Clic</font></div>
+    </td>
+    <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Descartar 
+    cambios</font></div>
+    </td>
+    <td align="left" valign="top" width="401" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Se cancelan los cambios realizados en el almac&#233;n.</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Clic</font></div>
+    </td>
+    <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Seleccionar 
+    valor</font></div>
+    </td>
+    <td align="left" valign="top" width="401" style="border: solid #010101 1px;"><font face="Arial Narrow">Si existen cambios sin aplicar al almac&#233;n de datos, se avisar&#225; de ello al 
+    usuario, indic&#225;ndole que debe aplicar o descartar los cambios antes de 
+    salir.</font>
+    <div align="left"><font face="Arial Narrow">Se cierra la vista, pasando el valor del registro seleccionado a la vista que 
+    la ha llamado.</font></div>
+    <div align="left">&nbsp;</div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Clic</font></div>
+    </td>
+    <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Cerrar</font></div>
+    </td>
+    <td align="left" valign="top" width="401" style="border: solid #010101 1px;"><font face="Arial Narrow">Si existen cambios sin aplicar al almac&#233;n de datos, se avisar&#225; de ello al 
+    usuario, inform&#225;ndole de que se perder&#225;n los cambios realizados.</font>
+    <div align="left"><font face="Arial Narrow">Si el usuario confirma la operaci&#243;n se descartan los cambios pendientes 
+    en el almac&#233;n de datos y se cierra la vista.</font></div>
+    <div align="left">&nbsp;</div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Clic</font></div>
+    </td>
+    <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Nuevo valor</font></div>
+    </td>
+    <td align="left" valign="top" width="401" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Agrega un registro a la lista, lo selecciona y lo muestra en el panel de 
+    detalle.</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Clic</font></div>
+    </td>
+    <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Eliminar 
+    seleccionado</font></div>
+    </td>
+    <td align="left" valign="top" width="401" style="border: solid #010101 1px;"><font face="Arial Narrow">Solicita confirmaci&#243;n para eliminar permanentemente el registro 
+    seleccionado.</font>
+    <div align="left"><font face="Arial Narrow">Elimina el registro de la lista.</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Clic</font></div>
+    </td>
+    <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Exportar lista</font></div>
+    </td>
+    <td align="left" valign="top" width="401" style="border: solid #010101 1px;"><font face="Arial Narrow">** INICIO ARIGIS-260</font>
+    <div align="left"><font face="Arial Narrow">Solicita confirmaci&#243;n para exportar la lista de registros&#160; a fichero CSV.</font></div>
+    <div align="left"><font face="Arial Narrow">Llama a la operacion READ de la entidad que se muestra en la vista, con 
+    el prefijo &quot;csv&quot; para que se genere el fichero CSV. Se incluyen en la 
+    exportaci&#243;n todas las columnas mostradas en el grid.</font></div>
+    <div align="left"><font face="Arial Narrow">** FIN ARIGIS-260</font></div>
+    </td></tr>
+</table>
+<div align="left"><font size="2"><br /></font></div><div align="left"><font size="2"><br /></font></div><div align="left">&nbsp;</div>
+</body>
+</html>

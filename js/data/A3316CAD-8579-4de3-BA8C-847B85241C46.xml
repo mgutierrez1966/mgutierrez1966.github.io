@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.3.2.6.2:1", "", "Gestión de usuarios", "EARoot/EA3/EA2/EA6/EA2/EA777.htm", "180.png", "795", "0", "", "Use Case diagram0","{DABC4B67-FA23-4d38-8148-5A934F0AADF9}");
+tocTab[tocTab.length] = new Array("0.3.2.6.2:2", "", "CU.ADMIN.ADM.030: Consulta de usuarios", "EARoot/EA3/EA2/EA6/EA2/EA780.htm", "7.png", "E6086", "0", "", "UseCase0","{3B651A91-E8AC-4566-9DBF-59F02596B725}");
+tocTab[tocTab.length] = new Array("0.3.2.6.2:3", "", "CU.ADMIN.ADM.031: Dar acceso al sistema a un usuario DICODEF", "EARoot/EA3/EA2/EA6/EA2/EA781.htm", "7.png", "E6087", "0", "", "UseCase0","{303F6B6C-0D9D-43ad-8E73-632C57B14465}");
+tocTab[tocTab.length] = new Array("0.3.2.6.2:4", "", "CU.ADMIN.ADM.032: Modificar los datos básicos de un usuario", "EARoot/EA3/EA2/EA6/EA2/EA782.htm", "7.png", "E6088", "0", "", "UseCase0","{46FAACE3-9F0E-40a8-B165-51F21B1C3465}");
+tocTab[tocTab.length] = new Array("0.3.2.6.2:5", "", "CU.ADMIN.ADM.033: Asignar roles a un usuario", "EARoot/EA3/EA2/EA6/EA2/EA783.htm", "7.png", "E6089", "0", "", "UseCase0","{D95EFCF2-BA9A-4409-A5EC-AFEF0AF0EBA7}");
+tocTab[tocTab.length] = new Array("0.3.2.6.2:6", "", "CU.ADMIN.ADM.035: Borrar un usuario", "EARoot/EA3/EA2/EA6/EA2/EA784.htm", "7.png", "E6091", "0", "", "UseCase0","{C652D8EA-C913-4154-9042-F645B3272548}");

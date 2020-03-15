@@ -1,0 +1,295 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<title></title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<meta http-equiv="Content-Style-Type" content="text/css"/>
+</head>
+<body>
+<div align="left"><font size="2"><br /></font></div><div align="left"><font size="2"><br /></font></div><div align="left"><font face="Arial Narrow"><b><u>DATOS GENERALES </u></b></font></div>
+<div align="left"><br/>&nbsp;</div>
+<table width="564" cellpadding="3" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 0px; border-color: #010101; ">
+    <colgroup>
+        <col width="120"></col>
+        <col width="48"></col>
+        <col width="102"></col>
+        <col width="84"></col>
+        <col width="210"></col>
+    </colgroup>
+    <tr>
+    <td align="left" valign="top" width="113" height="52" style="border: solid #010101 1px;"><font face="Arial Narrow"><b>NOMBRE</b></font>
+    <div align="left"><font face="Arial Narrow"><b><br /></b></font></div><div align="left">&nbsp;</div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="143" height="52" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">FormSeleccionRecursosHwBaja</font></div>
+    </td>
+    <td align="left" valign="top" width="77" height="52" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>VERSION</b></font></div>
+    </td>
+    <td align="left" valign="top" width="203" height="52" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" size="1">1.0</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" height="68" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>OBSERVACIONES</b></font></div>
+    </td>
+    <td colspan="4" align="left" valign="top" width="437" height="68" style="border: solid #010101 1px;"><font face="Arial Narrow">Permite seleccionar un grupo de recursos HW a a&#241;adir a un expediente de baja, 
+    indicando el motivo de la baja.</font>
+    <div align="left"><font face="Arial Narrow">Se estructura como un asistente con 2 pasos: el primero establece el motivo de la 
+    baja, y el segundo permite seleccionar los recursos.</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>CONFIGURACION 
+    ENTRADA</b></font></div>
+    </td>
+    <td colspan="4" align="left" valign="top" width="437" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">NO</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>CONFIGURACION 
+    SALIDA</b></font></div>
+    </td>
+    <td colspan="4" align="left" valign="top" width="437" style="border: solid #010101 1px;">
+    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
+    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow"><b>motivoBaja</b>: Texto. Motivo de baja seleccionado (ROBO_O_EXTRAVIO, 
+    NO_APTO_PARA_EL_SERVICIO)</font></li>
+    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow"><b>seleccion</b>: Array de objetos RecursoHw seleccionados.</font></li>
+    </ul>
+    <div align="left">&nbsp;</div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>REQ. AUTENTIC</b></font></div>
+    </td>
+    <td align="left" valign="top" width="41" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">SI</font></div>
+    </td>
+    <td colspan="3" align="left" valign="top" width="389" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>REQ. AUTORIZAC.</b></font></div>
+    </td>
+    <td align="left" valign="top" width="41" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">SI</font></div>
+    </td>
+    <td colspan="3" align="left" valign="top" width="389" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Rol SEAPO</font></div>
+    </td></tr>
+</table>
+<div align="left"><font face="Arial Narrow"><b><u><br /></u></b></font></div><div align="left"><font face="Arial Narrow"><b><u>ELEMENTOS VISUALES </u></b></font></div>
+<div align="left"><br/>&nbsp;</div>
+<table width="576" cellpadding="3" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 0px; border-color: #010101; ">
+    <colgroup>
+        <col width="120"></col>
+        <col width="84"></col>
+        <col width="372"></col>
+    </colgroup>
+    <tr>
+    <td align="left" valign="top" width="113" height="17" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>Funci&#243;n</b></font></div>
+    </td>
+    <td align="left" valign="top" width="77" height="17" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>Tipo</b></font></div>
+    </td>
+    <td align="left" valign="top" width="365" height="17" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>OBSERVACIONES</b></font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Contenedor</font></div>
+    </td>
+    <td align="left" valign="top" width="77" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Ventana </font></div>
+    </td>
+    <td align="left" valign="top" width="365" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">El contenedor principal tiene un layout de tipo &quot;CARD&quot;, de forma 
+    que muestra el panel correspondiente al paso del asistente 
+    seleccionado.</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" height="51" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Panel &quot;Paso 1: 
+    Motivo de la baja&quot;</font></div>
+    </td>
+    <td align="left" valign="top" width="77" height="51" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Panel</font></div>
+    </td>
+    <td align="left" valign="top" width="365" height="51" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Formulario con un combo para elegir el motivo de la baja (valor 
+    requerido). Los valores son los de la enumeracion <b>MotivoBajaHw</b></font>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Por defecto: &quot;No apto para el servicio&quot;.</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" height="118" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Panel &quot;Paso 2: 
+    Selecci&#243;n de 
+    recursos&quot; 
+    (alternativa 1)</font></div>
+    </td>
+    <td align="left" valign="top" width="77" height="118" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Panel</font></div>
+    </td>
+    <td align="left" valign="top" width="365" height="118" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARI-27</font>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Incluye la vista <b>PnSeleccionRecursosHw</b>, a la que se le pasan los 
+    par&#225;metros de configuraci&#243;n siguientes:</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">- </font><font face="Arial Narrow"><b>admiteSeleccionMultiple</b></font><font face="Arial Narrow" color="#0f0f0f">: TRUE </font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">- <b>filtroPorEstado</b>: [&quot;RETIRADA PARA BAJA&quot;, &quot;ALTA&quot;, 
+    &quot;PROPUESTA BAJA&quot;]</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** FIN ARI-27</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" height="85" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Panel &quot;Paso 2: 
+    Selecci&#243;n de 
+    recursos&quot; 
+    (alternativa 2)</font></div>
+    </td>
+    <td align="left" valign="top" width="77" height="85" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Panel</font></div>
+    </td>
+    <td align="left" valign="top" width="365" height="85" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARI-33</font>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Incluye la vista <b>FormSeleccionarRecursosHwPorLista</b>, para 
+    seleccionar los recursos a trav&#233;s de una lista de NI o n&#250;meros de 
+    serie.</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** FIN ARI-33</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" height="118" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Barra de botones</font></div>
+    </td>
+    <td align="left" valign="top" width="77" height="118" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Toolbar</font></div>
+    </td>
+    <td align="left" valign="top" width="365" height="118" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">- <b>Anterior</b>: Muestra el paso anterior. Visible si el paso es distinto del 
+    primero.</font>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">- <b>Siguiente</b>: Muestra el paso siguiente: Visible si el paso es distinto 
+    del &#250;ltimo.</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">- <b>Finalizar</b>: Visible si el paso es el &#250;ltimo. Habilitado si se ha 
+    seleccionado al menos un recurso de la lista en el paso 2.</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">- <b>Cancelar</b>: Visible y habilitado siempre.</font></div>
+    </td></tr>
+</table>
+<div align="left"><br/>&nbsp;</div>
+<table width="576" cellpadding="3" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 0px; border-color: #010101; ">
+    <colgroup>
+        <col width="132"></col>
+        <col width="78"></col>
+        <col width="366"></col>
+    </colgroup>
+    <tr>
+    <td colspan="2" align="left" valign="top" width="203" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>VISTA DIFERENCIADA POR 
+    ROLES</b></font></div>
+    </td>
+    <td align="left" valign="top" width="359" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">NO</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="437" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" height="17" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="437" height="17" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="437" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+</table>
+<div align="left"><b><u><br /></u></b></div><div align="left"><font face="Arial Narrow"><b><u>PROCESOS Y ELEMENTOS FUNCIONALES</u></b></font></div>
+<div align="left"><br/>&nbsp;</div>
+<table width="576" cellpadding="3" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 0px; border-color: #010101; ">
+    <colgroup>
+        <col width="78"></col>
+        <col width="90"></col>
+        <col width="408"></col>
+    </colgroup>
+    <tr>
+    <td align="center" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="center"><font face="Arial Narrow"><b>TIPO</b></font></div>
+    </td>
+    <td align="center" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="center"><font face="Arial Narrow"><b>NOMBRE</b></font></div>
+    </td>
+    <td align="center" valign="top" width="401" style="border: solid #010101 1px;">
+    <div align="center"><font face="Arial Narrow"><b>&#160;DESCRIPCION DEL PROCESO A EJECUTAR</b></font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" height="34" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Mostrar vista</font></div>
+    </td>
+    <td align="left" valign="top" width="83" height="34" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td align="left" valign="top" width="401" height="34" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Inicializa la vista </font><font face="Arial Narrow" color="#0f0f0f"><b>PnSeleccionRecursosHw</b></font><font face="Arial Narrow"> del paso 2, para ganar tiempo 
+    mientras el usuario trabaja en el paso 1.</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" height="17" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Clic</font></div>
+    </td>
+    <td align="left" valign="top" width="83" height="17" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Siguiente</font></div>
+    </td>
+    <td align="left" valign="top" width="401" height="17" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">- En el paso 1: Activa el panel del paso 2</font>
+    <div align="left">&nbsp;</div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Clic</font></div>
+    </td>
+    <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Anterior</font></div>
+    </td>
+    <td align="left" valign="top" width="401" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">- En el paso 2: Activa el panel del paso 1</font>
+    <div align="left">&nbsp;</div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Clic</font></div>
+    </td>
+    <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Finalizar</font></div>
+    </td>
+    <td align="left" valign="top" width="401" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARI-33</font>
+    <div align="left"><font face="Arial Narrow">Si el paso 2 se ha realizado con la vista 
+    </font><font face="Arial Narrow" color="#0f0f0f"><b>FormSeleccionarRecursosHwPorLista</b></font><font face="Arial Narrow">, se obtiene la informaci&#243;n de los 
+    recursos mediante el servicio REST de RecursoHw, filtrando por los NI y 
+    NS especificados. </font></div>
+    <div align="left"><font face="Arial Narrow">Si el servicio REST no devuelve ning&#250;n resultado, se informa de ello al 
+    usuario y se aborta la operaci&#243;n.</font></div>
+    <div align="left"><font face="Arial Narrow">Si el servicio REST devuelve al menos un recurso, se establece dicho 
+    array como configuraci&#243;n de salida &quot;seleccion&quot;.</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** FIN ARI-33</font></div>
+    <div align="left"><font face="Arial Narrow"><br /></font></div><div align="left"><font face="Arial Narrow">Establece la configuraci&#243;n de salida de la vista con los datos de los pasos 
+    1 y 2, y cierra el formulario.</font></div>
+    <div align="left">&nbsp;</div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Clic</font></div>
+    </td>
+    <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Cancelar</font></div>
+    </td>
+    <td align="left" valign="top" width="401" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Cierra el formulario.</font></div>
+    </td></tr>
+</table>
+<div align="left"><font size="2"><br /></font></div><div align="left"><font size="2"><br /></font></div><div align="left">&nbsp;</div>
+</body>
+</html>

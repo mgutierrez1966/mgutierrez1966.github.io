@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.6.9:1", "", "«Servicio REST» ExpedienteBajaHw", "EARoot/EA6/EA9/EA1881.htm", "10.png", "E6523", "0", "", "Component0","{9C519DD2-429D-4fe4-9DFA-2D6B9E2CC85E}");
+tocTab[tocTab.length] = new Array("0.6.9:2", "", "«Servicio API» ExpedienteBajaHwAPI", "EARoot/EA6/EA9/EA1882.htm", "10.png", "E6545", "0", "", "Component0","{C6D60F87-1C40-47e7-BA27-160518C6F1F2}");
+tocTab[tocTab.length] = new Array("0.6.9:3", "", "«Servicio REST» ExpedienteBajaHwDocumentacion", "EARoot/EA6/EA9/EA1883.htm", "10.png", "E6541", "0", "", "Component0","{A664D4EF-F6DD-45df-9715-1E11BA3F4771}");

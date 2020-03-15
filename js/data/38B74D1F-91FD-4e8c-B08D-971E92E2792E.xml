@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.3.2.1.5.2.1", "1", "ESTA.HW.03: Expediente de baja de recursos HW", "EARoot/EA3/EA2/EA1/EA5/EA2/EA1/EA397.htm", "4.png", "", "", "{9D1BAF4D-72A5-437b-95D1-47B0B47B6E91}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.1.5.2.2", "1", "PROC.HW.03: Baja de recursos HW", "EARoot/EA3/EA2/EA1/EA5/EA2/EA2/EA405.htm", "4.png", "", "", "{EF872EE6-2A9E-42c8-805D-5A60B4DD1FE5}", "Package");

@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.3.2.1.6.1.1", "1", "Obtener informes de inventario de recursos a cargo de UCOs", "EARoot/EA3/EA2/EA1/EA6/EA1/EA1/EA433.htm", "4.png", "", "", "{72E3ED25-D3F6-4007-A9A0-1659F7A422CA}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.1.6.1.2", "1", "Obtener informes de antiguedad, coste, mantenimiento, etc. de recursos hardware", "EARoot/EA3/EA2/EA1/EA6/EA1/EA2/EA445.htm", "4.png", "", "", "{3AC0B1DC-1215-4ba9-B551-C12F1B6DB53D}", "Package");

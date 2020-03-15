@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.3.2.1.7.2.3:1", "", "Asignar y reasignar recursos entre dependencias de una UCO", "EARoot/EA3/EA2/EA1/EA7/EA2/EA3/EA484.htm", "180.png", "740", "0", "", "Use Case diagram0","{FC7A36D6-A662-49e1-A65F-30688C51D491}");
+tocTab[tocTab.length] = new Array("0.3.2.1.7.2.3:2", "", "CU.CISPOC.HW.007: Asignar dependencia a un recurso HW", "EARoot/EA3/EA2/EA1/EA7/EA2/EA3/EA488.htm", "7.png", "E5806", "0", "", "UseCase0","{69551F0C-FB0E-402b-81FD-A36A50406760}");
+tocTab[tocTab.length] = new Array("0.3.2.1.7.2.3:3", "", "CU.CISPOC.HW.008: Asignar dependencia a múltiples recursos HW", "EARoot/EA3/EA2/EA1/EA7/EA2/EA3/EA489.htm", "7.png", "E5807", "0", "", "UseCase0","{0986F414-423E-4b0f-8CAC-D07714F8C487}");

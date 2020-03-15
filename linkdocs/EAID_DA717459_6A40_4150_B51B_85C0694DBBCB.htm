@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<title></title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<meta http-equiv="Content-Style-Type" content="text/css"/>
+</head>
+<body>
+<p align="center"><font face="Calibri" color="#0f0f0f"><b><u>&#173;SERVICIO API</u></b></font></p>
+<p align="justify"><font face="Calibri" color="#0f0f0f"><b><u>DATOS GENERALES</u></b></font></p>
+<div style="margin-left: -2mm;">
+<table width="603" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
+    <colgroup>
+        <col width="177"></col>
+        <col width="283"></col>
+        <col width="76"></col>
+        <col width="66"></col>
+    </colgroup>
+    <tr>
+    <td align="left" valign="top" width="168" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>NOMBRE</b></font></div>
+    </td>
+    <td align="left" valign="top" width="274" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f">ExpedienteAdquisicionHwApi</font></div>
+    </td>
+    <td align="left" valign="top" width="67" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>VERSION</b></font></div>
+    </td>
+    <td align="left" valign="top" width="57" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f">1.0</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="168" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DESCRIPCI&#211;N</b></font></div>
+    </td>
+    <td colspan="3" align="left" valign="top" width="416" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">Operaciones sobre expedientes de adquisici&#243;n de recursos HW</font></div>
+    </td></tr>
+</table>
+</div>
+<p><font face="Calibri" color="#0f0f0f"><br /></font></p><p><font face="Calibri" color="#0f0f0f"><b><u>OPERACIONES</u></b></font></p>
+<div style="margin-left: -2mm;">
+<table width="603" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
+    <colgroup>
+        <col width="162"></col>
+        <col width="126"></col>
+        <col width="54"></col>
+        <col width="5"></col>
+        <col width="98"></col>
+        <col width="15"></col>
+        <col width="76"></col>
+        <col width="66"></col>
+    </colgroup>
+    <tr>
+    <td align="left" valign="top" width="153" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>NOMBRE</b></font></div>
+    </td>
+    <td colspan="5" align="left" valign="top" width="290" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Arial Narrow">CargaRecursosPorFichero</font></div>
+    </td>
+    <td align="left" valign="top" width="67" style="border: solid #010101 1px;">
+    <div align="justify"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td align="left" valign="top" width="57" style="border: solid #010101 1px;">
+    <div align="justify"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="153" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>URL</b></font></div>
+    </td>
+    <td colspan="7" align="left" valign="top" width="432" style="border: solid #010101 1px;">
+    <div align="justify"><span style="font-size: 9pt;"></span></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="153" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>TRANSACCIONAL</b></font></div>
+    </td>
+    <td colspan="3" align="left" valign="top" width="176" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>SI</b></font></div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="104" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>AUDITADO</b></font></div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="133" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>SI</b></font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="153" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DESCRIPCI&#211;N</b></font></div>
+    </td>
+    <td colspan="7" align="left" valign="top" width="432" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">Crea y agrega recursos HW a un expediente de adquisici&#243;n, a partir de un fichero de 
+    tipo&#160; ALTA-RECURSOS-EXPEDIENTE.</font></div>
+    </td></tr>
+    <tr>
+    <td rowspan="3" align="left" valign="top" width="153" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DATOS ENTRADA</b></font></div>
+    </td>
+    <td align="left" valign="top" width="117" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>NOMBRE</b></font></div>
+    </td>
+    <td align="left" valign="top" width="45" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>TIPO</b></font></div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="94" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>REQUERIDO</b></font></div>
+    </td>
+    <td colspan="3" align="left" valign="top" width="148" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DESCRIPCION</b></font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="117" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">expediente</font></div>
+    </td>
+    <td align="left" valign="top" width="45" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">ID</font></div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="94" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">SI</font></div>
+    </td>
+    <td colspan="3" align="left" valign="top" width="148" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">Expediente de adquisici&#243;n 
+    (ExpedienteAdquisicionHw) al 
+    que se van a agregar los 
+    recursos del fichero</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="117" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">fichero</font></div>
+    </td>
+    <td align="left" valign="top" width="45" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">ID</font></div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="94" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">SI</font></div>
+    </td>
+    <td colspan="3" align="left" valign="top" width="148" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">Documento que contiene el 
+    fichero con los recursos a 
+    cargar, con formato 
+    ALTA-RECURSOS-EXPEDIENTE.</font></div>
+    </td></tr>
+    <tr>
+    <td rowspan="7" align="left" valign="top" width="153" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DATOS SALIDA</b></font></div>
+    </td>
+    <td align="left" valign="top" width="117" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>NOMBRE</b></font></div>
+    </td>
+    <td align="left" valign="top" width="45" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>TIPO</b></font></div>
+    </td>
+    <td colspan="5" align="left" valign="top" width="252" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DESCRIPCION</b></font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="117" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">numRecursosCargados</font></div>
+    </td>
+    <td align="left" valign="top" width="45" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">N&#250;mero</font></div>
+    </td>
+    <td colspan="5" align="left" valign="top" width="252" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">N&#250;mero de recursos agregados al expediente.</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="117" height="18" style="border: solid #010101 1px;">
+    <div align="justify"><span style="font-size: 9pt;"></span></div>
+    </td>
+    <td align="left" valign="top" width="45" height="18" style="border: solid #010101 1px;">
+    <div align="justify"><span style="font-size: 9pt;"></span></div>
+    </td>
+    <td colspan="5" align="left" valign="top" width="252" height="18" style="border: solid #010101 1px;">
+    <div align="justify"><span style="font-size: 9pt;"></span></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="117" style="border: solid #010101 1px;">
+    <div align="justify"><span style="font-size: 9pt;"></span></div>
+    </td>
+    <td align="left" valign="top" width="45" style="border: solid #010101 1px;">
+    <div align="justify"><span style="font-size: 9pt;"></span></div>
+    </td>
+    <td colspan="5" align="left" valign="top" width="252" style="border: solid #010101 1px;">
+    <div align="justify"><span style="font-size: 9pt;"></span></div>
+    </td></tr>
+</table>
+<table width="162" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
+    <colgroup>
+        <col width="162"></col>
+    </colgroup>
+    <tr>
+    <td align="left" valign="top" width="153" height="20" style="border: solid #010101 1px;">
+    <div align="justify"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+    <tr>
+    </tr>
+    <tr>
+    </tr>
+</table>
+<table width="603" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
+    <colgroup>
+        <col width="162"></col>
+        <col width="126"></col>
+        <col width="88"></col>
+        <col width="227"></col>
+    </colgroup>
+    <tr>
+    <td align="left" valign="top" width="153" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>PROCESO</b></font></div>
+    </td>
+    <td colspan="3" align="left" valign="top" width="432" style="border: solid #010101 1px;">
+    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
+    <li style="margin-left: 18pt; margin-right: 0pt; padding-left: 0pt; "><font face="Calibri" color="#0f0f0f" size="1">Se obtiene el fichero asociado al documento pasado en la entrada.</font></li>
+    <li style="margin-left: 18pt; margin-right: 0pt; padding-left: 0pt; ">
+    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">Se verifica que el documento es de tipo CSV y que no supera los 10 MB de 
+    tama&#241;o.</font></div>
+    </li>
+    <li style="margin-left: 18pt; margin-right: 0pt; padding-left: 0pt; ">
+    <div align="justify"><font face="Calibri" size="1">Para cada recurso incluido, se valida que:</font></div>
+    </li>
+    </ul>
+    <div align="justify"><font face="Calibri" size="1">- Los valores obligatorios est&#225;n informados : </font><font face="Calibri" size="2">N&#250;mero de Serie, </font><font face="Calibri" color="#0f0f0f" size="2">Fecha de 
+    contrataci&#243;n, </font><font face="Calibri" size="2">Fecha fin de garant&#237;a, NCAT, Mantenimiento centralizado.</font></div>
+    <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160;&#160;- La combinaci&#243;n [c&#243;digo de fabricante y n&#250;mero de serie] no existe ya en el 
+    inventario ni en los recursos ya revisados.</font></div>
+    <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160;&#160;- El ArticuloHw con el NCAT indicado, existe en el Cat&#225;logo y est&#225; en estado EN 
+    VIGOR.</font></div>
+    <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160;&#160;- Si el CIU de la UCO a cargo viene informado, este existe en la estructura org&#225;nica y 
+    corresponde a un nodo a cargo v&#225;lido (DependenciaEt o Almac&#233;n)</font></div>
+    <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160;&#160;- Si el CIU de la UCO a cargo NO viene informado, el expediente de adquisici&#243;n tiene 
+    asignado una UCO a cargo por defecto.</font></div>
+    <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160;&#160;- El c&#243;digo de expediente (si est&#225; informado) existe y est&#225; en estado CARGA. </font></div>
+    <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160;&#160;- Los c&#243;digos de las empresas fabricante, distribuidor y soporte t&#233;cnico, si viene 
+    informadas, existen y se encuentran 'activos' en el diccionario EMPRESA.</font></div>
+    <div align="left">&nbsp;</div>
+    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
+    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 9pt;  color: #010101;  "><font face="Calibri" size="1">Si se han producido errores de validaci&#243;n, se devuelven todos como respuesta del 
+    servicio. Para cada error de validaci&#243;n se indicar&#225; el n&#250;mero de l&#237;nea del fichero y 
+    el tipo de error producido.</font></li>
+    </ul>
+    <div align="left">&nbsp;</div>
+    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
+    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 9pt;  color: #010101;  "><font face="Calibri" size="1">Si no se han producido errores de validaci&#243;n, se inicializan objetos de tipo 
+    RecursoHw de la siguiente forma:</font></li>
+    </ul>
+    <div align="left"><font face="Calibri" size="1">&#160;&#160;- Si el n&#250;mero de expediente no est&#225; informado, se tomar&#225; el expediente indicado en 
+    el par&#225;metro de entrada.</font></div>
+    <div align="left"><font face="Calibri" size="1">&#160;&#160;- Para el nombre, descripci&#243;n, importe, fabricante, distribuidor y soporte t&#233;cnico, si no 
+    se han especificado en el fichero se usar&#225;n los correspondientes al art&#237;culo de Cat&#225;logo 
+    al que corresponda el NCAT.</font></div>
+    <div align="left"><font face="Calibri" size="1">&#160;&#160;- Como nodo a cargo se tomar&#225; el indicado en el fichero, y en caso de no venir 
+    informado se tomar&#225; la UCO a cargo por defecto especificada en el expediente</font></div>
+    <div align="left"><font face="Calibri" size="1">&#160; - Como configuraci&#243;n activa, se crear&#225; un objeto Configuraci&#243;nHw nueva a partir de los 
+    datos del art&#237;culo asociado al NCAT.</font></div>
+    <div align="left"><font face="Calibri" size="1">** INICIO ARIGIS-256</font></div>
+    <div align="left"><font face="Calibri" size="1">- Como nodoUbicaci&#243;n se tomar&#225; el mismo valor que para el nodo a cargo.</font></div>
+    <div align="left"><font face="Calibri" size="1">** FIN ARIGIS-256</font></div>
+    <div align="left">&nbsp;</div>
+    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
+    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 9pt;  color: #010101;  "><div style="margin-top: 0pt; margin-bottom: 0pt; "><font face="Calibri" size="1">Se crean los nuevos recursos mediante el servicio CRUD de <b>RecursoHw</b>.</font></div></li>
+    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 9pt;  color: #010101;  "><font face="Calibri" size="1">Finalmente, se devuelve como respuesta el n&#250;mero de recursos agregados al 
+    expediente.</font></li>
+    </ul>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="153" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DEPENDENCIAS</b></font></div>
+    </td>
+    <td colspan="3" align="left" valign="top" width="432" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 9pt;"></span></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="153" style="border: solid #010101 1px;">
+    <div align="justify"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td align="center" valign="top" width="117" style="border: solid #010101 1px;">
+    <div align="center"><font face="Calibri" color="#0f0f0f"><b>ANONIMO</b></font></div>
+    </td>
+    <td align="center" valign="top" width="79" style="border: solid #010101 1px;">
+    <div align="center"><font face="Calibri" color="#0f0f0f"><b>AUTENTICADO</b></font></div>
+    </td>
+    <td align="center" valign="top" width="218" style="border: solid #010101 1px;">
+    <div align="center"><font face="Calibri" color="#0f0f0f"><b>ROL/ROLES</b></font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="153" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" color="#0f0f0f"><b>SEGURIDAD DE ACCESO</b></font></div>
+    </td>
+    <td align="center" valign="top" width="117" style="border: solid #010101 1px;">
+    <div align="center"><span style="font-size: 9pt;"></span></div>
+    </td>
+    <td align="center" valign="top" width="79" style="border: solid #010101 1px;">
+    <div align="center"><font face="Calibri" color="#0f0f0f">X</font></div>
+    </td>
+    <td align="center" valign="top" width="218" style="border: solid #010101 1px;">
+    <div align="center"><font face="Calibri" color="#0f0f0f" size="1">SEAPO</font></div>
+    </td></tr>
+    <tr>
+    <td colspan="2" align="left" valign="top" width="279" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" color="#0f0f0f"><b>PROCESO DIFERENCIADO POR ROL</b></font></div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="306" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" color="#0f0f0f"><b>NO</b></font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="153" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" color="#0f0f0f"><b>ROL</b></font></div>
+    </td>
+    <td colspan="3" align="left" valign="top" width="432" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" color="#0f0f0f"><b>PROCESO</b></font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="153" height="22" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td colspan="3" align="left" valign="top" width="432" height="22" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 9pt;"></span></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="153" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 9pt;"></span></div>
+    </td>
+    <td colspan="3" align="left" valign="top" width="432" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 9pt;"></span></div>
+    </td></tr>
+</table>
+</div>
+<div style="margin-left: -3mm;">
+<table width="605" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
+    <colgroup>
+        <col width="217"></col>
+        <col width="387"></col>
+    </colgroup>
+    <tr>
+    <td colspan="2" align="left" valign="middle" width="596" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" color="#0f0f0f"><b>RESTRICCIONES</b></font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="middle" width="208" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" color="#0f0f0f"><b>PRECONDICIONES</b></font></div>
+    </td>
+    <td align="left" valign="middle" width="378" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">El expediente pasado como par&#225;metro debe encontrase en estado CARGA</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="middle" width="208" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" color="#0f0f0f"><b>POSTCONDICIONES</b></font></div>
+    </td>
+    <td align="left" valign="middle" width="378" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 9pt;"></span></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="middle" width="208" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" color="#0f0f0f"><b>INVARIANTES</b></font></div>
+    </td>
+    <td align="left" valign="middle" width="378" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">El proceso debe devolver una respuesta err&#243;nea si el fichero no tiene la 
+    estructura esperada, o bien se producen errores de validaci&#243;n en los 
+    recursos incluidos en el fichero.</font></div>
+    </td></tr>
+</table>
+</div>
+<div align="left">&nbsp;</div>
+</body>
+</html>

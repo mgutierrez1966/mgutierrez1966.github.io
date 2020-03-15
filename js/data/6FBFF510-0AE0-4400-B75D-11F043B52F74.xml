@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.3.2.6.3:1", "", "Gestión de la estructura orgánica del ET", "EARoot/EA3/EA2/EA6/EA3/EA785.htm", "180.png", "630", "0", "", "Use Case diagram0","{C72B9D51-2528-4b22-BA15-2684395101FC}");
+tocTab[tocTab.length] = new Array("0.3.2.6.3:2", "", "CU.ADMIN.ADM.001: Crear una UCO", "EARoot/EA3/EA2/EA6/EA3/EA791.htm", "7.png", "E4569", "0", "", "UseCase0","{65433213-FAD7-47af-BFE4-B054FB9A9E4E}");
+tocTab[tocTab.length] = new Array("0.3.2.6.3:3", "", "CU.ADMIN.ADM.002: Modificar datos de una UCO", "EARoot/EA3/EA2/EA6/EA3/EA792.htm", "7.png", "E4570", "0", "", "UseCase0","{D6263093-2CBF-40b5-B2E5-BE793C58AE63}");
+tocTab[tocTab.length] = new Array("0.3.2.6.3:4", "", "CU.ADMIN.ADM.003: Eliminar una UCO", "EARoot/EA3/EA2/EA6/EA3/EA793.htm", "7.png", "E4572", "0", "", "UseCase0","{ECA82E31-2DAD-4af5-B78E-6587E7143A10}");
+tocTab[tocTab.length] = new Array("0.3.2.6.3:5", "", "CU.ADMIN.ADM.004: Visualizar estructura organíca del ET", "EARoot/EA3/EA2/EA6/EA3/EA794.htm", "7.png", "E4571", "0", "", "UseCase0","{530B51BD-A78B-4502-BA0D-9B4C7615BFAC}");
+tocTab[tocTab.length] = new Array("0.3.2.6.3:6", "", "CU.ADMIN.ADM.005: Consultar datos de una UCO", "EARoot/EA3/EA2/EA6/EA3/EA795.htm", "7.png", "E4573", "0", "", "UseCase0","{AEFABCB0-5C85-4af9-B8A4-DF13AFE4954D}");

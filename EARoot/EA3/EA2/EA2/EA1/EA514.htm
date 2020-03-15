@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Descripción del módulo</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Descripción del módulo", " : "))</script>  : Public   Package</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">13/03/2017 14:18:58</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">13/03/2017 14:18:58</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">mgutca1</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{355396B8-208E-4280-BD7D-7566ADE1C8F5}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">El módulo de Mantenimiento de Hardware tiene como objeto la gestión y el control de las solicitudes de mantenimiento correctivo, adaptativo y de transporte de recursos hardware y ESYL dados de alta en el inventario del Ejército de Tierra.&lt;br/&gt;&lt;br/&gt;Las funciones del módulo se distribuyen en los siguientes grupos:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;u&gt;Gestión de contratos de mantenimiento&lt;/u&gt;: Mediante este grupo de funciones, el perfil DIRECTOR puede gestionar los contratos de mantenimiento centralizado, con los datos de las empresas asociadas. Igualmente puede generar los listados para la liquidación periódica de cada contrato.&lt;/li&gt;&lt;li&gt;&lt;u&gt;Gestión de tablas auxiliares para mantenimiento hardware&lt;/u&gt;: Mediante estas funciones, el perfil DIRECTOR gestiona tablas auxiliares de datos, necesarias para este módulo, como por ejemplo los códigos de los tipos de averías.&lt;/li&gt;&lt;li&gt;&lt;u&gt;Proceso de solicitudes de mantenimiento HW y ESYL&lt;/u&gt;: Este grupo de funciones gestiona la creación y tramitación de las solicitudes de mantenimiento y transporte, incluyendo las autorizaciones intermedias, tramitación y procesado de mensajes con la empresa de mantenimiento, y actualización automática del inventario y de los datos de configuración de los recursos afectados. Los mismos procesos son aplicables a los recursos HW y al material ESYL, con las particularidades que en su caso se indican. También contempla la gestión y tramitación de los partes de queja sobre las peticiones realizadas por la empresa de mantenimiento.&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los perfiles implicados en este módulo son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;u&gt;DIRECTOR&lt;/u&gt;: este perfil toma su nombre de la aplicación GISMI, y corresponde a la SEAPO de SUBOPER/JCISAT. Es responsable de gestionar los contratos de mantenimiento centralizado, y de aprobar o denegar al más alto nivel las solicitudes de mantenimiento y transporte. Tramita o anula los partes de queja elevados por los CISPOC.&lt;/li&gt;&lt;li&gt;&lt;u&gt;SUBDIRECTOR&lt;/u&gt;: Este perfil corresponde a los Jefes de los BT del RT22, y su misión fundamental es la de tramitar o denegar las solicitudes de mantenimiento y transporte realizadas en su ámbito de apoyo funcional. Tramita o anula los partes de queja elevados por los CISPOC.&lt;/li&gt;&lt;li&gt;&lt;u&gt;OACISE&lt;/u&gt;: Este perfil corresponde a los CECOM del RT22 que apoyan a las UCO,s. Su función es la de revisar y tramitar las solicitudes realizadas por los CISPOC de las UCOs a las que apoyan. Tramita o anula los partes de queja elevados por los CISPOC.&lt;/li&gt;&lt;li&gt;&lt;u&gt;CISPOC&lt;/u&gt;: Representa a los usuarios de las UCO,s. (nivel 5 de la estructura orgánica) con recursos a cargo. Carga en el sistema las solicitudes de mantenimiento correctivo, adaptativo y de transporte relativas al material HW y ESYL a cargo de su UCO. Tramita en su caso partes de queja sobre las peticiones realizadas por la empresa de mantenimiento.&lt;/li&gt;&lt;/ul&gt;&lt;p/&gt;</div>
+
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

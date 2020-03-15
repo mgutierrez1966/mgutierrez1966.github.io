@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.3.2.1.5.2.1:1", "", "ESTA.HW.03: Expediente de baja de recursos HW", "EARoot/EA3/EA2/EA1/EA5/EA2/EA1/EA395.htm", "183.png", "730", "0", "", "Statechart diagram0","{5DF132F7-D026-4443-B4C2-9B88D25A9C59}");
+tocTab[tocTab.length] = new Array("0.3.2.1.5.2.1:2", "", "Clasificación", "EARoot/EA3/EA2/EA1/EA5/EA2/EA1/EA398.htm", "20.png", "E5747", "0", "", "State0","{4463A6AC-2630-4b47-AA31-2D191A96A0C7}");
+tocTab[tocTab.length] = new Array("0.3.2.1.5.2.1:3", "", "Aprobado", "EARoot/EA3/EA2/EA1/EA5/EA2/EA1/EA399.htm", "20.png", "E5745", "0", "", "State0","{BA7AC134-9F75-43a6-9A91-16758FE838B3}");
+tocTab[tocTab.length] = new Array("0.3.2.1.5.2.1:4", "", "Borrador", "EARoot/EA3/EA2/EA1/EA5/EA2/EA1/EA400.htm", "68.png", "E5748", "0", "", "StateNode0","{44C0BB85-C9C4-4785-B2EC-7C155A2AF2C7}");
+tocTab[tocTab.length] = new Array("0.3.2.1.5.2.1:5", "", "Anulado", "EARoot/EA3/EA2/EA1/EA5/EA2/EA1/EA401.htm", "69.png", "E5749", "0", "", "StateNode0","{E58A8949-77D0-4b44-9457-98A09F292FC0}");
+tocTab[tocTab.length] = new Array("0.3.2.1.5.2.1:6", "", "Finalizado", "EARoot/EA3/EA2/EA1/EA5/EA2/EA1/EA402.htm", "69.png", "E5746", "0", "", "StateNode0","{C987E1C6-3D29-4cd0-B30C-C92BE907BEEA}");

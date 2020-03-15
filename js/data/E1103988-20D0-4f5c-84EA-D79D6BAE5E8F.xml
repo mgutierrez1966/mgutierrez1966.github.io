@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.3.2.1.5:1", "", "Baja de recursos HW", "EARoot/EA3/EA2/EA1/EA5/EA369.htm", "175.png", "727", "0", "", "Logical diagram0","{F2B1A8D6-EF75-4245-B6D4-B3C2DA03B2E3}");
+tocTab[tocTab.length] = new Array("0.3.2.1.5.1", "1", "Modelo de casos de uso", "EARoot/EA3/EA2/EA1/EA5/EA1/EA376.htm", "4.png", "", "", "{896694BD-679E-45f6-909D-AEFC3CC61F53}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.1.5.2", "1", "Modelo de procesos", "EARoot/EA3/EA2/EA1/EA5/EA2/EA392.htm", "4.png", "", "", "{38B74D1F-91FD-4e8c-B08D-971E92E2792E}", "Package");

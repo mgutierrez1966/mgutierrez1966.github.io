@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CU.SEAPO.ALMACEN.001: Obtener vista de recursos en stock en un almacén</title>
+<link href="../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.SEAPO.ALMACEN.001: Obtener vista de recursos en stock en un almacén", " : "))</script>  : Public   UseCase</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">13/03/2017 14:18:59</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">13/03/2017 14:18:59</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">mgutca1</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Prototipo_UI</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{923C3F13-1D69-4d33-B646-697C731DF9C0}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA755.htm">Obtener informes de recursos en stock en el almacén</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Esta funcionalidad muestra la vista Consulta de Recursos en stock de almacenes.&lt;br/&gt;&lt;br/&gt;El perfil SEAPO puede visualizar los recursos en stock en todos los almacenes. El perfil GESTOR ALMACEN puede consultar los recursos en stock de su almacén.&lt;br/&gt;&lt;br/&gt;La vista se compone de la siguiente información:&lt;br/&gt;&lt;br/&gt;- Lista agrupada y agregada por Categoría / Subcategoría / Artículo del Catálogo (Vista inicial)&lt;br/&gt;- Lista completa: relación de todos los recursos sin aplicar ninguna agrupación o agregación&lt;br/&gt;- Lista agrupada y agregada por almacén (solo perfil SEAPO)&lt;br/&gt;- Lista agrupada y agregada por valores de un atributo&lt;br/&gt;&lt;br/&gt;Los atributos mostrados de cada recurso serán:&lt;br/&gt;- Los datos básicos de los recursos, si la relación no se encuentra filtrada por categoría&lt;br/&gt;- Los atributos específicos de una categoría, si la relación está filtrada por dicha categoría.&lt;br/&gt;&lt;br/&gt;Las opciones de configuración de las listas son:&lt;br/&gt;- Selección de datos básicos a mostrar (datos comunes de artículos HW)&lt;br/&gt;- Selección de datos específicos de una categoría HW a mostrar (si está aplicado un filtro por categoría)&lt;br/&gt;- Filtro por Categoría / Subcategoría / Artículo&lt;br/&gt;- Filtro por Almacén (solo perfil SEAPO)&lt;br/&gt;- Filtro por valor concreto de uno o varios atributos&lt;br/&gt;- Filtro por tipo de material (reservado / no reservado)&lt;br/&gt;- Filtro por estado del material (comprometido / no comprometido)&lt;br/&gt;- Exportación a CSV&lt;br/&gt;</div>
+
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

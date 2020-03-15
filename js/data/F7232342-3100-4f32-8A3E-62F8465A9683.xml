@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.4.1.2.2:1", "", "Ubicación de un recurso informático HW", "EARoot/EA4/EA1/EA2/EA2/EA851.htm", "183.png", "651", "0", "", "Statechart diagram0","{2873F6A2-8665-4a22-9E24-56FC068ABF52}");
+tocTab[tocTab.length] = new Array("0.4.1.2.2:2", "", "Almacén", "EARoot/EA4/EA1/EA2/EA2/EA854.htm", "20.png", "E4761", "0", "", "State0","{CAE8E814-DD6C-4370-A9CC-E3E863CF6693}");
+tocTab[tocTab.length] = new Array("0.4.1.2.2:3", "", "Almacen baja", "EARoot/EA4/EA1/EA2/EA2/EA855.htm", "20.png", "E4759", "0", "", "State0","{A62F28AC-8849-4d42-B9F8-1857C95193C9}");
+tocTab[tocTab.length] = new Array("0.4.1.2.2:4", "", "En tránsito", "EARoot/EA4/EA1/EA2/EA2/EA856.htm", "20.png", "E4760", "0", "", "State0","{D9F88E6B-3745-48ef-BCC3-2CC588FD592A}");
+tocTab[tocTab.length] = new Array("0.4.1.2.2:5", "", "Inicio", "EARoot/EA4/EA1/EA2/EA2/EA857.htm", "68.png", "E4757", "0", "", "StateNode0","{E2DEE033-5F9C-43b9-8D20-C0F224CE98D7}");
+tocTab[tocTab.length] = new Array("0.4.1.2.2:6", "", "Recepción inicial en UCO o almacén", "EARoot/EA4/EA1/EA2/EA2/EA858.htm", "56.png", "E4758", "0", "", "StateNode0","{F9A1449F-BFBC-45ad-8B8A-9FA2805D3946}");
+tocTab[tocTab.length] = new Array("0.4.1.2.2:7", "", "UCO", "EARoot/EA4/EA1/EA2/EA2/EA859.htm", "20.png", "E4762", "0", "", "State0","{562B1FF4-DE6C-41da-AD2D-8F262D07B8B7}");

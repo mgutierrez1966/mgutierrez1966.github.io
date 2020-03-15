@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CU.SEAPO.HW.004: Alta masiva de recursos en el expediente desde fichero</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.SEAPO.HW.004: Alta masiva de recursos en el expediente desde fichero", " : "))</script>  : Public   UseCase</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">07/04/2017 11:14:56</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">12/03/2018 15:12:42</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">mgutca1</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{2D16199E-4EE7-40d7-95D8-0386DABDBC54}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA240.htm">Proceso de alta de recursos HW</a>, <a href="../../../../../EA7/EA2/EA1928.htm">Expedientes de adquisición HW</a>, Interaction</td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">El alta masiva de recursos en un expediente de adquisición, permite cargar los datos de múltiples recursos desde un fichero que será procesado por el sistema. En el fichero se indican los datos básicos y el artículo de catálogo al que corresponden los nuevos recursos.&lt;br/&gt;&lt;br/&gt;Desde la vista de detalle de un expediente de adquisición, el usuario SEAPO podrá cargar múltiples recursos desde un fichero CSV en un formato predefinido, con los siguientes campos: &lt;br/&gt;&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Número de Serie&lt;/li&gt;&lt;li&gt;Nombre (opcional)&lt;/li&gt;&lt;li&gt;Descripción (opcional)&lt;/li&gt;&lt;li&gt;Importe (opcional)&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Fecha de contratación&lt;/font&gt;&lt;/li&gt;&lt;li&gt;Fecha fin de garantía&lt;/li&gt;&lt;li&gt;NCAT del artículo&lt;/li&gt;&lt;/ul&gt;<br />&lt;ul&gt;<br />&lt;li&gt;CIU UCO a cargo (opcional)&lt;/li&gt;&lt;li&gt;Nº Expediente de adquisición (opcional)&lt;/li&gt;&lt;li&gt;Código de empresa fabricante (opcional)&lt;/li&gt;&lt;li&gt;Código de empresa distribuidora (opcional)&lt;/li&gt;&lt;li&gt;Código de empresa de soporte técnico (opcional)&lt;/li&gt;&lt;li&gt;Mantenimiento centralizado (S/N)&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;- El sistema solicitará al usuario la ubicación del fichero. &lt;br/&gt;- El sistema carga el fichero en el servidor.&lt;br/&gt;- El sistema realiza las siguientes validaciones:&lt;br/&gt;&#160;&#160;&#160;&#160;- A nivel de fichero, valida que la estructura es correcta, en base a las especificaciones del fichero ALTA-RECURSOS-EXPEDIENTE.&lt;br/&gt;&#160;&#160;&#160;&#160;- Para cada recurso incluido, valida que:&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;- Los valores obligatorios están informados.&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;- El número de serie no existe ya en el inventario&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;- El NCAT existe en el Catálogo y está en estado EN VIGOR.&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;- Si el CIU de la UCO a cargo viene informado, existe en la estructura orgánica y corresponde a un nodo a cargo válido (DependenciaEt o Almacén)&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;- Si el CIU de la UCO a cargo NO viene informado, el expediente de adquisición tiene asignado una UCO a cargo por defecto.&lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;- El código de expediente (si está informado) existe y está en estado CARGA. &lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;- Los códigos de las empresas fabricante, distribuidor y soporte técnico, si viene informadas, existen y se encuentran &#39;activos&#39; en el diccionario EMPRESA.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;- El sistema da de alta los recursos del fichero de la siguiente forma:&lt;br/&gt;&#160;&#160;- Si el número de expediente no está indicado, se tomará el expediente&lt;br/&gt;&#160;&#160;- Para el nombre, descripción, importe, fabricante, distribuidor y soporte técnico, si no se han especificado en el fichero se usarán los correspondientes al artículo de Catálogo al que corresponda el NCAT.&lt;br/&gt;&#160;&#160;- El estado se inicializa a ALTA PROVISIONAL&lt;br/&gt;&#160;&#160;- El NI se inicializa de la misma forma que las altas individuales.&lt;br/&gt;&#160;&#160;- Como nodo a cargo se tomará el indicado en el fichero, y en caso de no venir informado se tomará la UCO a cargo por defecto especificada en el expediente.&lt;br/&gt;&#160;&#160;- La configuración activa se crea a partir de los datos del artículo de Catálogo.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA5/EA1/EA2/EA4/EA2/EA1539.htm">PnExpedienteAdquisicionHwDetalle - Detalle de expediente de adquisición HW</a></td>
+					<td width="10%" class="TableRow" valign="top">Screen</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top">ARIGIS-111 CARGA-FICHERO-EXP-ADQUISICION</td>
+					<td width="10%" class="TableRow" valign="top">Feature</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA1/EA193.htm">«Gestor» SEAPO</a></td>
+					<td width="10%" class="TableRow" valign="top">Actor</td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

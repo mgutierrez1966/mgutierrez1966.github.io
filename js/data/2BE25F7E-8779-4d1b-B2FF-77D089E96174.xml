@@ -1,0 +1,9 @@
+tocTab[tocTab.length] = new Array("0.6.7:1", "", "«Servicio API» AgregarRecursosReasignacionHw", "EARoot/EA6/EA7/EA1827.htm", "10.png", "E5983", "0", "", "Component0","{9AA4A7C3-DDD9-4895-8ED1-BED8B5DAE230}");
+tocTab[tocTab.length] = new Array("0.6.7:2", "", "«Servicio API» AnularReasignacionHw", "EARoot/EA6/EA7/EA1828.htm", "10.png", "E5973", "0", "", "Component0","{5B74C48A-C8DB-459c-A0D6-C8CA68358026}");
+tocTab[tocTab.length] = new Array("0.6.7:3", "", "«Servicio API» CargarInformeReasignacionHw", "EARoot/EA6/EA7/EA1829.htm", "10.png", "E5997", "0", "", "Component0","{A46C5A9B-F18B-4e0f-A808-36D9ABF52CC0}");
+tocTab[tocTab.length] = new Array("0.6.7:4", "", "«Servicio API» EjecutarReasignacionHw", "EARoot/EA6/EA7/EA1830.htm", "10.png", "E5981", "0", "", "Component0","{796FAB9C-0003-4d1f-BFEF-46ECE66FDA2F}");
+tocTab[tocTab.length] = new Array("0.6.7:5", "", "«TareaProgramada» EnviarCorreoReasignacionesFueraPlazo", "EARoot/EA6/EA7/EA1831.htm", "10.png", "E6861", "0", "", "Component0","{9FE5A07F-55AF-45a8-BAC3-2D6ED5858C3D}");
+tocTab[tocTab.length] = new Array("0.6.7:6", "", "«Servicio API» QuitarRecursosReasignacionHw", "EARoot/EA6/EA7/EA1832.htm", "10.png", "E5985", "0", "", "Component0","{17488430-F85D-43b4-9037-6FFE8C49C7A2}");
+tocTab[tocTab.length] = new Array("0.6.7:7", "", "«Servicio REST» ReasignacionHw", "EARoot/EA6/EA7/EA1833.htm", "10.png", "E5975", "0", "", "Component0","{5619954F-CAF2-4069-BCFD-3482467DEFB7}");
+tocTab[tocTab.length] = new Array("0.6.7:8", "", "«Servicio REST» ReasignacionHwInforme", "EARoot/EA6/EA7/EA1834.htm", "10.png", "E5979", "0", "", "Component0","{51E4C94B-F17A-4a64-BBBC-14E20037C44F}");
+tocTab[tocTab.length] = new Array("0.6.7:9", "", "«Servicio REST» ReasignacionHwRecursos", "EARoot/EA6/EA7/EA1835.htm", "10.png", "E5977", "0", "", "Component0","{E563B9E7-DC47-43e4-B183-EB7D60B3EB99}");

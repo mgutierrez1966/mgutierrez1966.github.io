@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.3.2.6.5:1", "", "Gestión de la estructura de almacenes de SEAPO", "EARoot/EA3/EA2/EA6/EA5/EA804.htm", "180.png", "632", "0", "", "Use Case diagram0","{A051C48C-C65A-42f5-9E99-B3E6D323D2F7}");
+tocTab[tocTab.length] = new Array("0.3.2.6.5:2", "", "CU.ADMIN.ADM.020: Crear un almacén", "EARoot/EA3/EA2/EA6/EA5/EA809.htm", "7.png", "E4590", "0", "", "UseCase0","{DD329F90-498F-4c26-A03F-E5D2DF27F2B6}");
+tocTab[tocTab.length] = new Array("0.3.2.6.5:3", "", "CU.ADMIN.ADM.021: Modificar datos de un almacén", "EARoot/EA3/EA2/EA6/EA5/EA810.htm", "7.png", "E4593", "0", "", "UseCase0","{495A13FF-5D21-4d71-8E6E-4C30BD3BD376}");
+tocTab[tocTab.length] = new Array("0.3.2.6.5:4", "", "CU.ADMIN.ADM.022: Eliminar un almacén", "EARoot/EA3/EA2/EA6/EA5/EA811.htm", "7.png", "E4591", "0", "", "UseCase0","{CDA9BF90-B49A-4057-A56B-0BF7A1211BEA}");
+tocTab[tocTab.length] = new Array("0.3.2.6.5:5", "", "CU.ADMIN.ADM.023: Consultar relación de almacenes de SEAPO", "EARoot/EA3/EA2/EA6/EA5/EA812.htm", "7.png", "E4592", "0", "", "UseCase0","{19FB81DE-8400-48e4-840B-514E5BD4E776}");
+tocTab[tocTab.length] = new Array("0.3.2.6.5:6", "", "CU.ADMIN.ADM.024: Consultar datos de un almacén", "EARoot/EA3/EA2/EA6/EA5/EA813.htm", "7.png", "E4589", "0", "", "UseCase0","{87F31E9B-EFB3-4e9e-B453-FCF860C4D00D}");

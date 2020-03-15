@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<title></title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<meta http-equiv="Content-Style-Type" content="text/css"/>
+</head>
+<body>
+<p align="center"><font face="Calibri" color="#0f0f0f"><b><u>Tarea Programada</u></b></font></p>
+<p align="justify"><font face="Calibri" color="#0f0f0f"><b><u>DATOS GENERALES</u></b></font></p>
+<div style="margin-left: -2mm;">
+<table width="603" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
+    <colgroup>
+        <col width="177"></col>
+        <col width="170"></col>
+        <col width="113"></col>
+        <col width="76"></col>
+        <col width="66"></col>
+    </colgroup>
+    <tr>
+    <td align="left" valign="top" width="168" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>NOMBRE</b></font></div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="274" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f">EnviarCorreoReasignacionesFueraPlazo</font></div>
+    </td>
+    <td align="left" valign="top" width="67" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>VERSION</b></font></div>
+    </td>
+    <td align="left" valign="top" width="57" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f">1.0</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="168" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>TRANSACCIONAL</b></font></div>
+    </td>
+    <td align="left" valign="top" width="161" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>NO</b></font></div>
+    </td>
+    <td align="left" valign="top" width="104" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>AUDITADO</b></font></div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="133" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>NO</b></font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="168" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>PERIODICIDAD</b></font></div>
+    </td>
+    <td colspan="4" align="left" valign="top" width="416" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">Diariamente, a las 9:00h.</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="168" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DESCRIPCI&#211;N</b></font></div>
+    </td>
+    <td colspan="4" align="left" valign="top" width="416" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">Env&#237;a correos de recordatorio a los CISPOC que tienen reasignaciones pendientes de 
+    recepcionar, fuera del plazo l&#237;mite establecido.</font></div>
+    </td></tr>
+</table>
+</div>
+<p><br/>&nbsp;</p>
+<div style="margin-left: -2mm;">
+<table width="603" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
+    <colgroup>
+        <col width="164"></col>
+        <col width="438"></col>
+    </colgroup>
+    <tr>
+    <td align="left" valign="top" width="155" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>PROCESO</b></font></div>
+    </td>
+    <td align="left" valign="top" width="429" style="border: solid #010101 1px;">
+    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
+    <li style="margin-left: 18pt; margin-right: 0pt; padding-left: 0pt; "><font face="Calibri" color="#0f0f0f" size="1">Obtiene una lista de las reasignaciones que se encuentran en estado 
+    &quot;RECURSOS EN TRANSITO&quot;, y en las que la fecha l&#237;mite de recepci&#243;n es mayor 
+    que la fecha del sistema.</font></li>
+    <li style="margin-left: 18pt; margin-right: 0pt; padding-left: 0pt; ">
+    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">Para cada reasignaci&#243;n, se recuperan los usuarios con el rol CISPOC asociados 
+    a la UCO a cargo o a la Dependencia de destino de la reasignaci&#243;n.</font></div>
+    </li>
+    <li style="margin-left: 18pt; margin-right: 0pt; padding-left: 0pt; ">
+    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">Para cada usuario, se genera un email con el formato de la notificaci&#243;n de 
+    tipo &quot;Aviso de reasignaci&#243;n de recursos fuera de plazo de recepci&#243;n&quot;.</font></div>
+    </li>
+    </ul>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="155" style="border: solid #010101 1px;">
+    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DEPENDENCIAS</b></font></div>
+    </td>
+    <td align="left" valign="top" width="429" style="border: solid #010101 1px;">
+    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
+    <li style="margin-left: 18pt; margin-right: 0pt; padding-left: 0pt; "></li>
+    </ul>
+    </td></tr>
+</table>
+</div>
+<p><br/>&nbsp;</p>
+<div style="margin-left: -3mm;">
+<table width="605" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
+    <colgroup>
+        <col width="217"></col>
+        <col width="387"></col>
+    </colgroup>
+    <tr>
+    <td colspan="2" align="left" valign="middle" width="596" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" color="#0f0f0f"><b>RESTRICCIONES</b></font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="middle" width="208" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" color="#0f0f0f"><b>PRECONDICIONES</b></font></div>
+    </td>
+    <td align="left" valign="middle" width="378" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">N/A</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="middle" width="208" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" color="#0f0f0f"><b>POSTCONDICIONES</b></font></div>
+    </td>
+    <td align="left" valign="middle" width="378" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">N/A</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="middle" width="208" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" color="#0f0f0f"><b>INVARIANTES</b></font></div>
+    </td>
+    <td align="left" valign="middle" width="378" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">N/A</font></div>
+    </td></tr>
+</table>
+</div>
+<p align="justify"><font face="Calibri" color="#0f0f0f"><br /></font></p><div align="left"><font color="#0f0f0f" size="2"><br /></font></div><div align="left">&nbsp;</div>
+</body>
+</html>

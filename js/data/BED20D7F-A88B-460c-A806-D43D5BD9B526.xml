@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.3.2.1.4:1", "", "Reasignación de recursos entre UCOs", "EARoot/EA3/EA2/EA1/EA4/EA315.htm", "175.png", "722", "0", "", "Logical diagram0","{82900CAA-10CB-4aa6-B4B6-CDB1F903E381}");
+tocTab[tocTab.length] = new Array("0.3.2.1.4.1", "1", "Modelo de casos de uso", "EARoot/EA3/EA2/EA1/EA4/EA1/EA322.htm", "4.png", "", "", "{3859F22E-06B6-4bd1-917B-8DD9F156C46A}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.1.4.2", "1", "Modelo de procesos", "EARoot/EA3/EA2/EA1/EA4/EA2/EA333.htm", "4.png", "", "", "{0F8C97DF-F404-47ad-81A4-A1344C125029}", "Package");

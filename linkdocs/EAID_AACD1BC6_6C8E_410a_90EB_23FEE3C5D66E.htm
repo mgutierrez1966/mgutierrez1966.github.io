@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+<title></title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+<meta http-equiv="Content-Style-Type" content="text/css"/>
+</head>
+<body>
+<div align="left"><font size="2"><br /></font></div><div align="left"><font size="2"><br /></font></div><div align="left"><font face="Arial Narrow"><b><u>DATOS GENERALES </u></b></font></div>
+<div align="left"><br/>&nbsp;</div>
+<table width="564" cellpadding="3" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 0px; border-color: #010101; ">
+    <colgroup>
+        <col width="120"></col>
+        <col width="48"></col>
+        <col width="102"></col>
+        <col width="84"></col>
+        <col width="210"></col>
+    </colgroup>
+    <tr>
+    <td align="left" valign="top" width="113" height="52" style="border: solid #010101 1px;"><font face="Arial Narrow"><b>NOMBRE</b></font>
+    <div align="left"><font face="Arial Narrow"><b><br /></b></font></div><div align="left">&nbsp;</div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="143" height="52" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">FormSeleccionRecursosHw</font></div>
+    </td>
+    <td align="left" valign="top" width="77" height="52" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>VERSION</b></font></div>
+    </td>
+    <td align="left" valign="top" width="203" height="52" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" size="1">1.0</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" height="236" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>OBSERVACIONES</b></font></div>
+    </td>
+    <td colspan="4" align="left" valign="top" width="437" height="236" style="border: solid #010101 1px;"><font face="Arial Narrow">Formulario para seleccionar recursos HW, permitiendo filtrado y busqueda de 
+    recursos por diversos criterios.</font>
+    <div align="left"><font face="Arial Narrow">Utiliza la vista <b>PnInventarioHw</b>, pero adaptada para el modo de unicamente 
+    seleccion.</font></div>
+    <div align="left"><font face="Arial Narrow">Devuelve los recursos seleccionados en la configuraci&#243;n &quot;seleccion&quot;.</font></div>
+    <div align="left"><font face="Arial Narrow"><br /></font></div><div align="left"><font face="Arial Narrow">Par&#225;metros de entrada:</font></div>
+    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
+    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow"><b>admiteSeleccionMultiple</b>: booleano. Cierto si el formulario permite la 
+    selecci&#243;n m&#250;ltiple de registros. Por defecto &quot;falso&quot;.</font></li>
+    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow"><b>nodoRaizFiltroOrganica</b>: Identificador del NodoOrganicaEt que debe figurar 
+    como nodo raiz en el panel de filtro por org&#225;nica. Opcional. Si no se 
+    especifica, el nodo raiz es &quot;Todas las UCOs&quot;.</font></li>
+    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow"><b>filtroPorEstado</b>: Array de valores permitidos para el atributo &quot;estado&quot; de los 
+    recursos. Si est&#225; vac&#237;o o nulo no se aplica ning&#250;n filtro. </font></li>
+    </ul>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>REQ. AUTENTIC</b></font></div>
+    </td>
+    <td align="left" valign="top" width="41" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">SI</font></div>
+    </td>
+    <td colspan="3" align="left" valign="top" width="389" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>REQ. AUTORIZAC.</b></font></div>
+    </td>
+    <td align="left" valign="top" width="41" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">SI</font></div>
+    </td>
+    <td colspan="3" align="left" valign="top" width="389" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+</table>
+<div align="left"><font face="Arial Narrow"><b><u>?</u></b></font></div>
+<div align="left"><font face="Arial Narrow"><b><u>ELEMENTOS VISUALES </u></b></font></div>
+<div align="left"><br/>&nbsp;</div>
+<table width="576" cellpadding="3" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 0px; border-color: #010101; ">
+    <colgroup>
+        <col width="132"></col>
+        <col width="42"></col>
+        <col width="402"></col>
+    </colgroup>
+    <tr>
+    <td align="left" valign="top" width="125" height="17" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td align="left" valign="top" width="35" height="17" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td align="left" valign="top" width="395" height="17" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b><u>OBSERVACIONES</u></b></font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Lista de recursos</font></div>
+    </td>
+    <td align="left" valign="top" width="35" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td align="left" valign="top" width="395" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Similar a la vista PnInventarioHw, salvo que admite selecci&#243;n m&#250;ltiple si 
+    el par&#225;metro de entrada est&#225; especificado a &quot;cierto&quot;</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" height="85" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Panel de filtro</font></div>
+    </td>
+    <td align="left" valign="top" width="35" height="85" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td align="left" valign="top" width="395" height="85" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Similar a la vista PnInventarioHw, salvo que si se especifica el par&#225;metro 
+    &quot;</font><font face="Arial Narrow">nodoRaizFiltroOrganica</font><font face="Arial Narrow" color="#0f0f0f">&quot;, el nodo raiz del panel es dicho nodo de la 
+    org&#225;nica.</font>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Si el par&#225;metro &quot;filtroPorEstado&quot; tiene valor, el filtro &quot;Estado&quot; debe limitar 
+    su lista de valores posibles a los valores pasados en el par&#225;metro.</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" height="17" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td align="left" valign="top" width="35" height="17" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td align="left" valign="top" width="395" height="17" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+</table>
+<div align="left"><br/>&nbsp;</div>
+<table width="576" cellpadding="3" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 0px; border-color: #010101; ">
+    <colgroup>
+        <col width="132"></col>
+        <col width="78"></col>
+        <col width="366"></col>
+    </colgroup>
+    <tr>
+    <td colspan="2" align="left" valign="top" width="203" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>VISTA DIFERENCIADA POR 
+    ROLES</b></font></div>
+    </td>
+    <td align="left" valign="top" width="359" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">SI (Similar a la vista PnInventarioHw)</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="437" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="437" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td colspan="2" align="left" valign="top" width="437" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+</table>
+<div align="left"><b><u><br /></u></b></div><div align="left"><font face="Arial Narrow"><b><u>PROCESOS Y ELEMENTOS FUNCIONALES</u></b></font></div>
+<div align="left"><br/>&nbsp;</div>
+<table width="576" cellpadding="3" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 0px; border-color: #010101; ">
+    <colgroup>
+        <col width="78"></col>
+        <col width="90"></col>
+        <col width="408"></col>
+    </colgroup>
+    <tr>
+    <td align="center" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="center"><font face="Arial Narrow"><b>TIPO</b></font></div>
+    </td>
+    <td align="center" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="center"><font face="Arial Narrow"><b>NOMBRE</b></font></div>
+    </td>
+    <td align="center" valign="top" width="401" style="border: solid #010101 1px;">
+    <div align="center"><font face="Arial Narrow"><b>&#160;DESCRIPCION DEL PROCESO A EJECUTAR</b></font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" height="169" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Mostrar</font></div>
+    </td>
+    <td align="left" valign="top" width="83" height="169" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Vista</font></div>
+    </td>
+    <td align="left" valign="top" width="401" height="169" style="border: solid #010101 1px;"><font face="Arial Narrow">Adem&#225;s de lo especificado para la vista PnInventarioHw, en caso de que 
+    se haya especificado </font><font face="Arial Narrow" color="#0f0f0f">el par&#225;metro &quot;</font><font face="Arial Narrow">nodoRaizFiltroOrganica</font><font face="Arial Narrow" color="#0f0f0f">&quot;,</font><font face="Arial Narrow"> se debe de 
+    seleccionar autom&#225;ticamente el nodo raiz al inicializar la vista. </font>
+    <div align="left"><font face="Arial Narrow">De esta forma se aplicar&#225; autom&#225;ticamente el filtro, de forma que solo se 
+    muestren los recursos HW ubicados en el nodo especificado o en nodos 
+    dependientes.</font></div>
+    <div align="left"><font face="Arial Narrow"><br /></font></div><div align="left"><font face="Arial Narrow">Si se ha especificado el par&#225;metro &quot;filtroPorEstado&quot;, las llamadas a los 
+    servicios REST de RecursoHw incluir&#225;n siempre un filtro adicional para 
+    restringir el atributo &quot;estado&quot; a los valores especificados (operador IN).</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td align="left" valign="top" width="401" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td align="left" valign="top" width="401" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td align="left" valign="top" width="401" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td></tr>
+</table>
+<div align="left"><font size="2"><br /></font></div><div align="left"><font size="2"><br /></font></div><div align="left">&nbsp;</div>
+</body>
+</html>

@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.3.2.1.7.2.5:1", "", "Sustituir recurso HW por garantía", "EARoot/EA3/EA2/EA1/EA7/EA2/EA5/EA496.htm", "180.png", "1090", "0", "", "Use Case diagram0","{08A9EF7B-795C-4a06-8D71-2AEEFDEB177B}");
+tocTab[tocTab.length] = new Array("0.3.2.1.7.2.5:2", "", "CU.SEAPO.HW.63: Sustituir recurso HW por garantía", "EARoot/EA3/EA2/EA1/EA7/EA2/EA5/EA499.htm", "7.png", "E7357", "0", "", "UseCase0","{6BD2A74B-5025-4e70-994D-53D47FD39E1F}");

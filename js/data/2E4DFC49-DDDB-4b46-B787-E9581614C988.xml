@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.3.2.3.2:1", "", "Mantenimiento del Catálogo de Productos Sofware", "EARoot/EA3/EA2/EA3/EA2/EA650.htm", "180.png", "614", "0", "", "Use Case diagram0","{447F9D04-23EE-4296-8EFB-15AE1945DF46}");
+tocTab[tocTab.length] = new Array("0.3.2.3.2:2", "", "CU.SEAPO.SW.001: Crear Artículo SW", "EARoot/EA3/EA2/EA3/EA2/EA655.htm", "7.png", "E4502", "0", "", "UseCase0","{5375E77E-2CB8-48e8-A3C8-0252711FEEE6}");
+tocTab[tocTab.length] = new Array("0.3.2.3.2:3", "", "CU.SEAPO.SW.002: Modificar Artículo SW", "EARoot/EA3/EA2/EA3/EA2/EA656.htm", "7.png", "E4504", "0", "", "UseCase0","{0E60D661-00C5-4bde-884F-899B43B115D3}");
+tocTab[tocTab.length] = new Array("0.3.2.3.2:4", "", "CU.SEAPO.SW.003: Borrar Artículo SW", "EARoot/EA3/EA2/EA3/EA2/EA657.htm", "7.png", "E4506", "0", "", "UseCase0","{34C91E08-4F34-4d47-9192-C196D934B502}");
+tocTab[tocTab.length] = new Array("0.3.2.3.2:5", "", "CU.SEAPO.SW.004: Consultar estructura Catálogo Articulos SW", "EARoot/EA3/EA2/EA3/EA2/EA658.htm", "7.png", "E4505", "0", "", "UseCase0","{7241B7DA-D70E-406c-97A6-2F6EFA5F1340}");
+tocTab[tocTab.length] = new Array("0.3.2.3.2:6", "", "CU.SEAPO.SW.005:  Buscar Artículo SW", "EARoot/EA3/EA2/EA3/EA2/EA659.htm", "7.png", "E4503", "0", "", "UseCase0","{256CC9DA-639F-4b7f-9406-87891671536F}");
+tocTab[tocTab.length] = new Array("0.3.2.3.2:7", "", "CU.SEAPO.SW.006:  Obtener listado de Artículos SW", "EARoot/EA3/EA2/EA3/EA2/EA660.htm", "7.png", "E4507", "0", "", "UseCase0","{B8974BBC-FA92-44b2-8A12-08EAD0AADBA4}");

@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("0.6.12:1", "", "«Servicio» GestionDicodefService", "EARoot/EA6/EA12/EA1898.htm", "10.png", "E6101", "0", "", "Component0","{A7CA8D23-2913-435f-84D0-A72AC7DF7C81}");
+tocTab[tocTab.length] = new Array("0.6.12:2", "", "«Servicio API» GestionUsuariosApis", "EARoot/EA6/EA12/EA1899.htm", "10.png", "E6059", "0", "", "Component0","{850E7CF5-046D-42fc-AF2A-3DC967BC3EF6}");
+tocTab[tocTab.length] = new Array("0.6.12:3", "", "«Servicio API» LeerUsuarioDicodef", "EARoot/EA6/EA12/EA1900.htm", "10.png", "E6097", "0", "", "Component0","{54551F76-DE48-4434-8666-0E34ABD2FF4B}");
+tocTab[tocTab.length] = new Array("0.6.12:4", "", "«Servicio API» LeerUsuarios", "EARoot/EA6/EA12/EA1901.htm", "10.png", "E6041", "0", "", "Component0","{AA8791EA-842D-4c08-A032-F8124382F99E}");
+tocTab[tocTab.length] = new Array("0.6.12:5", "", "«Servicio REST» SAtributoRolBasico", "EARoot/EA6/EA12/EA1902.htm", "10.png", "E6502", "0", "", "Component0","{98D72C49-268A-4db2-ABD1-B5607DE62E9B}");
+tocTab[tocTab.length] = new Array("0.6.12:6", "", "«Servicio REST» SRolBasico", "EARoot/EA6/EA12/EA1903.htm", "10.png", "E6501", "0", "", "Component0","{80555254-9946-4d6b-9B03-DD453562521A}");
+tocTab[tocTab.length] = new Array("0.6.12:7", "", "«Servicio REST» Usuario", "EARoot/EA6/EA12/EA1904.htm", "10.png", "E6095", "0", "", "Component0","{E32045CE-62A2-4bc0-B59B-8493A8AEE5CB}");
+tocTab[tocTab.length] = new Array("0.6.12:8", "", "«Servicio» UsuariosService", "EARoot/EA6/EA12/EA1905.htm", "10.png", "E7429", "0", "", "Component0","{A4B7E53E-665C-41ab-9CFB-CBD9B04F92B4}");

@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.3.2.5.2:1", "", "Obtener informes de recursos en stock en el almacén", "EARoot/EA3/EA2/EA5/EA2/EA755.htm", "180.png", "627", "0", "", "Use Case diagram0","{B74B1E8A-3934-45f4-B97B-3FEB6C970DBA}");
+tocTab[tocTab.length] = new Array("0.3.2.5.2:2", "", "CU.SEAPO.ALMACEN.001: Obtener vista de recursos en stock en un almacén", "EARoot/EA3/EA2/EA5/EA2/EA758.htm", "7.png", "E4557", "0", "", "UseCase0","{923C3F13-1D69-4d33-B646-697C731DF9C0}");

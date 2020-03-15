@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Descripción del módulo</title>
+<link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Descripción del módulo", " : "))</script>  : Public   Package</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">07/04/2017 11:14:55</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">10/10/2017 12:14:59</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue">mgutca1</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Proposed</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{13F59DA7-D69C-4987-96E2-3E9CA2065022}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">El módulo de Inventario de Hardware tiene como objeto la gestión y el control del inventario de recursos informáticos de tipo hardware del Ejército de Tierra.&lt;br/&gt;&lt;br/&gt;Las funciones del módulo se distribuyen en los siguientes grupos:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;u&gt;Mantenimiento del Catálogo de Artículos HW&lt;/u&gt;: Los usuarios de perfil SEAPO pueden mantener el Catálogo de Artículos HW, cuya misión es la tipificación y normalización de los recursos informáticos incluidos en el inventario del ET.&lt;/li&gt;&lt;li&gt;&lt;u&gt;Gestionar estructura de dependencias de las UCOs&lt;/u&gt;: Los CISPOC pueden gestionar las dependencias internas de las UCO,s. a las que pertenecen, de forma que les permita un mejor control de la ubicación de los recursos que su UCO tiene a cargo.&lt;/li&gt;&lt;li&gt;&lt;u&gt;Proceso de alta de recursos HW&lt;/u&gt;: Mediante este grupo de funciones, el perfil SEAPO puede controlar las operaciones de alta de recursos en el inventario, a través de los expedientes de adquisición.&lt;/li&gt;&lt;li&gt;&lt;u&gt;Proceso de reasignación de recursos entre UCOs o Dependencias&lt;/u&gt;: Los perfiles SEAPO, Mando Orgánico y CISPOC pueden reasignar recursos informáticos entre las UCO,s. o Dependencias de su ámbito. La reasignación de recursos conlleva la actualización del inventario de responsabilidad, y puede necesitar acciones logísticas de transporte.&lt;/li&gt;&lt;li&gt;&lt;u&gt;Proceso de baja de recursos HW&lt;/u&gt;: Este grupo de funciones gestiona el proceso de baja de recursos informáticos, mediante la creación de expedientes de baja. El material retirado previamente de las UCO,s. a los almacenes de baja, es incluido en expedientes de baja. Tras las acciones de clasificación y destrucción, el material es dado de baja en el inventario.&lt;/li&gt;&lt;li&gt;&lt;u&gt;Obtener informes de inventario de recursos a cargo de UCOs&lt;/u&gt;: Tanto SEAPO como los Mandos Orgánicos y los CISPOC, pueden consultar y obtener diversos informes de los recursos a cargo. Estas funciones son fundamentales para la correcta gestión y control de los recursos informáticos. Son flexibles y permiten la exportación a formatos ofimáticos.&lt;/li&gt;&lt;li&gt;&lt;u&gt;Visualizar los datos de configuración de los recursos hardware&lt;/u&gt;: La configuración de un recurso hardware es el conjunto de los atributos y características y sus correspondientes valores en un momento dado. El sistema permite, a través de estas funciones, la visualización de la configuración actual, así como, a través del histórico de eventos de cada recurso, las configuraciones previas y las acciones que las han modificado.&lt;/li&gt;&lt;li&gt;&lt;u&gt;Modificar los datos de configuración de los recursos hardware&lt;/u&gt;: Determinados perfiles, y en situaciones puntuales, pueden modificar la configuración actual de un recurso informático, aunque lo habitual es que dichas modificaciones sean derivadas de acciones de mantenimiento correctivo y adaptativo. Todos los cambios quedan reflejados en el histórico de eventos del recurso.&lt;/li&gt;&lt;li&gt;&lt;u&gt;Asignar y reasignar recursos entre dependencias de una UCO&lt;/u&gt;: Los CISPOC, mediante estas funciones, pueden reasignar la ubicación de los recursos entre sus diversas dependencias.&lt;/li&gt;&lt;li&gt;&lt;u&gt;Asignar persona responsable a los recursos hardware&lt;/u&gt;: Los CISPOC, mediante estas funciones, pueden establecer las personas que utilizan o tienen a cargo los recursos informáticos, para un control en detalle.&lt;/li&gt;&lt;li&gt;&lt;u&gt;Obtener informes de antigüedad, coste, mantenimiento, etc. de recursos hardware&lt;/u&gt;: Mediante estas funciones, los perfiles SEAPO y Mando Orgánico pueden obtener informes de alto nivel que les permitan tomar decisiones en cuanto a la necesidad de renovar el parque informático, gestionar los contratos de mantenimiento, y otros aspectos de la gestión a su nivel.&lt;/li&gt;&lt;/ul&gt;<br />&lt;br/&gt;Los perfiles implicados en este módulo son los siguientes:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;&lt;u&gt;SEAPO&lt;/u&gt;: Es responsable de los procesos de alta y de baja de recursos del inventario. Puede reasignar recursos entre cualquier UCO del ET. Mantiene el Catálogo de Artículos HW.&lt;/li&gt;&lt;li&gt;&lt;u&gt;Mando Orgánico&lt;/u&gt;: Representa a los mandos de primer nivel y a cualquier mando intermedio (niveles 1 a 4 de la estructura orgánica del ET). Este perfil, en su ámbito de la jerarquía orgánica, puede controlar el inventario de responsabilidad de sus UCO,s., así como ordenar reasignaciones de material entre las mismas.&lt;/li&gt;&lt;li&gt;&lt;u&gt;CISPOC&lt;/u&gt;: Representa a los usuarios de las UCO,s. (nivel 5 de la estructura orgánica)&#160;&#160;o de alguna de sus Dependencias con recursos a cargo. Realiza las tareas administrativas y de control de los medios CIS a cargo de su Unidad que le encomienda la normativa vigente y los que le encomiende su Jefe de UCO o Dependencia. Puede ordenar reasignaciones de recursos entre Dependencias dependientes de su UCO o Dependencia.&lt;/li&gt;&lt;/ul&gt;&lt;p/&gt;</div>
+
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

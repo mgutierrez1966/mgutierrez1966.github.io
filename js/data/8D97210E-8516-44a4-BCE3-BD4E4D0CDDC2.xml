@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.3.2.5:1", "", "6. MODULO DE ALMACEN", "EARoot/EA3/EA2/EA5/EA748.htm", "180.png", "626", "0", "", "Use Case diagram0","{2C7F9B08-BF65-4cd5-A2BA-8E5C4177C1B8}");
+tocTab[tocTab.length] = new Array("0.3.2.5.1", "", "Descripción del módulo", "EARoot/EA3/EA2/EA5/EA1/EA754.htm", "4.png", "", "", "{BABE8BC6-801A-4d44-9BA2-B7590A9937A2}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.5.2", "1", "Obtener informes de recursos en stock en el almacén", "EARoot/EA3/EA2/EA5/EA2/EA757.htm", "4.png", "", "", "{C3CE2394-8794-4224-992A-3090F52144E4}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.5.3", "1", "Gestión de préstamos de material en stock", "EARoot/EA3/EA2/EA5/EA3/EA761.htm", "4.png", "", "", "{25FA863E-4973-4010-B38C-E8B9BC67D19F}", "Package");

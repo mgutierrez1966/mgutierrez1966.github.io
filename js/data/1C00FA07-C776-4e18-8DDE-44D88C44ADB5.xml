@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.3.2.1", "1", "«Subsistema» 1. MODULO DE INVENTARIO HARDWARE", "EARoot/EA3/EA2/EA1/EA205.htm", "4.png", "", "", "{B6E93235-B058-4a59-A745-5EC8626517D1}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.2", "1", "«Subsistema» 3. MODULO DE MANTENIMIENTO HARDWARE", "EARoot/EA3/EA2/EA2/EA502.htm", "4.png", "", "", "{434F1638-3813-4d45-AD05-FF80449DE305}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.3", "1", "«Subsistema» 4. MODULO DE INVENTARIO SOFTWARE", "EARoot/EA3/EA2/EA3/EA645.htm", "4.png", "", "", "{1FA2C175-2D4E-45c2-8DD1-AFBBD2630DBC}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.4", "1", "«Subsistema» 5. MODULO DE INVENTARIO ESYL", "EARoot/EA3/EA2/EA4/EA688.htm", "4.png", "", "", "{14F59635-064C-4147-BAD5-FE52D1967A14}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.5", "1", "«Subsistema» 6. MODULO DE ALMACEN", "EARoot/EA3/EA2/EA5/EA750.htm", "4.png", "", "", "{8D97210E-8516-44a4-BCE3-BD4E4D0CDDC2}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.6", "1", "«Subsistema» 8. MODULO DE ADMINISTRACION", "EARoot/EA3/EA2/EA6/EA770.htm", "4.png", "", "", "{82948107-44A9-4d99-A33E-F5FFB396B27C}", "Package");

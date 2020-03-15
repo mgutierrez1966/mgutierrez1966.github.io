@@ -1,0 +1,2 @@
+tocTab[tocTab.length] = new Array("0.3.2.2.10:1", "", "Gestión de tablas auxiliares para mantenimiento hardware", "EARoot/EA3/EA2/EA2/EA10/EA611.htm", "180.png", "612", "0", "", "Use Case diagram0","{ABE4E554-31B1-48af-A7EB-7BAD0ADC149D}");
+tocTab[tocTab.length] = new Array("0.3.2.2.10:2", "", "CU.DIRECTOR.MANTO.06: Mantenimiento tabla de códigos de avería", "EARoot/EA3/EA2/EA2/EA10/EA614.htm", "7.png", "E4467", "0", "", "UseCase0","{3123CA17-DB9D-4c6f-BAA5-2B865427CB60}");

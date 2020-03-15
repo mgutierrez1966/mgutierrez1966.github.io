@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.3.2.6:1", "", "8. MODULO DE ADMINISTRACION", "EARoot/EA3/EA2/EA6/EA768.htm", "180.png", "629", "0", "", "Use Case diagram0","{998C2FF4-D06C-4c57-AFC9-771518C11569}");
+tocTab[tocTab.length] = new Array("0.3.2.6.1", "", "Descripción del módulo", "EARoot/EA3/EA2/EA6/EA1/EA776.htm", "4.png", "", "", "{B768E128-3B10-448a-B522-6F125C32CF25}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.6.2", "1", "Gestión de usuarios", "EARoot/EA3/EA2/EA6/EA2/EA779.htm", "4.png", "", "", "{A3316CAD-8579-4de3-BA8C-847B85241C46}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.6.3", "1", "Gestión de la estructura orgánica del ET", "EARoot/EA3/EA2/EA6/EA3/EA787.htm", "4.png", "", "", "{6FBFF510-0AE0-4400-B75D-11F043B52F74}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.6.4", "1", "Gestionar estructura de dependencias de las UCOs", "EARoot/EA3/EA2/EA6/EA4/EA798.htm", "4.png", "", "", "{0B4C97D4-382E-4633-BAA5-3BB8AA2B79F4}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.6.5", "1", "Gestión de la estructura de almacenes de SEAPO", "EARoot/EA3/EA2/EA6/EA5/EA806.htm", "4.png", "", "", "{2F6083EC-7A8C-4600-B6B7-31838922DA20}", "Package");

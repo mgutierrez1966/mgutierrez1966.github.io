@@ -1,0 +1,7 @@
+tocTab[tocTab.length] = new Array("0.6.5:1", "", "«Servicio» InventarioHwService", "EARoot/EA6/EA5/EA1815.htm", "10.png", "E6858", "0", "", "Component0","{01D839BC-0926-4b23-8B2D-2DC8DE232826}");
+tocTab[tocTab.length] = new Array("0.6.5:2", "", "«Servicio REST» RecursoHwBaja", "EARoot/EA6/EA5/EA1816.htm", "10.png", "E6875", "0", "", "Component0","{FAF5610A-AB5F-48cb-AF7E-A4ED64DDB95C}");
+tocTab[tocTab.length] = new Array("0.6.5:3", "", "«Servicio REST» ArticuloHw", "EARoot/EA6/EA5/EA1817.htm", "10.png", "E5901", "0", "", "Component0","{75B7C030-0552-4fdf-B6DC-8AAB8BD75EE6}");
+tocTab[tocTab.length] = new Array("0.6.5:4", "", "«Servicio REST» HistoricoHw", "EARoot/EA6/EA5/EA1818.htm", "10.png", "E5882", "0", "", "Component0","{4C1BBC1D-8AB7-491a-9E2F-0EC3CB52A4C0}");
+tocTab[tocTab.length] = new Array("0.6.5:5", "", "«Servicio REST» RecursoHw", "EARoot/EA6/EA5/EA1819.htm", "10.png", "E5862", "0", "", "Component0","{29DB8EE9-5B34-41e1-8925-CF2F65A37769}");
+tocTab[tocTab.length] = new Array("0.6.5:6", "", "«Servicio REST» ConfiguracionHw", "EARoot/EA6/EA5/EA1820.htm", "10.png", "E5898", "0", "", "Component0","{E5A1047B-E60B-433e-AC29-74314AC3B5C9}");
+tocTab[tocTab.length] = new Array("0.6.5:7", "", "«Servicio API» InventarioHwAPI", "EARoot/EA6/EA5/EA1821.htm", "10.png", "E6617", "0", "", "Component0","{B2769D6D-D527-4b53-B34F-58A685FD57E7}");

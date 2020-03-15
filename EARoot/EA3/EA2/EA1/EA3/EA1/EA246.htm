@@ -1,0 +1,140 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>CU.SEAPO.HW.001: Crear Expediente Adquisición de recursos HW</title>
+<link href="../../../../../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="pageHeader"></div>
+<div class="PageBody">
+	<div id="name_classifier" style="display: none;"></div>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.SEAPO.HW.001: Crear Expediente Adquisición de recursos HW", " : "))</script>  : Public   UseCase</span>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">07/04/2017 11:14:56</td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic">Modified:</td>
+			<td class="ObjectDetailsValue">02/02/2018 11:37:39</td>
+		</tr>
+		<tr style="height: 10px"><td colspan="2"></td></tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj02" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
+			<td class="ObjectDetailsValue">1.0</td>
+		</tr>
+		<tr id="proj03" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
+			<td class="ObjectDetailsValue">Propuesto</td>
+		</tr>
+		<tr id="proj04" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
+			<td class="ObjectDetailsValue">Easy</td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Difficulty:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj06" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Priority:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="proj05" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Multiplicity:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr>
+			<td class="ObjectDetailsTopic"><img src="../../../../../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td class="ObjectDetailsValue"></td>
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
+			<td class="ObjectDetailsValue">{B5884A89-B42E-4a9e-80BE-1A91646ACE7A}</td>
+		</tr>
+		<tr id="adv01" style="display: none;">
+			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
+			<td class="ObjectDetailsValue"><a href="EA240.htm">Proceso de alta de recursos HW</a>, <a href="../../../../../EA7/EA2/EA1928.htm">Expedientes de adquisición HW</a></td>
+		</tr>
+	</table>
+	<div class="ObjectDetailsNotes">Desde la vista de consulta de Expedientes de Adquisición, el usuario podrá crear un nuevo expediente de adquisición de recursos HW.&lt;br/&gt;&lt;br/&gt;El sistema solicitará los datos básicos del nuevo expediente:&lt;br/&gt;&lt;ul&gt;<br />&lt;li&gt;Número de Expediente (*A20)&lt;/li&gt;&lt;li&gt;Ejercicio (*A4): Por defecto el ejercicio actual&lt;/li&gt;&lt;li&gt;Descripción (*A200)&lt;/li&gt;&lt;li&gt;Fecha de creación (*F): Por defecto la fecha del sistema&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;UCO o Almacén inicial: UCO a cuyo cargo se darán de alta los recursos del expediente. Puede ser una UCO propiamente dicha o un Almacén&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Expediente SIDAE (A100)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Importe del expediente (Moneda)&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Fabricante (id): informativo&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Distribuidor (id): informativo&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;Observaciones (A2000)&lt;/font&gt;&lt;/li&gt;&lt;/ul&gt;<br />&lt;font color=&quot;#0f0f0f&quot;&gt;&lt;br/&gt;&lt;/font&gt;&lt;font color=&quot;#0f0f0f&quot;&gt;El sistema dará de alta el nuevo expediente, dejándolo en estado &quot;Pendiente de carga de recursos&quot;, en el cual se podrán añadir datos de los nuevos recursos al expediente (anteriormente el estado era &quot;Pendiente de contratación&quot;)&lt;/font&gt;&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../../EA5/EA1/EA2/EA4/EA2/EA1538.htm">FormExpedienteAdquisicion - Modificacion de expediente de adquisicion HW</a></td>
+					<td width="10%" class="TableRow" valign="top">Screen</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA3/EA306.htm">«Activity» Creación de Expediente de Adquisición de HW</a></td>
+					<td width="10%" class="TableRow" valign="top">Activity</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../../EA1/EA193.htm">«Gestor» SEAPO</a></td>
+					<td width="10%" class="TableRow" valign="top">Actor</td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
+<div class="pageFooter"></div>
+ 
+</body>
+</html>

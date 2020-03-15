@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("0.3.2.1.4.2.1:1", "", "ESTA.HW.02: Reasignación de recursos", "EARoot/EA3/EA2/EA1/EA4/EA2/EA1/EA336.htm", "183.png", "725", "0", "", "Statechart diagram0","{B08F4BAF-915B-4d0c-B79A-5CF68AD99492}");
+tocTab[tocTab.length] = new Array("0.3.2.1.4.2.1:2", "", "Anulada", "EARoot/EA3/EA2/EA1/EA4/EA2/EA1/EA339.htm", "69.png", "E5694", "0", "", "StateNode0","{34BB1D32-2B4E-4cd5-8F02-65B213EC7606}");
+tocTab[tocTab.length] = new Array("0.3.2.1.4.2.1:3", "", "Borrador", "EARoot/EA3/EA2/EA1/EA4/EA2/EA1/EA340.htm", "20.png", "E5695", "0", "", "State0","{6D123001-0E5B-4ac0-9ACB-0FC3720C2E3E}");
+tocTab[tocTab.length] = new Array("0.3.2.1.4.2.1:4", "", "Finalizada", "EARoot/EA3/EA2/EA1/EA4/EA2/EA1/EA341.htm", "69.png", "E5699", "0", "", "StateNode0","{E6CFB2FC-2D4A-4e61-A2DF-7DB76C2F25AF}");
+tocTab[tocTab.length] = new Array("0.3.2.1.4.2.1:5", "", "Nuevo", "EARoot/EA3/EA2/EA1/EA4/EA2/EA1/EA342.htm", "68.png", "E5696", "0", "", "StateNode0","{B805F5BA-5D06-4573-8836-30776992C88B}");
+tocTab[tocTab.length] = new Array("0.3.2.1.4.2.1:6", "", "Recepción conforme con salvedades", "EARoot/EA3/EA2/EA1/EA4/EA2/EA1/EA343.htm", "20.png", "E5698", "0", "", "State0","{9A0BC623-0F2D-447d-9A85-5C3E5B92F8B6}");
+tocTab[tocTab.length] = new Array("0.3.2.1.4.2.1:7", "", "Recepción no conforme", "EARoot/EA3/EA2/EA1/EA4/EA2/EA1/EA344.htm", "20.png", "E5700", "0", "", "State0","{43FFCF0E-429C-41f4-A8FC-5281CEC7B655}");
+tocTab[tocTab.length] = new Array("0.3.2.1.4.2.1:8", "", "Recursos en tránsito", "EARoot/EA3/EA2/EA1/EA4/EA2/EA1/EA345.htm", "20.png", "E5697", "0", "", "State0","{627D082C-95C7-478f-ADA0-43EFCD42FF26}");

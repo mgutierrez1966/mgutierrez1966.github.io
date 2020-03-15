@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.4.1.1", "1", "ESTA.HW.01: Expediente de adquisición de recursos HW", "EARoot/EA4/EA1/EA1/EA825.htm", "4.png", "", "", "{A2F83CA4-937B-49f7-B5D3-ABDD0A119698}", "Package");
+tocTab[tocTab.length] = new Array("0.4.1.2", "1", "Estados de un recurso informático HW", "EARoot/EA4/EA1/EA2/EA829.htm", "4.png", "", "", "{D2CF714C-858E-45b7-BAF2-30AF041A6820}", "Package");
+tocTab[tocTab.length] = new Array("0.4.1.3", "1", "PROC.HW.01: Alta de recursos HW", "EARoot/EA4/EA1/EA3/EA862.htm", "4.png", "", "", "{1F89428E-E7CA-45d9-8FD6-D2384AF82C4E}", "Package");

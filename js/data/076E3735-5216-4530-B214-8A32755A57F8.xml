@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.4.1", "1", "Alta de recursos HW", "EARoot/EA4/EA1/EA819.htm", "4.png", "", "", "{DE60EE8E-AA30-4cc9-B80D-6140E82E80C9}", "Package");
+tocTab[tocTab.length] = new Array("0.4.2", "1", "Reasignacion de recursos HW", "EARoot/EA4/EA2/EA881.htm", "4.png", "", "", "{43D50513-FED1-4253-A22E-5178110721BF}", "Package");
+tocTab[tocTab.length] = new Array("0.4.3", "1", "Baja de recursos HW", "EARoot/EA4/EA3/EA917.htm", "4.png", "", "", "{941F7539-9EEF-4bc0-BFC9-E2EBBBED2753}", "Package");
+tocTab[tocTab.length] = new Array("0.4.4", "1", "Mantenimiento de recursos", "EARoot/EA4/EA4/EA952.htm", "4.png", "", "", "{CE7CD9C9-0691-4e20-A895-B6E1A84E76DC}", "Package");

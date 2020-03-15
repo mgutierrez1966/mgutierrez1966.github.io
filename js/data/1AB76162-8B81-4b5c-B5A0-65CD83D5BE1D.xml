@@ -1,0 +1,4 @@
+tocTab[tocTab.length] = new Array("0.3.2.1.3.2.1:1", "", "ESTA.HW.01: expediente de adquisición de recursos HW", "EARoot/EA3/EA2/EA1/EA3/EA2/EA1/EA259.htm", "183.png", "718", "0", "", "Statechart diagram0","{3505661D-2CD2-4445-975A-522EAF2D6D48}");
+tocTab[tocTab.length] = new Array("0.3.2.1.3.2.1:2", "", "Finalizado", "EARoot/EA3/EA2/EA1/EA3/EA2/EA1/EA262.htm", "69.png", "E5630", "0", "", "StateNode0","{7AD1896C-ECB9-4a4e-942F-E915A042B7FF}");
+tocTab[tocTab.length] = new Array("0.3.2.1.3.2.1:3", "", "Nuevo", "EARoot/EA3/EA2/EA1/EA3/EA2/EA1/EA263.htm", "68.png", "E5631", "0", "", "StateNode0","{466E79F3-AD9C-48aa-AFC2-8EAC44FA4829}");
+tocTab[tocTab.length] = new Array("0.3.2.1.3.2.1:4", "", "Pte. carga de recursos", "EARoot/EA3/EA2/EA1/EA3/EA2/EA1/EA264.htm", "20.png", "E5629", "0", "", "State0","{14EF0068-A8D6-40b0-96D6-5144EEA963BE}");

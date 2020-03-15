@@ -1,0 +1,14 @@
+tocTab[tocTab.length] = new Array("0.2.2:1", "", "TIPOS DE DATOS", "EARoot/EA2/EA2/EA152.htm", "175.png", "770", "0", "", "Logical diagram0","{F5917190-1738-44cc-A610-48F4F40A2690}");
+tocTab[tocTab.length] = new Array("0.2.2:2", "", "CIU", "EARoot/EA2/EA2/EA157.htm", "229.png", "E5939", "0", "", "PrimitiveType0","{B068F86A-5324-4034-963F-C5DC04065F8C}");
+tocTab[tocTab.length] = new Array("0.2.2:3", "", "CODIGO", "EARoot/EA2/EA2/EA158.htm", "229.png", "E6569", "0", "", "PrimitiveType0","{67578B83-9D9D-4f32-943C-C0E479E28113}");
+tocTab[tocTab.length] = new Array("0.2.2:4", "", "DESCRIPCION", "EARoot/EA2/EA2/EA159.htm", "229.png", "E5943", "0", "", "PrimitiveType0","{D49CB9E0-B511-492e-995F-CB5A39463A6D}");
+tocTab[tocTab.length] = new Array("0.2.2:5", "", "EMAIL", "EARoot/EA2/EA2/EA160.htm", "229.png", "E5942", "0", "", "PrimitiveType0","{58612FD5-6BB2-461b-8CD4-A81D134AFB21}");
+tocTab[tocTab.length] = new Array("0.2.2:6", "", "GUID", "EARoot/EA2/EA2/EA161.htm", "229.png", "E5934", "0", "", "PrimitiveType0","{CD5065FD-C151-4d7b-913C-11D5FFBB5F4D}");
+tocTab[tocTab.length] = new Array("0.2.2:7", "", "IMPORTE", "EARoot/EA2/EA2/EA162.htm", "229.png", "E5945", "0", "", "PrimitiveType0","{6BE7306C-5AB1-40e7-9389-DBD935379F7B}");
+tocTab[tocTab.length] = new Array("0.2.2:8", "", "NOMBRE_CORTO", "EARoot/EA2/EA2/EA163.htm", "229.png", "E5936", "0", "", "PrimitiveType0","{FA9287F3-6FAE-46ee-AFC6-CAF93D4B59FE}");
+tocTab[tocTab.length] = new Array("0.2.2:9", "", "NOMBRE_LARGO", "EARoot/EA2/EA2/EA164.htm", "229.png", "E5937", "0", "", "PrimitiveType0","{28C816F1-3F2A-4da5-802F-9483EA8AEC05}");
+tocTab[tocTab.length] = new Array("0.2.2:10", "", "OBSERVACIONES", "EARoot/EA2/EA2/EA165.htm", "229.png", "E5944", "0", "", "PrimitiveType0","{F14578DB-9BF6-40a3-8FCD-0D3A6DE6C667}");
+tocTab[tocTab.length] = new Array("0.2.2:11", "", "TELEFONO", "EARoot/EA2/EA2/EA166.htm", "229.png", "E5941", "0", "", "PrimitiveType0","{BF322B24-47CB-43ab-BF9B-6E14FA14D4B3}");
+tocTab[tocTab.length] = new Array("0.2.2:12", "", "TEXTO_CORTO", "EARoot/EA2/EA2/EA169.htm", "229.png", "E5938", "0", "", "PrimitiveType0","{12E3FA41-7F93-4372-A3D0-8FC06A65279E}");
+tocTab[tocTab.length] = new Array("0.2.2:13", "", "TEXTO_LARGO", "EARoot/EA2/EA2/EA170.htm", "229.png", "E5940", "0", "", "PrimitiveType0","{5BD71AB7-F9EB-4a78-B465-7A477DE73A81}");
+tocTab[tocTab.length] = new Array("0.2.2:14", "", "UID", "EARoot/EA2/EA2/EA171.htm", "229.png", "E5946", "0", "", "PrimitiveType0","{AE84E45D-5914-413c-B1D5-005D509C16AF}");

@@ -1,0 +1,3 @@
+tocTab[tocTab.length] = new Array("0.3.2.1.7.2.4:1", "", "Asignar persona responsable a los recursos hardware", "EARoot/EA3/EA2/EA1/EA7/EA2/EA4/EA490.htm", "180.png", "741", "0", "", "Use Case diagram0","{4F07E993-2565-42df-8CFD-8DA487C9C79A}");
+tocTab[tocTab.length] = new Array("0.3.2.1.7.2.4:2", "", "CU.CISPOC.HW.009: Asignar responsable a un recurso HW", "EARoot/EA3/EA2/EA1/EA7/EA2/EA4/EA494.htm", "7.png", "E5811", "0", "", "UseCase0","{A3E55425-0D0C-4bcb-B786-609E2A8ECD53}");
+tocTab[tocTab.length] = new Array("0.3.2.1.7.2.4:3", "", "CU.CISPOC.HW.010: Asignar responsable a múltiples recursos HW", "EARoot/EA3/EA2/EA1/EA7/EA2/EA4/EA495.htm", "7.png", "E5810", "0", "", "UseCase0","{757E2544-0292-4b83-8505-DE85EC74C814}");

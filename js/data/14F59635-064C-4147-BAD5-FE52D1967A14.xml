@@ -1,0 +1,11 @@
+tocTab[tocTab.length] = new Array("0.3.2.4:1", "", "5. MODULO DE INVENTARIO ESYL", "EARoot/EA3/EA2/EA4/EA686.htm", "180.png", "616", "0", "", "Use Case diagram0","{71C63478-EEDE-4771-966C-68D22ACDB398}");
+tocTab[tocTab.length] = new Array("0.3.2.4.1", "", "Descripción del módulo", "EARoot/EA3/EA2/EA4/EA1/EA701.htm", "4.png", "", "", "{BB64A4AB-EF99-4010-AF5C-C38D0803F0B1}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.4.2", "1", "Mantenimiento del Catálogo de Artículos ESYL", "EARoot/EA3/EA2/EA4/EA2/EA704.htm", "4.png", "", "", "{67545A6E-FCD3-4779-B06E-E711DAC28D89}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.4.3", "1", "Proceso de alta de recursos ESYL", "EARoot/EA3/EA2/EA4/EA3/EA717.htm", "4.png", "", "", "{2561D224-B0B1-4e94-AFAC-020D72E2439A}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.4.4", "1", "Proceso de reasignación de recursos ESYL entre UCOs", "EARoot/EA3/EA2/EA4/EA4/EA721.htm", "4.png", "", "", "{851E572C-0054-4dde-BF2C-93C9CE933422}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.4.5", "1", "Proceso de baja de recursos ESYL", "EARoot/EA3/EA2/EA4/EA5/EA725.htm", "4.png", "", "", "{08180809-3F88-4ddb-A53E-E011DB0920BE}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.4.6", "1", "Obtener informes de inventario de recursos ESYL a cargo de UCOs", "EARoot/EA3/EA2/EA4/EA6/EA729.htm", "4.png", "", "", "{3352BE69-03CB-4d71-B304-4AE0A4E7EBBA}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.4.7", "1", "Visualizar los datos de configuración de los recursos ESYL", "EARoot/EA3/EA2/EA4/EA7/EA733.htm", "4.png", "", "", "{29B08594-E0F0-456c-912A-9313E889833E}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.4.8", "1", "Modificar los datos de configuración de los recursos ESYL", "EARoot/EA3/EA2/EA4/EA8/EA737.htm", "4.png", "", "", "{8F39A506-FDC1-4229-B897-75593B3ECEB8}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.4.9", "1", "Asignar y reasignar recursos ESYL entre dependencias de una UCO", "EARoot/EA3/EA2/EA4/EA9/EA742.htm", "4.png", "", "", "{12272199-D43A-46af-93C4-6A52F0E75A24}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2.4.10", "1", "Asignar persona responsable a los recursos ESYL", "EARoot/EA3/EA2/EA4/EA10/EA746.htm", "4.png", "", "", "{D9D90DE8-BF99-451e-B057-34DC7EDCBD79}", "Package");

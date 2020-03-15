@@ -1,0 +1,6 @@
+tocTab[tocTab.length] = new Array("0.5.1.2.11:4", "", "FormModificarUsuario - Modificar usuario", "EARoot/EA5/EA1/EA2/EA11/EA1761.htm", "11.png", "E6498", "0", "", "Screen0","{A5957DD4-26FC-4b4c-8593-6F0C4A48BD07}");
+tocTab[tocTab.length] = new Array("0.5.1.2.11:5", "", "FormNuevoUsuario - Nuevo usuario", "EARoot/EA5/EA1/EA2/EA11/EA1762.htm", "11.png", "E6499", "0", "", "Screen0","{5F63E657-D049-41d6-B1AC-8CDF509CDA0A}");
+tocTab[tocTab.length] = new Array("0.5.1.2.11:6", "", "PnGestionUsuarios - Gestión de usuarios", "EARoot/EA5/EA1/EA2/EA11/EA1763.htm", "11.png", "E6500", "0", "", "Screen0","{7BEFD7EE-85B3-4cd2-8C0C-E4BC9D771863}");
+tocTab[tocTab.length] = new Array("0.5.1.2.11:1", "", "FormModificarUsuario - Modificar usuario", "EARoot/EA5/EA1/EA2/EA11/EA1754.htm", "188.png", "945", "E6498", "", "Custom diagram0","{D0AF5505-B7FB-487c-9FCA-F8B03E768BDB}");
+tocTab[tocTab.length] = new Array("0.5.1.2.11:2", "", "FormNuevoUsuario - Nuevo usuario", "EARoot/EA5/EA1/EA2/EA11/EA1756.htm", "188.png", "944", "E6499", "", "Custom diagram0","{DF6DEC63-761F-4141-B966-9FDFF119762D}");
+tocTab[tocTab.length] = new Array("0.5.1.2.11:3", "", "PnGestionUsuarios - Gestión de usuarios", "EARoot/EA5/EA1/EA2/EA11/EA1758.htm", "188.png", "943", "E6500", "", "Custom diagram0","{731B5DF2-DAE2-4d86-8C01-E390C016E09F}");

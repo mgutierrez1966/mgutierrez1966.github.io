@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Gestion de usuarios::LeerUsuarioDicodef</title>
+<title>Gestion de usuarios::GestionUsuariosApis</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("LeerUsuarioDicodef", " : "))</script>  : Public  &lt;&lt;Servicio API&gt;&gt; Component</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GestionUsuariosApis", " : "))</script>  : Public  &lt;&lt;Servicio API&gt;&gt; Component</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02/08/2017 13:08:36</td>
+			<td width="85%" class="ObjectDetailsValue">17/07/2017 13:01:07</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">22/03/2018 10:52:39</td>
+			<td class="ObjectDetailsValue">10/10/2019 13:42:41</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -55,7 +55,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td class="ObjectDetailsValue">1.0</td>
+			<td class="ObjectDetailsValue">2</td>
 		</tr>
 		<tr id="proj02" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
@@ -63,7 +63,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj03" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
-			<td class="ObjectDetailsValue">Nuevo</td>
+			<td class="ObjectDetailsValue">Aprobado</td>
 		</tr>
 		<tr id="proj04" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
@@ -87,22 +87,270 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{54551F76-DE48-4434-8666-0E34ABD2FF4B}</td>
+			<td class="ObjectDetailsValue">{850E7CF5-046D-42fc-AF2A-3DC967BC3EF6}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../EA7/EA1/EA1919.htm">Gestión de usuarios</a></td>
+			<td class="ObjectDetailsValue"><a href="../../EA7/EA1/EA1916.htm">Gestión Estructura Organica ET</a>, Interaction, Interaction, Interaction, Interaction, <a href="../../EA7/EA3/EA1952.htm">Mantenimiento HW - Suministro de material</a>, <a href="../../EA7/EA3/EA1954.htm">Mantenimiento HW - Transporte material entre UCOs</a>, Mantenimiento HW - Suministro de material, Mantenimiento HW - Transporte material entre UCOs</td>
 		</tr>
 	</table>
 	
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('LinkedDocument');" id="LinkedDocumentTitle">Linked Document</li>
+			<li onClick="parent.toggleItem('Operations');" id="OperationsTitle">Operations</li>
+			<li onClick="parent.toggleItem('Files');" id="FilesTitle">Files</li>
 			<li onClick="parent.toggleItem('CustomProperties');" id="CustomPropertiesTitle">Advanced</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 		<div class="ItemBody" id="LinkedDocumentTable">
-			<iframe src="../../../linkdocs/EAID_54551F76_DE48_4434_8666_0E34ABD2FF4B.htm" frameborder="0" id="linkDocIFrame"></iframe>
+			<iframe src="../../../linkdocs/EAID_850E7CF5_046D_42fc_AF2A_3DC967BC3EF6.htm" frameborder="0" id="linkDocIFrame"></iframe>
+		</div>
+<div class="ItemBody" id="OperationsTable">
+	<table border="0" cellspacing="0" cellpadding="0" class="Table">
+		<tr>
+			<td width="100%" class="TableHeading">Operation</td>
+		</tr>
+						<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>LeerCispocPorUco</strong>(					<a href="#" onclick="parent.toggleData('param{6A938FDE-4D75-4a1d-8941-9FFBF913CBE6}')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="param{6A938FDE-4D75-4a1d-8941-9FFBF913CBE6}" border="0" />uco: <a href="../../EA2/EA2/EA161.htm">GUID</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{6A938FDE-4D75-4a1d-8941-9FFBF913CBE6}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{6A938FDE-4D75-4a1d-8941-9FFBF913CBE6}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{6A938FDE-4D75-4a1d-8941-9FFBF913CBE6}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{6A938FDE-4D75-4a1d-8941-9FFBF913CBE6}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):void
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7391" onclick="parent.toggleDiv('detailsDIVOperations7391','DetailsImageOperations7391')" />Details:
+						<div id="detailsDIVOperations7391" class="DetailsDiv" >
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>LeerUsuariosMandoOrganico</strong>(					<a href="#" onclick="parent.toggleData('param{2A9C1C5C-4A8E-4285-839D-61E2F4A56CBE}')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="param{2A9C1C5C-4A8E-4285-839D-61E2F4A56CBE}" border="0" />uco: <a href="../../EA2/EA2/EA161.htm">GUID</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{2A9C1C5C-4A8E-4285-839D-61E2F4A56CBE}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{2A9C1C5C-4A8E-4285-839D-61E2F4A56CBE}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{2A9C1C5C-4A8E-4285-839D-61E2F4A56CBE}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{2A9C1C5C-4A8E-4285-839D-61E2F4A56CBE}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):void
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7392" onclick="parent.toggleDiv('detailsDIVOperations7392','DetailsImageOperations7392')" />Details:
+						<div id="detailsDIVOperations7392" class="DetailsDiv" >
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>LeerUsuariosAlmacen</strong>(					<a href="#" onclick="parent.toggleData('param{36A210B6-3FA6-425d-889D-A0618364886A}')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="param{36A210B6-3FA6-425d-889D-A0618364886A}" border="0" />uco: <a href="../../EA2/EA2/EA161.htm">GUID</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{36A210B6-3FA6-425d-889D-A0618364886A}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{36A210B6-3FA6-425d-889D-A0618364886A}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{36A210B6-3FA6-425d-889D-A0618364886A}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{36A210B6-3FA6-425d-889D-A0618364886A}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):void
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7393" onclick="parent.toggleDiv('detailsDIVOperations7393','DetailsImageOperations7393')" />Details:
+						<div id="detailsDIVOperations7393" class="DetailsDiv" >
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>LeerUsuariosSubdirector</strong>(					<a href="#" onclick="parent.toggleData('param{6A341302-454B-43ec-9DDE-B4DBDEB3D172}')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="param{6A341302-454B-43ec-9DDE-B4DBDEB3D172}" border="0" />uco: <a href="../../EA2/EA2/EA161.htm">GUID</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{6A341302-454B-43ec-9DDE-B4DBDEB3D172}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{6A341302-454B-43ec-9DDE-B4DBDEB3D172}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{6A341302-454B-43ec-9DDE-B4DBDEB3D172}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{6A341302-454B-43ec-9DDE-B4DBDEB3D172}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):void
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7394" onclick="parent.toggleDiv('detailsDIVOperations7394','DetailsImageOperations7394')" />Details:
+						<div id="detailsDIVOperations7394" class="DetailsDiv" >
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="100%" class="TableRow">
+					<i>Public</i><br />
+					<strong>LeerUsuariosOacise</strong>(					<a href="#" onclick="parent.toggleData('param{A8A6A74F-A49C-46b6-9585-C10D84707063}')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="param{A8A6A74F-A49C-46b6-9585-C10D84707063}" border="0" />uco: <a href="../../EA2/EA2/EA161.htm">GUID</a></a>, 
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+						<tr id="param{A8A6A74F-A49C-46b6-9585-C10D84707063}00" style="display: none;">
+							<td width="50"><strong>Default:</strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{A8A6A74F-A49C-46b6-9585-C10D84707063}01" style="display: none;">
+							<td width="50"><strong>Kind:</strong></td>
+							<td>in</td>
+						</tr>
+						<tr id="param{A8A6A74F-A49C-46b6-9585-C10D84707063}02" style="display: none;">
+							<td width="50"><strong>Stereotype: </strong></td>
+							<td></td>
+						</tr>
+						<tr id="param{A8A6A74F-A49C-46b6-9585-C10D84707063}03" style="display: none;">
+							<td width="50"></td>
+							<td></td>
+						</tr>
+					</table>
+):void
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageOperations7395" onclick="parent.toggleDiv('detailsDIVOperations7395','DetailsImageOperations7395')" />Details:
+						<div id="detailsDIVOperations7395" class="DetailsDiv" >
+					<i>Sequential  </i>
+					<table>
+						<tr>
+							<td valign = "top"><i></i><span style="margin-left: .7cm;"> </span></td>
+							<td></td>
+						</tr>
+					</table>
+					
+					
+					
+						</div>
+					</div>
+				</td>
+			</tr>
+
+		</table>
+</div>		<div class="ItemBody" id="FilesTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="90%" class="TableHeading">File</td>
+					<td width="10%" class="TableHeading">Type</td>
+				</tr>
+			<tr>
+				<td width="50%" class="TableRow"><a href="http://10.71.92.106:4444/jira/browse/ARIGIS-24">http://10.71.92.106:4444/jira/browse/ARIGIS-24</a></td>
+				<td width="10%" class="TableRow">HTTP</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="2">
+					<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageFiles7396" onclick="parent.toggleDiv('detailsDIVFiles7396','DetailsImageFiles7396')" />Details:
+						<div id="detailsDIVFiles7396" class="DetailsDiv" >
+							<br />
+							<span class="NoteHeading">File Size:</span> <br />
+							<span class="NoteHeading">Time Stamp:</span> <br />
+						</div>
+					</div>
+				</td>
+			</tr>
+
+			</table>
 		</div>
 		<div class="ItemBody" id="CustomPropertiesTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -127,24 +375,52 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA1/EA2/EA10/EA1751.htm">FormNuevoUsuario - Nuevo usuario</a></td>
+					<td width="30%" class="TableRow" valign="top">ARI-021 MOSTRAR-USUARIOS-ESTRUCTURA-ORGANICA</td>
+					<td width="10%" class="TableRow" valign="top">Feature</td>
+					<td width="10%" class="TableRow" valign="top">Abstraction</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA1/EA2/EA5/EA6/EA1661.htm">FormSolicitudSuministroHW - Creación o modificación solicitud de suministro de material</a></td>
 					<td width="10%" class="TableRow" valign="top">Screen</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA1/EA2/EA11/EA1762.htm">FormNuevoUsuario - Nuevo usuario</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA1/EA2/EA8/EA1731.htm">PnGestionEstructuraApoyoSicis - Gestión Estructura de Apoyo SICIS</a></td>
 					<td width="10%" class="TableRow" valign="top">Screen</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA1898.htm">«Servicio» GestionDicodefService</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1902.htm">«Servicio API» LeerUsuarios</a></td>
 					<td width="10%" class="TableRow" valign="top">Component</td>
 					<td width="10%" class="TableRow" valign="top">Usage</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA1/EA2/EA7/EA1717.htm">PnGestionEstructuraOrganica - Gestión de la Estructura Orgánica del ET</a></td>
+					<td width="10%" class="TableRow" valign="top">Screen</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA1/EA2/EA5/EA7/EA1672.htm">FormSolicitudTransporteHW - Creación o modificación solicitud de transporte de material entre UCOs</a></td>
+					<td width="10%" class="TableRow" valign="top">Screen</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA1/EA2/EA7/EA1718.htm">PnGestionEstructuraUCO - Gestión de la Estructura Interna de una UCO</a></td>
+					<td width="10%" class="TableRow" valign="top">Screen</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

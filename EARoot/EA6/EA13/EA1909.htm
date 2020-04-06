@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Gestión de notificaciones::Notificacion</title>
+<title>Gestión de notificaciones::GenerarNotificacion</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Notificacion", " : "))</script>  : Public  &lt;&lt;Servicio REST&gt;&gt; Component</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GenerarNotificacion", " : "))</script>  : Public  &lt;&lt;Servicio&gt;&gt; Component</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">17/07/2017 10:07:15</td>
+			<td width="85%" class="ObjectDetailsValue">16/04/2017 21:19:36</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">25/07/2017 12:43:02</td>
+			<td class="ObjectDetailsValue">21/07/2017 9:38:30</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,11 +87,11 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{E5705973-D02A-44d0-A06B-F11CD4995CB5}</td>
+			<td class="ObjectDetailsValue">{D160ADDA-C16F-40f5-87D6-E798C98665AA}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../../EA7/EA1/EA1917.htm">Gestión de notificaciones</a></td>
+			<td class="ObjectDetailsValue"><a href="../../EA7/EA2/EA1929.htm">Expedientes de adquisición HW</a>, <a href="../../EA7/EA2/EA1931.htm">Reasignacion de recursos HW</a>, <a href="../../EA7/EA1/EA1918.htm">Gestión de notificaciones</a>, Interaction</td>
 		</tr>
 	</table>
 	
@@ -102,7 +102,7 @@ function nameClassifier(name, separator)
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 		<div class="ItemBody" id="LinkedDocumentTable">
-			<iframe src="../../../linkdocs/EAID_E5705973_D02A_44d0_A06B_F11CD4995CB5.htm" frameborder="0" id="linkDocIFrame"></iframe>
+			<iframe src="../../../linkdocs/EAID_D160ADDA_C16F_40f5_87D6_E798C98665AA.htm" frameborder="0" id="linkDocIFrame"></iframe>
 		</div>
 		<div class="ItemBody" id="CustomPropertiesTable">
 			<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -127,16 +127,44 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA1/EA2/EA3/EA1331.htm">VistaPrincipal - Pantalla principal de la aplicación</a></td>
-					<td width="10%" class="TableRow" valign="top">Screen</td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA8/EA1841.htm">«Servicio API» MantenimientoHwAPI</a></td>
+					<td width="10%" class="TableRow" valign="top">Component</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA5/EA1/EA2/EA9/EA1737.htm">PnNotificaciones - Consulta de notificaciones</a></td>
-					<td width="10%" class="TableRow" valign="top">Screen</td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA1911.htm">«TareaProgramada» ProcesarNotificacionesEmail</a></td>
+					<td width="10%" class="TableRow" valign="top">Component</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA6/EA1825.htm">«Servicio API» FinalizarExpedienteAdquisicionHw</a></td>
+					<td width="10%" class="TableRow" valign="top">Component</td>
+					<td width="10%" class="TableRow" valign="top">Usage</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA7/EA1828.htm">«Servicio API» AnularReasignacionHw</a></td>
+					<td width="10%" class="TableRow" valign="top">Component</td>
+					<td width="10%" class="TableRow" valign="top">Usage</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA7/EA1830.htm">«Servicio API» EjecutarReasignacionHw</a></td>
+					<td width="10%" class="TableRow" valign="top">Component</td>
+					<td width="10%" class="TableRow" valign="top">Usage</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA7/EA1829.htm">«Servicio API» CargarInformeReasignacionHw</a></td>
+					<td width="10%" class="TableRow" valign="top">Component</td>
+					<td width="10%" class="TableRow" valign="top">Usage</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>

@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.6.13:1", "", "«TareaProgramada» BorrarNotificacionesAntiguas", "EARoot/EA6/EA13/EA1908.htm", "10.png", "E6066", "0", "", "Component0","{81073FF4-0048-4d31-B785-E8CD105E87EF}");
-tocTab[tocTab.length] = new Array("0.6.13:2", "", "«Servicio» GenerarNotificacion", "EARoot/EA6/EA13/EA1909.htm", "10.png", "E5860", "0", "", "Component0","{D160ADDA-C16F-40f5-87D6-E798C98665AA}");
-tocTab[tocTab.length] = new Array("0.6.13:3", "", "«Servicio REST» Notificacion", "EARoot/EA6/EA13/EA1910.htm", "10.png", "E6055", "0", "", "Component0","{E5705973-D02A-44d0-A06B-F11CD4995CB5}");
-tocTab[tocTab.length] = new Array("0.6.13:4", "", "«TareaProgramada» ProcesarNotificacionesEmail", "EARoot/EA6/EA13/EA1911.htm", "10.png", "E6061", "0", "", "Component0","{873BB0D5-9D0B-4c20-8756-0C7297C06515}");
+tocTab[tocTab.length] = new Array("0.4.13:1", "", "«TareaProgramada» BorrarNotificacionesAntiguas", "EARoot/EA4/EA13/EA798.htm", "10.png", "E6066", "0", "", "Component0","{81073FF4-0048-4d31-B785-E8CD105E87EF}");
+tocTab[tocTab.length] = new Array("0.4.13:2", "", "«Servicio» GenerarNotificacion", "EARoot/EA4/EA13/EA799.htm", "10.png", "E5860", "0", "", "Component0","{D160ADDA-C16F-40f5-87D6-E798C98665AA}");
+tocTab[tocTab.length] = new Array("0.4.13:3", "", "«Servicio REST» Notificacion", "EARoot/EA4/EA13/EA800.htm", "10.png", "E6055", "0", "", "Component0","{E5705973-D02A-44d0-A06B-F11CD4995CB5}");
+tocTab[tocTab.length] = new Array("0.4.13:4", "", "«TareaProgramada» ProcesarNotificacionesEmail", "EARoot/EA4/EA13/EA801.htm", "10.png", "E6061", "0", "", "Component0","{873BB0D5-9D0B-4c20-8756-0C7297C06515}");

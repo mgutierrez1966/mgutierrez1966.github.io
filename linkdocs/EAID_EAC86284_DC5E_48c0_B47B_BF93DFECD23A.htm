@@ -27,15 +27,16 @@
     <div align="left"><font face="Arial Narrow"><b>VERSION</b></font></div>
     </td>
     <td align="left" valign="top" width="77" height="52" style="border: solid #010101 1px;">
-    <div align="left"><font face="Arial Narrow" size="1">2 (ARIGIS-667)</font></div>
+    <div align="left"><font face="Arial Narrow" size="1">3 (ARIGIS-1241)</font></div>
     </td></tr>
     <tr>
-    <td align="left" valign="top" width="113" height="135" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="113" height="152" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow"><b>OBSERVACIONES</b></font></div>
     </td>
-    <td colspan="4" align="left" valign="top" width="437" height="135" style="border: solid #010101 1px;"><font face="Arial Narrow">Vista general de la consulta de inventario de recursos HW</font>
-    <div align="left"><font face="Arial Narrow">Esta vista muestra el listado de Recursos HW visibles para el usuario, en base al 
-    rol asignado. La lista permite la b&#250;squeda y filtrado por diferentes criterios:</font></div>
+    <td colspan="4" align="left" valign="top" width="437" height="152" style="border: solid #010101 1px;"><font face="Arial Narrow">Vista general de la consulta de inventario de recursos. </font>
+    <div align="left"><font face="Arial Narrow">Esta vista muestra el listado de Recursos correspondientes a una familia (HW o 
+    ESYL) visibles para el usuario, en base al rol asignado. La lista permite la 
+    b&#250;squeda y filtrado por diferentes criterios:</font></div>
     <div align="left"><font face="Arial Narrow">- Categor&#237;a y/o subcategor&#237;a</font></div>
     <div align="left"><font face="Arial Narrow">- Atributos comunes de los recursos</font></div>
     <div align="left"><font face="Arial Narrow">- Atributos espec&#237;ficos seg&#250;n la categor&#237;a</font></div>
@@ -47,10 +48,12 @@
     <div align="left"><font face="Arial Narrow"><b>CONFIGURACION 
     ENTRADA</b></font></div>
     </td>
-    <td colspan="4" align="left" valign="top" width="437" style="border: solid #010101 1px;">
+    <td colspan="4" align="left" valign="top" width="437" style="border: solid #010101 1px;"><font face="Arial Narrow">** INICIO ARIGIS-1241</font>
     <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
-    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow">N/A</font></li>
+    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow"><b>familia</b>: Opcional. Indica la familia de recursos a mostrar. Valores posibles 
+    seg&#250;n enumerado CodigoFamilia (HW o ESYL). Por defecto &quot;HW&quot;.</font></li>
     </ul>
+    <div align="left"><font face="Arial Narrow">** FIN ARIGIS-1241</font></div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="113" style="border: solid #010101 1px;">
@@ -109,10 +112,8 @@
     <td align="left" valign="top" width="77" height="68" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Panel</font></div>
     </td>
-    <td align="left" valign="top" width="353" height="68" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARI-011</font>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Agregado el filtro &quot;Provincia&quot;, que toma los valores de la entidad 
-    Provincia</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** FIN ARI-011</font></div>
+    <td align="left" valign="top" width="353" height="68" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="125" style="border: solid #010101 1px;">
@@ -127,34 +128,41 @@
     </td></tr>
     <tr>
     <td align="left" valign="top" width="125" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Filtro por categor&#237;as</font></div>
+    </td>
+    <td align="left" valign="top" width="77" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 11pt;"></span></div>
+    </td>
+    <td align="left" valign="top" width="353" style="border: solid #010101 1px;"><font face="Arial Narrow">** INICIO ARIGIS-1241</font>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Muestra las categor&#237;as asociadas a la familia &quot;HW&quot; o &quot;ESYL&quot;, en 
+    funci&#243;n del par&#225;metro de entrada &quot;familia&quot;.</font></div>
+    <div align="left"><font face="Arial Narrow"><br /></font></div><div align="left"><font face="Arial Narrow">** FIN ARIGIS-1241</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="125" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Barra de opciones</font></div>
     </td>
     <td align="left" valign="top" width="77" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Toolbar</font></div>
     </td>
     <td align="left" valign="top" width="353" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Opciones:</font>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">- Ver recurso: Abre una nueva pesta&#241;a con el recurso 
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">- Ver recurso: Abre una nueva pesta&#241;a con el recurso 
     seleccionado en la lista. Solo activo si hay un recursos 
     seleccionado.</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">- Modificar recursos: se explica en el propio componente.</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">- Exportar datos: Exporta los datos del listado actual a un fichero 
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">- Modificar recursos: se explica en el propio componente.</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">- Exportar datos: Exporta los datos del listado actual a un fichero 
     CSV, respetando las columnas mostradas, la ordenaci&#243;n y los 
     filtros aplicados.</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARIGIS-33</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">- Generar etiquetas: Genera un PDF con las etiquetas de los 
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">- Generar etiquetas: Genera un PDF con las etiquetas de los 
     recursos mostrados en la lista. Visible para el rol SEAPO y 
     CISPOC.</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** FIN ARIGIS-33</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARI-002</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">- Exportar por lista NI/NS: Solicita una listya de NI o N/S por la 
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">- Exportar por lista NI/NS: Solicita una listya de NI o N/S por la 
     que filtrar los recursos.Visible para rol SEAPO.</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** FIN ARI-002</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARIGIS-207</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">- Casilla &quot;Ocultar recursos en baja&quot;: Por defecto a CIERTO. 
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">- Casilla &quot;Ocultar recursos en baja&quot;: Por defecto a CIERTO. 
     Visible s&#243;lo para rol SEAPO. Si est&#225; marcada (por defecto), se 
     a&#241;ade un filtro a la lista de recursos, de forma que se excluyan lo 
     que tengan estado &quot;BAJA DEFINITIVA&quot;</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** FIN ARIGIS-207</font></div>
+    <div align="left">&nbsp;</div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="125" style="border: solid #010101 1px;">
@@ -175,8 +183,12 @@
     <td align="left" valign="top" width="77" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Grid</font></div>
     </td>
-    <td align="left" valign="top" width="353" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Muestra la lista de recursos HW con los filtros aplicados. </font>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Toma los datos de la entidad RecursoHw.</font></div>
+    <td align="left" valign="top" width="353" style="border: solid #010101 1px;"><font face="Arial Narrow">** INICIO ARIGIS-1241</font>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Muestra la lista de recursos de la familia correspondiente al 
+    par&#225;metro &quot;familia&quot; con los filtros aplicados. </font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Toma los datos del servicio REST de la entidad <b>RecursoHw</b> para 
+    familia HW, o de <b>RecursoEsyl</b> para la familia ESYL.</font></div>
+    <div align="left"><font face="Arial Narrow">** FIN ARIGIS-1241</font></div>
     </td></tr>
 </table>
 <div align="left"><br/>&nbsp;</div>
@@ -235,23 +247,22 @@
     <div align="center"><font face="Arial Narrow"><b>&#160;DESCRIPCION DEL PROCESO A EJECUTAR</b></font></div>
     </td></tr>
     <tr>
-    <td align="left" valign="top" width="89" height="186" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="89" height="169" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Clic</font></div>
     </td>
-    <td align="left" valign="top" width="89" height="186" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="89" height="169" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Fichero 
     Etiquetas</font></div>
     </td>
-    <td align="left" valign="top" width="377" height="186" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARIGIS-33</font>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Si el n&#250;mero de recursos mostrado en la lista excede de 1000, se 
+    <td align="left" valign="top" width="377" height="169" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Si el n&#250;mero de recursos mostrado en la lista excede de 1000, se 
     informar&#225; al usuario de que el l&#237;mite m&#225;ximo de recursos para generar 
-    etiquetas es de 1000, y se cancelar&#225; la operaci&#243;n.</font></div>
+    etiquetas es de 1000, y se cancelar&#225; la operaci&#243;n.</font>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">Llama al servicio API as&#237;ncrono 
     <b>InventarioHwAPI.generarInformeEtiquetas()</b>, pasando como 
     par&#225;metros los filtros aplicados a la lista actual (filter y query)</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Si el servicio responde con &#233;xito, muestra el enlace de descarga del 
     fichero devuelto por el servicio en un mensaje emergente (toast).</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** FIN ARIGIS-33</font></div>
+    <div align="left">&nbsp;</div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="89" style="border: solid #010101 1px;">
@@ -261,13 +272,14 @@
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Exportar por 
     lista NI/NS</font></div>
     </td>
-    <td align="left" valign="top" width="377" style="border: solid #010101 1px;"><font face="Arial Narrow">** INICIO ARI-002</font>
+    <td align="left" valign="top" width="377" style="border: solid #010101 1px;"><font face="Arial Narrow">** INICIO ARIGIS-1241</font>
     <div align="left"><font face="Arial Narrow">Muestra la vista <b>FormSeleccionarRecursosHwPorLista</b>.</font></div>
     <div align="left"><font face="Arial Narrow">Si la vista se ejecuta con &#233;xito, llama a la operacion READ de 
-    RecursoHw con el prefijo &quot;csv&quot;, y con un &#250;nico filtro para que se 
-    incluyan los recursos cuyo NI o N&#250;mero de Serie est&#233; en el array 
-    devuelto por la vista.</font></div>
-    <div align="left"><font face="Arial Narrow">** FIN ARI-002</font></div>
+    <b>RecursoHw o RecursoEsyl (seg&#250;n el par&#225;metro &quot;familia&quot;) </b>con el 
+    prefijo &quot;csv&quot;, y con un &#250;nico filtro para que se incluyan los recursos 
+    cuyo NI o N&#250;mero de Serie est&#233; en el array devuelto por la vista.</font></div>
+    <div align="left"><font face="Arial Narrow">** FIN ARIGIS-1241</font></div>
+    <div align="left">&nbsp;</div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="89" style="border: solid #010101 1px;">

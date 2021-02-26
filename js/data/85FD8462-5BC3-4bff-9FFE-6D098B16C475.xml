@@ -1,2 +1,2 @@
-tocTab[tocTab.length] = new Array("0.5.1.2.2:2", "", "FormPropiedadesSistema - Propiedades del sistema", "EARoot/EA5/EA1/EA2/EA2/EA1312.htm", "11.png", "E7388", "0", "", "Screen0","{DE6155BA-9305-4a9b-96AE-64EABF354C7F}");
-tocTab[tocTab.length] = new Array("0.5.1.2.2:1", "", "FormPropiedadesSistema - Propiedades del sistema", "EARoot/EA5/EA1/EA2/EA2/EA1309.htm", "188.png", "1100", "E7388", "", "Custom diagram0","{E6B38A16-986A-4a62-8AE7-E963267A76AD}");
+tocTab[tocTab.length] = new Array("0.3.1.2.2:2", "", "FormPropiedadesSistema - Propiedades del sistema", "EARoot/EA3/EA1/EA2/EA2/EA201.htm", "11.png", "E7388", "0", "", "Screen0","{DE6155BA-9305-4a9b-96AE-64EABF354C7F}");
+tocTab[tocTab.length] = new Array("0.3.1.2.2:1", "", "FormPropiedadesSistema - Propiedades del sistema", "EARoot/EA3/EA1/EA2/EA2/EA198.htm", "188.png", "1100", "E7388", "", "Custom diagram0","{E6B38A16-986A-4a62-8AE7-E963267A76AD}");

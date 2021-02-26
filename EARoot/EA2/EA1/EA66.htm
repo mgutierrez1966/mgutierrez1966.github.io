@@ -91,7 +91,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue">Interaction, <a href="../EA24.htm">Inventario HW</a>, <a href="../EA22.htm">Catalogo de artículos HW</a></td>
+			<td class="ObjectDetailsValue">Interaction, <a href="../EA26.htm">Inventario HW</a>, <a href="../EA24.htm">Catalogo de artículos</a></td>
 		</tr>
 	</table>
 	
@@ -109,6 +109,54 @@ function nameClassifier(name, separator)
 						<tr>
 				<td width="100%" class="TableRow">
 					<i>Private <a href="../EA2/EA161.htm">GUID</a></i><br /><strong>&nbsp;&nbsp;id</strong>
+				</td>
+			</tr>
+			<tr>
+				<td class="TableRowBottomDashed"  colspan="1">										
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes890')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes890" border="0" />Details:</a>
+					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
+					
+						<tr id="DetailsImageAttributes890_00" style="display: none;">
+							<td width="75"><i>Alias:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes890_01" style="display: none;">
+							<td width="75"><i>Initial:</i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes890_02" style="display: none;">
+							<td width="75"><i>Stereotype: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes890_03" style="display: none;">
+							<td width="75"><i>Ordered: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes890_04" style="display: none;">
+							<td width="75"><i>Range: </i></td>
+							<td></td>
+						</tr>
+						<tr id="DetailsImageAttributes890_05" style="display: none;">
+							<td width="75"><i>Transient: </i></td>
+							<td>False</td>
+						</tr>
+						<tr id="DetailsImageAttributes890_06" style="display: none;">
+							<td width="75"><i>Derived: </i></td>
+							<td>False</td>
+						</tr>
+							<tr id="DetailsImageAttributes890_07" style="display: none;">
+							<td width="75"><i>IsID: </i></td>
+						<td>True</td>
+						</tr>
+					</table>
+					
+					
+						&nbsp;
+						
+				</td>
+			</tr>			<tr>
+				<td width="100%" class="TableRow">
+					<i>Private String(3)</i><br /><strong>&nbsp;&nbsp;codigo</strong>
 				</td>
 			</tr>
 			<tr>
@@ -146,7 +194,7 @@ function nameClassifier(name, separator)
 						</tr>
 							<tr id="DetailsImageAttributes891_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
-						<td>True</td>
+						<td>False</td>
 						</tr>
 					</table>
 					
@@ -156,7 +204,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Private String(3)</i><br /><strong>&nbsp;&nbsp;codigo</strong>
+					<i>Private <a href="../EA2/EA163.htm">NOMBRE_CORTO</a></i><br /><strong>&nbsp;&nbsp;nombreCorto</strong>
 				</td>
 			</tr>
 			<tr>
@@ -204,7 +252,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Private <a href="../EA2/EA163.htm">NOMBRE_CORTO</a></i><br /><strong>&nbsp;&nbsp;nombreCorto</strong>
+					<i>Private <a href="../EA2/EA159.htm">DESCRIPCION</a></i><br /><strong>&nbsp;&nbsp;descripcion</strong>
 				</td>
 			</tr>
 			<tr>
@@ -252,7 +300,7 @@ function nameClassifier(name, separator)
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Private <a href="../EA2/EA159.htm">DESCRIPCION</a></i><br /><strong>&nbsp;&nbsp;descripcion</strong>
+					<i>Private boolean</i><br /><strong>&nbsp;&nbsp;permiteEquipoSustitucion</strong>
 				</td>
 			</tr>
 			<tr>
@@ -266,7 +314,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes894_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
-							<td></td>
+							<td>Falso</td>
 						</tr>
 						<tr id="DetailsImageAttributes894_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
@@ -295,12 +343,22 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Indica si los recursos de esta categoría permiten solicitar equipo de sustitución en caso de retirada por reparación.&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Private boolean</i><br /><strong>&nbsp;&nbsp;permiteEquipoSustitucion</strong>
+					<i>Private <a href="EA69.htm">CodigoFamilia</a></i><br /><strong>&nbsp;&nbsp;familia</strong>
 				</td>
 			</tr>
 			<tr>
@@ -314,7 +372,7 @@ function nameClassifier(name, separator)
 						</tr>
 						<tr id="DetailsImageAttributes895_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
-							<td>Falso</td>
+							<td>HW</td>
 						</tr>
 						<tr id="DetailsImageAttributes895_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
@@ -343,17 +401,7 @@ function nameClassifier(name, separator)
 					</table>
 					
 					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Indica si los recursos de esta categoría permiten solicitar equipo de sustitución en caso de retirada por reparación.&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+						&nbsp;
 						
 				</td>
 			</tr>
@@ -368,7 +416,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA123.htm">SubcategoriaHw</a><br />
+						<a href="EA126.htm">SubcategoriaHw</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -400,6 +448,13 @@ function nameClassifier(name, separator)
 					<td width="10%" class="TableHeading">Connection</td>
 					<td width="10%" class="TableHeading">Direction</td>
 					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA69.htm">CodigoFamilia</a></td>
+					<td width="10%" class="TableRow" valign="top">Enumeration</td>
+					<td width="10%" class="TableRow" valign="top">Usage</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
 					<td width="30%" class="TableRow" valign="top">ARIGIS-191 MANTO-CORREC-SOLICITAR-EQUIPO-SUSTITUCION</td>

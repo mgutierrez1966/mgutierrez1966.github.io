@@ -27,7 +27,8 @@
     <div align="left"><font face="Arial Narrow"><b>VERSION</b></font></div>
     </td>
     <td align="left" valign="top" width="83" height="52" style="border: solid #010101 1px;">
-    <div align="left"><font face="Arial Narrow" size="1">3 (ARIGIS-1108)</font></div>
+    <div align="left"><font face="Arial Narrow" size="1">3 (ARIGIS-1108, 
+    1105, 1136)</font></div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="113" height="51" style="border: solid #010101 1px;">
@@ -106,9 +107,10 @@
     <td align="left" valign="top" width="371" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Opciones disponibles:</font>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">- <b>Modificar solicitud</b>: Activo en alguno de estos casos:</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">&#160;&#160;&#160;&#160;&#160; - Si la solicitud est&#225; en estado &quot;Nueva&quot;, y el rol es CISPOC</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">&#160;&#160;&#160;&#160;&#160; - Si la solicitud est&#225; en estado &quot;Tramitada a Director por 
-    Subdirector&quot;, y el rol es DIRECTOR.</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">- <b>Borrar solicitud</b>: elimina la solicitud. Activo solo si la solicitud est&#225; 
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARIGIS-1136</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">&#160;&#160;&#160;&#160;&#160; - Si el rol es DIRECTOR, en cualquier estado de la solicitud.</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** FIN ARIGIS-1136</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">- <b>Borrar solicitud</b>: elimina la solicitud. Activo solo si la solicitud est&#225; 
     en estado &quot;Nueva&quot;, y el rol es CISPOC.</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARIGIS-1108</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">- <b>Crear parte de queja</b>: Activo solo si la solicitud est&#225; en estado 
@@ -136,13 +138,13 @@
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">&#160;</font></div>
     </td></tr>
     <tr>
-    <td align="left" valign="top" width="125" height="101" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="125" height="85" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Datos de la solicitud</font></div>
     </td>
-    <td align="left" valign="top" width="59" height="101" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="59" height="85" style="border: solid #010101 1px;">
     <div align="left"><span style="font-size: 11pt;"></span></div>
     </td>
-    <td align="left" valign="top" width="371" height="101" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Panel con datos de la solicitud y del recurso HW, organizados en 
+    <td align="left" valign="top" width="371" height="85" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Panel con datos de la solicitud y del recurso HW, organizados en 
     grupos de campos.</font>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">El grupo &quot;Contrato de mantenimiento&quot; muestra los datos del objeto 
     ContratoMantenimiento de la solicitud.</font></div>
@@ -150,14 +152,14 @@
     2/3 del contenedor (permite scroll vertical).</font></div>
     </td></tr>
     <tr>
-    <td align="left" valign="top" width="125" height="17" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="125" height="51" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Pesta&#241;a &quot;Recursos 
     sustituidos&quot;</font></div>
     </td>
-    <td align="left" valign="top" width="59" height="17" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="59" height="51" style="border: solid #010101 1px;">
     <div align="left"><span style="font-size: 11pt;"></span></div>
     </td>
-    <td align="left" valign="top" width="371" height="17" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="371" height="51" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Dispone de una barra de opciones y de la lista de recursos 
     sustituidos asociados a la solicitud. En el t&#237;tulo de la pesta&#241;a muestra 
     el n&#250;mero de recursos asociados.</font></div>
@@ -220,16 +222,27 @@
     muestra el n&#250;mero de recursos asociados.</font></div>
     </td></tr>
     <tr>
-    <td align="left" valign="top" width="125" height="51" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="125" height="236" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Barra de opciones de 
     &quot;Recursos entregados&quot;</font></div>
     </td>
-    <td align="left" valign="top" width="59" height="51" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="59" height="236" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Toolbar</font></div>
     </td>
-    <td align="left" valign="top" width="371" height="51" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Opciones de la lista de recursos:</font>
+    <td align="left" valign="top" width="371" height="236" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARIGIS-1105</font>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Opciones de la lista de recursos:</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">- A&#241;adir recursos por consulta: Habilitado si el rol es DIRECTOR y el 
+    estado de la solicitud es TRAMITADA A DIRECTOR POR 
+    SUBDIRECTOR.</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">- A&#241;adir recursos por lista de NI/NS: Habilitado en los mismos casos 
+    que la opci&#243;n anterior.</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">- Quitar recursos: Habilitado si hay seleccionado alg&#250;n recurso en la 
+    lista, y adem&#225;s se cumple alguno de los casos anteriores.</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">- Ver recurso: Habilitado si hay seleccionado alg&#250;n recurso en la 
     lista.</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">- Asignar peso: Habilitado si hay alg&#250;n recurso seleccionado en la 
+    lista, y adem&#225;s se cumple alguno de los casos anteriores.</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** FIN ARIGIS-1105</font></div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="125" height="101" style="border: solid #010101 1px;">
@@ -259,14 +272,14 @@
     <b>SolicitudMantenimientoTramit</b></font></div>
     </td></tr>
     <tr>
-    <td align="left" valign="top" width="125" height="101" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="125" height="51" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Pesta&#241;a &quot;Partes de 
     queja&quot;</font></div>
     </td>
-    <td align="left" valign="top" width="59" height="101" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="59" height="51" style="border: solid #010101 1px;">
     <div align="left"><span style="font-size: 11pt;"></span></div>
     </td>
-    <td align="left" valign="top" width="371" height="101" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Lista ordenada por defecto por fecha ascendente. El grid obtiene los 
+    <td align="left" valign="top" width="371" height="51" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Lista ordenada por defecto por fecha ascendente. El grid obtiene los 
     valores del servicio REST de la entidad <b>ParteQueja.</b></font>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Cada fila del grid puede desplegar un panel que contiene otro grid 
     con el hist&#243;rico de tramitaci&#243;n del parte de queja. Este grid obtiene 
@@ -481,7 +494,8 @@
     <div align="left"><font face="Arial Narrow">Clic</font></div>
     </td>
     <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
-    <div align="left"><font face="Arial Narrow">A&#241;adir 
+    <div align="left"><font face="Arial Narrow">Pesta&#241;a 
+    RecursosSusti-tuidos - A&#241;adir 
     recursos por 
     consulta</font></div>
     </td>
@@ -500,7 +514,7 @@
     <div align="left"><font face="Arial Narrow">Clic</font></div>
     </td>
     <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
-    <div align="left"><font face="Arial Narrow">A&#241;adir 
+    <div align="left"><font face="Arial Narrow">RecursosSusti-tuidos - A&#241;adir 
     recursos por 
     lista de NI/NS</font></div>
     </td>
@@ -521,13 +535,78 @@
     <div align="left"><font face="Arial Narrow">Clic</font></div>
     </td>
     <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
-    <div align="left"><font face="Arial Narrow">Quitar recursos</font></div>
+    <div align="left"><font face="Arial Narrow">RecursosSusti-tuidos - Quitar 
+    recursos</font></div>
     </td>
     <td align="left" valign="top" width="443" style="border: solid #010101 1px;"><font face="Arial Narrow">Solicita confirmaci&#243;n para quitar de la reasignaci&#243;n los recursos seleccionados. </font>
     <div align="left"><font face="Arial Narrow">Se llama a la API <b>MantenimientoHwApi.quitarRecursosAdaptativo()</b>, pasando 
     la lista de recursos seleccionados.</font></div>
     <div align="left"><font face="Arial Narrow">Si la llamada a la API tiene exito, se recarga el contenido del almac&#233;n asociado al 
     grid de recursos sustituidos, para reflejar los cambios. </font></div>
+    <div align="left">&nbsp;</div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Clic</font></div>
+    </td>
+    <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Pesta&#241;a 
+    Recursos 
+    Entregados - 
+    A&#241;adir 
+    recursos por 
+    consulta</font></div>
+    </td>
+    <td align="left" valign="top" width="443" style="border: solid #010101 1px;"><font face="Arial Narrow">Muestra la vista &quot;<b>FormSeleccionRecursosHw</b>&quot;, con los atributos:</font>
+    <div align="left"><font face="Arial Narrow">- admiteSeleccionMultiple: true</font></div>
+    <div align="left"><font face="Arial Narrow">- filtroPorEstado: ALTA</font></div>
+    <div align="left"><font face="Arial Narrow"><br /></font></div><div align="left"><font face="Arial Narrow">Si la vista tiene &#233;xito, se llama a la API 
+    <b>MantenimientoHwApi.agregarRecursosEntregadosAdaptativo()</b>, pasando la 
+    lista de recursos seleccionados.</font></div>
+    <div align="left"><font face="Arial Narrow">Si la llamada a la API tiene exito, se recarga el contenido del almac&#233;n asociado al 
+    grid de recursos entregados, para reflejar los cambios. </font></div>
+    <div align="left">&nbsp;</div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Clic</font></div>
+    </td>
+    <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Pesta&#241;a 
+    Recursos 
+    Entregados - 
+    A&#241;adir 
+    recursos por 
+    lista de NI/NS</font></div>
+    </td>
+    <td align="left" valign="top" width="443" style="border: solid #010101 1px;"><font face="Arial Narrow">Muestra la vista &quot;<b>FormSeleccionarRecursosHwPorLista</b>&quot;.</font>
+    <div align="left"><font face="Arial Narrow">Si la vista tiene &#233;xito, se obtiene la informaci&#243;n de los recursos mediante el 
+    servicio REST de RecursoHw, filtrando por los NI y NS especificados. </font></div>
+    <div align="left"><font face="Arial Narrow">Si el servicio REST no devuelve ning&#250;n resultado, se informa de ello al usuario y 
+    se aborta la operaci&#243;n.</font></div>
+    <div align="left"><font face="Arial Narrow">Si el servicio REST devuelve al menos un recurso, se llama a la API 
+    <b>MantenimientoHwApi.agregarRecursosEntregadosAdaptativo()</b>, pasando la 
+    lista de recursos seleccionados.</font></div>
+    <div align="left"><font face="Arial Narrow">Si la llamada a la API tiene exito, se recarga el contenido del almac&#233;n asociado al 
+    grid de recursos entregados, para reflejar los cambios. </font></div>
+    <div align="left">&nbsp;</div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="71" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Clic</font></div>
+    </td>
+    <td align="left" valign="top" width="83" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">Pesta&#241;a 
+    Recursos 
+    Entregados - 
+    Quitar recursos</font></div>
+    </td>
+    <td align="left" valign="top" width="443" style="border: solid #010101 1px;"><font face="Arial Narrow">Solicita confirmaci&#243;n para quitar de la reasignaci&#243;n los recursos seleccionados. </font>
+    <div align="left"><font face="Arial Narrow">Se llama a la API 
+    <b>MantenimientoHwApi.quitarRecursosEntregadosAdaptativo()</b>, pasando la lista 
+    de recursos seleccionados.</font></div>
+    <div align="left"><font face="Arial Narrow">Si la llamada a la API tiene exito, se recarga el contenido del almac&#233;n asociado al 
+    grid de recursos entregados, para reflejar los cambios. </font></div>
     <div align="left">&nbsp;</div>
     </td></tr>
     <tr>

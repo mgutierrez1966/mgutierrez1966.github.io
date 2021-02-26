@@ -27,15 +27,38 @@
     <div align="left"><font face="Arial Narrow"><b>VERSION</b></font></div>
     </td>
     <td align="left" valign="top" width="203" height="52" style="border: solid #010101 1px;">
-    <div align="left"><font face="Arial Narrow" size="1">1.0</font></div>
+    <div align="left"><font face="Arial Narrow">2 (ARIGIS-1241)</font></div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="113" height="51" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow"><b>OBSERVACIONES</b></font></div>
     </td>
-    <td colspan="4" align="left" valign="top" width="437" height="51" style="border: solid #010101 1px;"><font face="Arial Narrow">Formulario para consultar y seleccionar un art&#237;culo del Cat&#225;logo de Articulos 
-    Hardware. Solo muestra los art&#237;culos en vigor en el Cat&#225;logo.</font>
+    <td colspan="4" align="left" valign="top" width="437" height="51" style="border: solid #010101 1px;"><font face="Arial Narrow">Formulario para consultar y seleccionar un art&#237;culo del Cat&#225;logo de Articulos . 
+    Solo muestra los art&#237;culos en vigor en el Cat&#225;logo.</font>
     <div align="left"><font face="Arial Narrow">Devuelve el art&#237;culo seleccionado en la configuraci&#243;n &quot;seleccion&quot;</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>CONFIGURACION 
+    ENTRADA</b></font></div>
+    </td>
+    <td colspan="4" align="left" valign="top" width="437" style="border: solid #010101 1px;"><font face="Arial Narrow">** INICIO ARIGIS-1241</font>
+    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
+    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow"><b>familia</b>: Opcional. Indica la familia de los articulos que se pueden 
+    seleccionar. Valores posibles seg&#250;n enumerado CodigoFamilia (HW o 
+    ESYL). Por defecto &quot;HW&quot;.</font></li>
+    </ul>
+    <div align="left"><font face="Arial Narrow">** FIN ARIGIS-1241</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>CONFIGURACION 
+    SALIDA</b></font></div>
+    </td>
+    <td colspan="4" align="left" valign="top" width="437" style="border: solid #010101 1px;">
+    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
+    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow">N/A</font></li>
+    </ul>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="113" style="border: solid #010101 1px;">
@@ -77,18 +100,23 @@
     <div align="left"><font face="Arial Narrow"><b>OBSERVACIONES</b></font></div>
     </td></tr>
     <tr>
-    <td align="left" valign="top" width="125" height="101" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="125" height="186" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Filtro por categorias</font></div>
     </td>
-    <td align="left" valign="top" width="77" height="101" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="77" height="186" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Bot&#243;n split</font></div>
     </td>
-    <td align="left" valign="top" width="353" height="101" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Se compone de un bot&#243;n tipo split, que muestra opciones para 
+    <td align="left" valign="top" width="353" height="186" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Se compone de un bot&#243;n tipo split, que muestra opciones para 
     cada categor&#237;a de art&#237;culos (entidad <b>CategoriaHw</b>), y otro bot&#243;n 
     split con opciones para las subcategor&#237;as de la categor&#237;a 
     seleccionada en el anterior (entidad SubcategoriaHw).</font>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Se usa para filtrar los art&#237;culos del almac&#233;n principal por categor&#237;a 
     y subcategor&#237;a. </font></div>
+    <div align="left"><font face="Arial Narrow">** INICIO ARIGIS-1241</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Las categor&#237;as mostradas ser&#225;n las correspondientes a la familia 
+    indicada en el par&#225;metro de entrada</font></div>
+    <div align="left"><font face="Arial Narrow">** FIN ARIGIS-1241</font></div>
+    <div align="left">&nbsp;</div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="125" height="51" style="border: solid #010101 1px;">
@@ -216,8 +244,11 @@
     <td align="left" valign="top" width="83" height="17" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow">Vista</font></div>
     </td>
-    <td align="left" valign="top" width="401" height="17" style="border: solid #010101 1px;">
-    <div align="left"><font face="Arial Narrow">Abrir almac&#233;n de datos principal. </font></div>
+    <td align="left" valign="top" width="401" height="17" style="border: solid #010101 1px;"><font face="Arial Narrow">Abrir almac&#233;n de datos principal. </font>
+    <div align="left"><font face="Arial Narrow">** INICIO ARIGIS-1241</font></div>
+    <div align="left"><font face="Arial Narrow">Debe filtrar el almac&#233;n de art&#237;culos por aquellos cuya familia sea la 
+    especificada en el par&#225;metro de entrada.</font></div>
+    <div align="left"><font face="Arial Narrow">** FIN ARIGIS-1241</font></div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="71" style="border: solid #010101 1px;">

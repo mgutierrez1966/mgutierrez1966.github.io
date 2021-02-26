@@ -27,7 +27,7 @@
     <div align="justify"><font face="Calibri"><b>VERSI&#211;N</b></font></div>
     </td>
     <td align="left" valign="top" width="170" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri">3 (ARIGIS-848)</font></div>
+    <div align="justify"><font face="Calibri">4 (ARIGIS-1241)</font></div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="168" style="border: solid #010101 1px;">
@@ -123,9 +123,7 @@
     OACISE, 
     SUBDIRETOR, 
     DIRECTOR, SEAPO, 
-    RT22 (** 
-    ARIGIS-848), 
-    MANDO 
+    RT22 , MANDO 
     ORGANICO</font></div>
     </td></tr>
     <tr>
@@ -179,7 +177,7 @@
     <div align="left"><font face="Calibri"><b>VISIBILIDAD DIFERENCIADA POR ROL</b></font></div>
     </td>
     <td align="left" valign="top" width="324" style="border: solid #010101 1px;">
-    <div align="left"><font face="Calibri"><b>SI (** ARIGIS-207)</b></font></div>
+    <div align="left"><font face="Calibri"><b>SI </b></font></div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="168" style="border: solid #010101 1px;">
@@ -241,7 +239,7 @@
     </td>
     <td colspan="2" align="left" valign="top" width="407" style="border: solid #010101 1px;">
     <div align="left"><font face="Calibri" color="#0f0f0f" size="1">Ve todos los recursos del inventario HW, salvo el estado &quot;ALTA PROVISIONAL&quot; y 
-    &quot;BAJA DEFINITIVA&quot; (** ARIGIS-848)</font></div>
+    &quot;BAJA DEFINITIVA&quot;</font></div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="168" style="border: solid #010101 1px;">
@@ -282,42 +280,13 @@
     </ul>
     </td>
     <td align="left" valign="top" width="159" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1"><br /></font></div><div align="left"><font face="Calibri" color="#0f0f0f" size="1">** INICIO ARIGIS-207</font></div>
-    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">- El atributo &quot;nodoCargo&quot; es 
-    obligatorio.</font></div>
-    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">- Si &quot;nodoUbicacion&quot; no viene 
-    informado, se asignar&#225; el mismo 
-    valor que a &quot;nodoCargo&quot;.</font></div>
-    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">** FIN ARIGIS-207</font></div>
+    <div align="left"><span style="font-size: 9pt;"></span></div>
     </td>
-    <td align="left" valign="top" width="177" style="border: solid #010101 1px;"><font face="Calibri" color="#0f0f0f" size="1">El estado del recurso se inicializa a 
-    &quot;Alta provisional&quot;.</font>
-    <div align="left"><font face="Segoe UI" size="1">El NI se inicializa con un valor 
-    provisional con el formato 
-    &quot;PROV00000&quot; donde &quot;00000&quot; es 
-    un n&#250;mero secuencial, obtenido 
-    a partir del n&#250;mero m&#225;s alto 
-    existente.</font></div>
-    <div align="left"><font face="Segoe UI" size="1"><br /></font></div><div align="left"><font face="Segoe UI" size="1">** INICIO ARIGIS-478</font></div>
-    <div align="left"><font face="Segoe UI" size="1">Se crea un objeto 
-    ConfiguracionHw, y sus atributos 
-    se inicializan con los valores de 
-    los correspondientes atributos 
-    del art&#237;culo (NCAT) asociado.</font></div>
-    <div align="left"><font face="Segoe UI" size="1">La nueva configuraci&#243;n se 
-    establece como &quot;activa&quot; y la 
-    fecha de inicio se establece a la 
-    fecha del sistema. Se asigna 
-    como configuracionActiva del 
-    recursoHw.</font></div>
-    <div align="left"><font face="Segoe UI" size="1">** FIN ARIGIS-478</font></div>
-    <div align="left"><font face="Segoe UI" size="1"><br /></font></div><div align="left">&nbsp;</div>
+    <td align="left" valign="top" width="177" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 9pt;"></span></div>
     </td>
     <td align="left" valign="top" width="116" style="border: solid #010101 1px;">
-    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">La combinaci&#243;n 
-    &quot;fabricante&quot; y 
-    &quot;numSerie&quot; debe ser 
-    &#250;nica.</font></div>
+    <div align="left"><span style="font-size: 9pt;"></span></div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="105" style="border: solid #010101 1px;">
@@ -340,34 +309,14 @@
     <li style="margin-left: 18pt; margin-right: 0pt; padding-left: 0pt; "><font face="Calibri"><b>Update</b></font></li>
     </ul>
     </td>
-    <td align="left" valign="top" width="159" style="border: solid #010101 1px;"><font face="Calibri" color="#0f0f0f" size="1">No se puede modificar un 
-    recurso en estado BAJA 
-    DEFINITIVA</font>
-    <div align="left"><font face="Calibri" size="1"><br /></font></div><div align="left"><font face="Calibri" size="1">El rol CISPOC solo puede 
-    modificar recursos:</font></div>
-    <div align="left"><font face="Calibri" size="1">- en estado &quot;ALTA&quot;</font></div>
-    <div align="left"><font face="Calibri" size="1">- que est&#233;n </font><font face="Calibri" color="#0f0f0f" size="1">ubicados en la UCO 
-    a la que apoya como CISPOC o 
-    en dependencias subordinadas.</font></div>
-    <div align="left"><font face="Calibri" size="1"><br /></font></div><div align="left"><font face="Calibri" size="1">El rol&#160; CISPOC solo puede 
-    modificar los atributos:</font></div>
-    <div align="left"><font face="Calibri" size="1">- observaciones</font></div>
-    <div align="left"><font face="Calibri" size="1">- responsable</font></div>
-    <div align="left"><font face="Calibri" size="1">- nodoUbicacion</font></div>
-    <div align="left"><font face="Calibri" size="1"><br /></font></div><div align="left"><font face="Calibri" size="1">Los atributos &quot;nodoCargo&quot; y 
-    &quot;nodoUbicacion&quot; son 
-    obligatorios, salvo para el 
-    estado BAJA DEFINITIVA.</font></div>
-    <div align="left">&nbsp;</div>
+    <td align="left" valign="top" width="159" style="border: solid #010101 1px;">
+    <div align="left"><span style="font-size: 9pt;"></span></div>
     </td>
     <td align="left" valign="top" width="177" style="border: solid #010101 1px;">
     <div align="left"><span style="font-size: 9pt;"></span></div>
     </td>
     <td align="left" valign="top" width="116" style="border: solid #010101 1px;">
-    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">La combinaci&#243;n 
-    &quot;fabricante&quot; y 
-    &quot;numSerie&quot; debe ser 
-    &#250;nica.</font></div>
+    <div align="left"><span style="font-size: 9pt;"></span></div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="105" style="border: solid #010101 1px;">
@@ -376,13 +325,10 @@
     </ul>
     </td>
     <td align="left" valign="top" width="159" style="border: solid #010101 1px;">
-    <div align="left"><font face="Calibri" size="1">Solo se pueden eliminar 
-    recursos en estado&#160; &quot;ALTA 
-    PROVISIONAL&quot;</font></div>
+    <div align="left"><span style="font-size: 9pt;"></span></div>
     </td>
     <td align="left" valign="top" width="177" style="border: solid #010101 1px;">
-    <div align="left"><font face="Calibri" size="1">Elimina en cascada las entidades 
-    ConfiguracionHw asociadas.</font></div>
+    <div align="left"><span style="font-size: 9pt;"></span></div>
     </td>
     <td align="left" valign="top" width="116" style="border: solid #010101 1px;">
     <div align="left"><span style="font-size: 9pt;"></span></div>

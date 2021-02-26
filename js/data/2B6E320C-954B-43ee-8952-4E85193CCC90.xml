@@ -1,11 +1,11 @@
 tocTab[tocTab.length] = new Array("0.2:1", "", "MODELO DE DOMINIO GLOBAL", "EARoot/EA2/EA20.htm", "175.png", "600", "0", "", "Logical diagram0","{DE15D2DD-FBCD-4e31-9F27-62F0DA0882C5}");
-tocTab[tocTab.length] = new Array("0.2:2", "", "Catalogo de artículos HW", "EARoot/EA2/EA22.htm", "175.png", "1103", "0", "", "Logical diagram0","{528D26F7-65A7-4659-A041-4327724FE750}");
-tocTab[tocTab.length] = new Array("0.2:3", "", "Inventario HW", "EARoot/EA2/EA24.htm", "175.png", "1026", "0", "", "Logical diagram0","{B91BBA16-A864-4937-B509-977A8AB7CC27}");
-tocTab[tocTab.length] = new Array("0.2:4", "", "Catalogo de artículos ESYL", "EARoot/EA2/EA26.htm", "175.png", "1105", "0", "", "Logical diagram0","{A8FE82D9-325C-4385-9822-5E4C1E260842}");
+tocTab[tocTab.length] = new Array("0.2:2", "", "Familias de recursos", "EARoot/EA2/EA22.htm", "175.png", "1109", "0", "", "Logical diagram0","{CF034062-E768-4fd0-9EA9-A07D4FB5F77F}");
+tocTab[tocTab.length] = new Array("0.2:3", "", "Catalogo de artículos", "EARoot/EA2/EA24.htm", "175.png", "1103", "0", "", "Logical diagram0","{528D26F7-65A7-4659-A041-4327724FE750}");
+tocTab[tocTab.length] = new Array("0.2:4", "", "Inventario HW", "EARoot/EA2/EA26.htm", "175.png", "1026", "0", "", "Logical diagram0","{B91BBA16-A864-4937-B509-977A8AB7CC27}");
 tocTab[tocTab.length] = new Array("0.2:5", "", "Estructura Organica ET", "EARoot/EA2/EA28.htm", "175.png", "780", "0", "", "Logical diagram0","{B551AE59-FC17-4d58-A316-90A00B2B8935}");
-tocTab[tocTab.length] = new Array("0.2:6", "", "Expedientes de adquisición HW", "EARoot/EA2/EA30.htm", "175.png", "757", "0", "", "Logical diagram0","{DBCD5C9A-E9EA-49f5-A4C3-76B4DC49162D}");
+tocTab[tocTab.length] = new Array("0.2:6", "", "Expedientes de adquisición", "EARoot/EA2/EA30.htm", "175.png", "757", "0", "", "Logical diagram0","{DBCD5C9A-E9EA-49f5-A4C3-76B4DC49162D}");
 tocTab[tocTab.length] = new Array("0.2:7", "", "Reasignacion de recursos HW", "EARoot/EA2/EA32.htm", "175.png", "772", "0", "", "Logical diagram0","{1823F150-7D64-4a35-82B8-4D67552F144D}");
-tocTab[tocTab.length] = new Array("0.2:8", "", "Expedientes de baja HW", "EARoot/EA2/EA34.htm", "175.png", "949", "0", "", "Logical diagram0","{91A0C513-E3EC-4160-830B-367EDBEEAAD8}");
+tocTab[tocTab.length] = new Array("0.2:8", "", "Expedientes de baja", "EARoot/EA2/EA34.htm", "175.png", "949", "0", "", "Logical diagram0","{91A0C513-E3EC-4160-830B-367EDBEEAAD8}");
 tocTab[tocTab.length] = new Array("0.2:9", "", "Notificaciones", "EARoot/EA2/EA36.htm", "175.png", "786", "0", "", "Logical diagram0","{3ADF9F7B-E974-4e2e-A029-C1E6EB0EB5C5}");
 tocTab[tocTab.length] = new Array("0.2:10", "", "Gestión de usuarios", "EARoot/EA2/EA38.htm", "175.png", "790", "0", "", "Logical diagram0","{1FC7A6AB-1491-489f-8BE1-D79FB60CA430}");
 tocTab[tocTab.length] = new Array("0.2:11", "", "Gestión de usuarios (Autenticación básica)", "EARoot/EA2/EA40.htm", "175.png", "1089", "0", "", "Logical diagram0","{15F804C2-1476-4f7a-A6B9-D61216F26DD1}");

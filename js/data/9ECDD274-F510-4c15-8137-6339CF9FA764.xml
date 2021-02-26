@@ -1,2 +1,2 @@
-tocTab[tocTab.length] = new Array("0.5.1.1", "1", "MODELO DE NAVEGACION", "EARoot/EA5/EA1/EA1/EA1292.htm", "4.png", "", "", "{39F13B46-F1D0-416c-8AE0-667EC18945F3}", "Package");
-tocTab[tocTab.length] = new Array("0.5.1.2", "1", "FORMATOS INDIVIDUALES DE PANTALLAS", "EARoot/EA5/EA1/EA2/EA1293.htm", "4.png", "", "", "{ED72E4C5-CF87-4ee8-A4D0-E744F8B6B459}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.1", "1", "MODELO DE NAVEGACION", "EARoot/EA3/EA1/EA1/EA181.htm", "4.png", "", "", "{39F13B46-F1D0-416c-8AE0-667EC18945F3}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.2", "1", "FORMATOS INDIVIDUALES DE PANTALLAS", "EARoot/EA3/EA1/EA2/EA182.htm", "4.png", "", "", "{ED72E4C5-CF87-4ee8-A4D0-E744F8B6B459}", "Package");

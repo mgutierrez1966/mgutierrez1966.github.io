@@ -27,14 +27,36 @@
     <div align="left"><font face="Arial Narrow"><b>VERSION</b></font></div>
     </td>
     <td align="left" valign="top" width="203" height="52" style="border: solid #010101 1px;">
-    <div align="left"><font face="Arial Narrow" size="1">1.0</font></div>
+    <div align="left"><font face="Arial Narrow">2 (ARIGIS-1276)</font></div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="113" height="17" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow"><b>OBSERVACIONES</b></font></div>
     </td>
     <td colspan="4" align="left" valign="top" width="437" height="17" style="border: solid #010101 1px;">
-    <div align="left"><font face="Arial Narrow">Formulario para creaci&#243;n o modificaci&#243;n de un expediente de baja HW</font></div>
+    <div align="left"><font face="Arial Narrow">Formulario para creaci&#243;n o modificaci&#243;n de un expediente de baja HW / ESYL</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>CONFIGURACION 
+    ENTRADA</b></font></div>
+    </td>
+    <td colspan="4" align="left" valign="top" width="437" style="border: solid #010101 1px;"><font face="Arial Narrow">** INICIO ARIGIS-1276</font>
+    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
+    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow"><b>familia</b>: Opcional. Indica la familia del nuevo expediente. Valores posibles 
+    seg&#250;n enumerado CodigoFamilia (HW o ESYL). Por defecto &quot;HW&quot;.</font></li>
+    </ul>
+    <div align="left"><font face="Arial Narrow">** FIN ARIGIS-1276</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="113" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow"><b>CONFIGURACION 
+    SALIDA</b></font></div>
+    </td>
+    <td colspan="4" align="left" valign="top" width="437" style="border: solid #010101 1px;">
+    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
+    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow">N/A</font></li>
+    </ul>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="113" style="border: solid #010101 1px;">
@@ -82,9 +104,13 @@
     <td align="left" valign="top" width="125" style="border: solid #010101 1px;">
     <div align="left"><span style="font-size: 11pt;"></span></div>
     </td>
-    <td align="left" valign="top" width="341" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Para creaci&#243;n: &quot;Nuevo expediente de baja HW&quot;</font>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Para edici&#243;n: &quot;Modificar expediente XXXXXXX&quot;, siendo 
+    <td align="left" valign="top" width="341" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARIGIS-1276</font>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Para creaci&#243;n: &quot;Nuevo expediente de baja HW o ESYL&quot; (en 
+    funci&#243;n del par&#225;metro &quot;familia&quot;)</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Para edici&#243;n: &quot;Modificar expediente de baja HW o ESYL 
+    XXXXXXX&quot; (en funci&#243;n del par&#225;metro &quot;familia&quot;), siendo 
     XXXXXX el n&#186; de expediente.</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARIGIS-1276</font></div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="89" style="border: solid #010101 1px;">
@@ -180,17 +206,21 @@
     <div align="center"><font face="Arial Narrow"><b>&#160;DESCRIPCION DEL PROCESO A EJECUTAR</b></font></div>
     </td></tr>
     <tr>
-    <td align="left" valign="top" width="71" height="118" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="71" height="203" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Inicializar 
     vista</font></div>
     </td>
-    <td align="left" valign="top" width="83" height="118" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="83" height="203" style="border: solid #010101 1px;">
     <div align="left"><span style="font-size: 11pt;"></span></div>
     </td>
-    <td align="left" valign="top" width="401" height="118" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Para creaci&#243;n:</font>
+    <td align="left" valign="top" width="401" height="203" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Para creaci&#243;n:</font>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">- Crear un objeto ExpedienteBajaHw nuevo e inicializar valores por 
     defecto.</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Para edici&#243;n:</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARIGIS-1276</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">- El atributo &quot;familia&quot; se inicializar&#225; con el valor del par&#225;metro &quot;familia&quot; de 
+    la vista.</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** FIN ARIGIS-1276</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">Para edici&#243;n:</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">- Tomar valores del objeto a editar</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">- Iniciar edici&#243;n del modelo</font></div>
     <div align="left">&nbsp;</div>

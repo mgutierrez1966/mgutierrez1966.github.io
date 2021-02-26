@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.5.3:1", "", "«Document» ALTA-RECURSOS-EXPEDIENTE", "EARoot/EA5/EA3/EA1772.htm", "82.png", "E6800", "0", "", "Artifact0","{6290F6EE-4CF4-4811-8E5A-B45149E4AFF5}");
-tocTab[tocTab.length] = new Array("0.5.3:2", "", "«Document» PLANTILLA_FICHERO_CARGA_RECURSOS.ODC", "EARoot/EA5/EA3/EA1774.htm", "82.png", "E6797", "0", "", "Artifact0","{9C4CFB7B-F614-421a-83B8-AE3BD09CE6F3}");
-tocTab[tocTab.length] = new Array("0.5.3:3", "", "«Document» PLANTILLA_FICHERO_CARGA_RECURSOS.XLS", "EARoot/EA5/EA3/EA1775.htm", "82.png", "E6796", "0", "", "Artifact0","{6D1AA95B-8BA7-44ba-8DE7-3CB71272B5B9}");
-tocTab[tocTab.length] = new Array("0.5.3.1", "1", "EMPRESA MANTENIMIENTO", "EARoot/EA5/EA3/EA1/EA1778.htm", "4.png", "", "", "{2CF88C59-3AE7-4cde-8F18-574B51D4DBD2}", "Package");
+tocTab[tocTab.length] = new Array("0.3.3:1", "", "«Document» ALTA-RECURSOS-EXPEDIENTE", "EARoot/EA3/EA3/EA661.htm", "82.png", "E6800", "0", "", "Artifact0","{6290F6EE-4CF4-4811-8E5A-B45149E4AFF5}");
+tocTab[tocTab.length] = new Array("0.3.3:2", "", "«Document» PLANTILLA_FICHERO_CARGA_RECURSOS.ODC", "EARoot/EA3/EA3/EA663.htm", "82.png", "E6797", "0", "", "Artifact0","{9C4CFB7B-F614-421a-83B8-AE3BD09CE6F3}");
+tocTab[tocTab.length] = new Array("0.3.3:3", "", "«Document» PLANTILLA_FICHERO_CARGA_RECURSOS.XLS", "EARoot/EA3/EA3/EA664.htm", "82.png", "E6796", "0", "", "Artifact0","{6D1AA95B-8BA7-44ba-8DE7-3CB71272B5B9}");
+tocTab[tocTab.length] = new Array("0.3.3.1", "1", "EMPRESA MANTENIMIENTO", "EARoot/EA3/EA3/EA1/EA667.htm", "4.png", "", "", "{2CF88C59-3AE7-4cde-8F18-574B51D4DBD2}", "Package");

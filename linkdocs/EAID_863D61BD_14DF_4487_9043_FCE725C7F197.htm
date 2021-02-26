@@ -27,14 +27,14 @@
     <div align="left"><font face="Arial Narrow"><b>VERSION</b></font></div>
     </td>
     <td align="left" valign="top" width="173" height="52" style="border: solid #010101 1px;">
-    <div align="left"><font face="Arial Narrow" size="1">2 (ARIGIS-287)</font></div>
+    <div align="left"><font face="Arial Narrow" size="2">3 (ARIGIS-1276)</font></div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="113" height="17" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow"><b>OBSERVACIONES</b></font></div>
     </td>
     <td colspan="4" align="left" valign="top" width="437" height="17" style="border: solid #010101 1px;">
-    <div align="left"><font face="Arial Narrow">Detalle de expediente de baja de recursos HW</font></div>
+    <div align="left"><font face="Arial Narrow">Detalle de expediente de baja de recursos HW / ESYL</font></div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="113" style="border: solid #010101 1px;">
@@ -107,14 +107,14 @@
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Contenedor principal de la vista. Puede cerrarse.</font></div>
     </td></tr>
     <tr>
-    <td align="left" valign="top" width="125" height="321" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="125" height="287" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Menu de opciones</font></div>
     </td>
-    <td align="left" valign="top" width="83" height="321" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="83" height="287" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Toolbar 
     superior</font></div>
     </td>
-    <td align="left" valign="top" width="347" height="321" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="347" height="287" style="border: solid #010101 1px;">
     <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
     <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow" color="#0f0f0f"><b>Modificar</b>: Habilitado siempre</font></li>
     <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow" color="#0f0f0f"><b>Anular</b>: Habilitado si el estado del expediente es 
@@ -130,12 +130,8 @@
     expediente es PENDIENTE_APROBACION</font></li>
     <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow" color="#0f0f0f"><b>Finalizar</b>: Visible si el estado del expediente es 
     APROBADO</font></li>
-    </ul>
-    <div align="left"><font face="Arial Narrow">** INICIO ARIGIS-98</font></div>
-    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
     <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow" color="#0f0f0f"><b>Listados oficiales</b>: Habilitado siempre. </font></li>
     </ul>
-    <div align="left"><font face="Arial Narrow">** FIN ARIGIS-98</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left">&nbsp;</div>
     </td></tr>
     <tr>
@@ -151,34 +147,34 @@
     <div align="left"><span style="font-size: 11pt;"></span></div>
     </td></tr>
     <tr>
-    <td align="left" valign="top" width="125" height="186" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="125" height="203" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Bloque &quot;Recursos para 
     baja&quot;</font></div>
     </td>
-    <td align="left" valign="top" width="83" height="186" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="83" height="203" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Tab</font></div>
     </td>
-    <td align="left" valign="top" width="347" height="186" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Muestra los recursos HW (entidad <b>RecursoHw</b>) incluidos en el 
-    expediente de baja. </font>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Obtiene los datos del servicio REST <b>RecursoHw</b>, filtrando por el 
-    atributo <b>expedienteBajaHw.</b></font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">En el t&#237;tulo muestra el total de recursos en la lista.</font></div>
+    <td align="left" valign="top" width="347" height="203" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARIGIS-1276</font>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Muestra los recursos (entidad <b><strike>RecursoHw</strike></b><b> Recurso</b>) incluidos 
+    en el expediente de baja. </font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">Obtiene los datos del servicio REST <b><strike>RecursoHw</strike></b><b> Recurso</b>, 
+    filtrando por el atributo <b>expedienteBajaHw.</b></font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** FIN ARIGIS-1276</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">En el t&#237;tulo muestra el total de recursos en la lista.</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">La tabla permite SELECCION MULTIPLE.</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARIGIS-287</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Incluye un cuadro de b&#250;squeda libre de recursos para baja del 
     expediente (par&#225;metro &quot;query&quot;)</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** FIN ARIGIS-287</font></div>
     <div align="left">&nbsp;</div>
     </td></tr>
     <tr>
-    <td align="left" valign="top" width="125" height="169" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="125" height="186" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Opciones del bloque 
     &quot;Recursos para baja&quot;</font></div>
     </td>
-    <td align="left" valign="top" width="83" height="169" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="83" height="186" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Toolbar</font></div>
     </td>
-    <td align="left" valign="top" width="347" height="169" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="347" height="186" style="border: solid #010101 1px;">
     <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
     <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow" color="#0f0f0f"><b>A&#241;adir recursos</b>: Habilitado solo si el estado del 
     expediente es BORRADOR o CLASIFICACION..</font></li>
@@ -418,10 +414,9 @@
     <td align="left" valign="top" width="95" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow">Listados oficiales</font></div>
     </td>
-    <td align="left" valign="top" width="401" style="border: solid #010101 1px;"><font face="Arial Narrow">** INICIO ARIGIS-98</font>
-    <div align="left"><font face="Arial Narrow">Muestra la vista <b>FormOpcionesListadoExpBaja</b> , pasando el expediente 
-    de baja actual. </font></div>
-    <div align="left"><font face="Arial Narrow">** FIN ARIGIS-98</font></div>
+    <td align="left" valign="top" width="401" style="border: solid #010101 1px;"><font face="Arial Narrow">Muestra la vista <b>FormOpcionesListadoExpBaja</b> , pasando el expediente 
+    de baja actual. </font>
+    <div align="left">&nbsp;</div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="59" style="border: solid #010101 1px;">
@@ -430,7 +425,10 @@
     <td align="left" valign="top" width="95" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow">A&#241;adir recursos</font></div>
     </td>
-    <td align="left" valign="top" width="401" style="border: solid #010101 1px;"><font face="Arial Narrow">Muestra la vista &quot;<b>FormSeleccionRecursosHwBaja</b>&quot;.</font>
+    <td align="left" valign="top" width="401" style="border: solid #010101 1px;"><font face="Arial Narrow">** INICIO ARIGIS-1276</font>
+    <div align="left"><font face="Arial Narrow">Muestra la vista &quot;<b>FormSeleccionRecursosHwBaja</b>&quot;, pasandole el 
+    par&#225;metro &quot;familia&quot; con el mismo valor del par&#225;metro de la vista.</font></div>
+    <div align="left"><font face="Arial Narrow">** FIN ARIGIS-1276</font></div>
     <div align="left"><font face="Arial Narrow">Si la vista tiene exito, llama a la operaci&#243;n 
     <b>AgregarRecursosExpedienteBajaHw </b>de la API<b> ExpedienteBajaHwAPI</b>, 
     pasando la lista de recursos seleccionados.</font></div>
@@ -496,10 +494,9 @@
     b&#250;squeda libre 
     de recursos</font></div>
     </td>
-    <td align="left" valign="top" width="401" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARIGIS-287</font>
-    <div align="left"><font face="Arial Narrow">Modifica el par&#225;metro &quot;query&quot; de la llamada al servicio REST asociado al 
-    store de recursos para baja.</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** FIN ARIGIS-287</font></div>
+    <td align="left" valign="top" width="401" style="border: solid #010101 1px;"><font face="Arial Narrow">Modifica el par&#225;metro &quot;query&quot; de la llamada al servicio REST asociado al 
+    store de recursos para baja.</font>
+    <div align="left">&nbsp;</div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="59" style="border: solid #010101 1px;">

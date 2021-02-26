@@ -27,7 +27,8 @@
     <div align="left"><font face="Arial Narrow"><b>VERSION</b></font></div>
     </td>
     <td align="left" valign="top" width="107" height="52" style="border: solid #010101 1px;">
-    <div align="left"><font face="Arial Narrow" size="2">4 (ARIGIS-1108)</font></div>
+    <div align="left"><font face="Arial Narrow" size="2">4 (ARIGIS-1108, 
+    1136)</font></div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="113" height="34" style="border: solid #010101 1px;">
@@ -106,9 +107,12 @@
     <td align="left" valign="top" width="371" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Opciones disponibles:</font>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">- <b>Modificar solicitud</b>: Activo en alguno de estos casos:</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">&#160;&#160;&#160;&#160;&#160; - Si la solicitud est&#225; en estado &quot;Nueva&quot;, y el rol es CISPOC</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARIGIS-1136</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">&#160;&#160;&#160;&#160;&#160; - Si la solicitud est&#225; en estado &quot;Tramitada a Director por 
-    Subdirector&quot;, y el rol es DIRECTOR o MANDO_ORGANICO</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">- <b>Borrar solicitud</b>: elimina la solicitud. Activo solo si la solicitud est&#225; 
+    Subdirector&quot;, y el rol es MANDO_ORGANICO</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">&#160;&#160;&#160;&#160;&#160; - Si el rol es DIRECTOR, en cualquier estado de la solicitud.</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** FIN ARIGIS-1136</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">- <b>Borrar solicitud</b>: elimina la solicitud. Activo solo si la solicitud est&#225; 
     en estado &quot;Nueva&quot;, y el rol es CISPOC.</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARIGIS-1108</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">- <b>Crear parte de queja</b>: Activo solo si la solicitud est&#225; en estado 
@@ -137,13 +141,13 @@
     <div align="left">&nbsp;</div>
     </td></tr>
     <tr>
-    <td align="left" valign="top" width="125" height="68" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="125" height="152" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Datos de la solicitud</font></div>
     </td>
-    <td align="left" valign="top" width="59" height="68" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="59" height="152" style="border: solid #010101 1px;">
     <div align="left"><span style="font-size: 11pt;"></span></div>
     </td>
-    <td align="left" valign="top" width="371" height="68" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Panel con datos de la solicitud y del recurso HW, organizados en 
+    <td align="left" valign="top" width="371" height="152" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Panel con datos de la solicitud y del recurso HW, organizados en 
     grupos de campos.</font>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">El grupo &quot;Contrato de mantenimiento&quot; muestra los datos del objeto 
     ContratoMantenimiento de la solicitud.</font></div>
@@ -181,16 +185,16 @@
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">&#160;&#160;&#160;&#160;&#160; * El rol es CISPOC y el estado de la solicitud es NUEVA</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">&#160;&#160;&#160;&#160;&#160; * El rol es DIRECTOR o MANDO_ORGANICO y el estado de la 
     solicitud es TRAMITADA A DIRECTOR POR SUBDIRECTOR.</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARIGIS-1083</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f"><b>- Asignar peso: Habilitado si hay alg&#250;n recurso seleccionado en 
+    la lista, y adem&#225;s se cumple alguno de los casos anteriores</b></font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** FIN ARIGIS-1083</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">- A&#241;adir recursos por lista de NI/NS: Habilitado en los mismos casos 
     que la opci&#243;n anterior.</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">- Quitar recursos: Habilitado si hay seleccionado alg&#250;n recurso en la 
     lista, y adem&#225;s se cumple alguno de los casos anteriores.</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">- Ver recurso: Habilitado si hay seleccionado alg&#250;n recurso en la 
     lista.</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** INICIO ARIGIS-1083</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f"><b>- Asignar peso: Habilitado si hay alg&#250;n recurso seleccionado en 
-    la lista</b></font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f">** FIN ARIGIS-1083</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left">&nbsp;</div>
     </td></tr>
     <tr>

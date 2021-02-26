@@ -103,17 +103,17 @@
     <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DESCRIPCION</b></font></div>
     </td></tr>
     <tr>
-    <td align="left" valign="top" width="87" height="53" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="87" style="border: solid #010101 1px;">
     <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">solicitud</font></div>
     </td>
-    <td align="left" valign="top" width="111" height="53" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="111" style="border: solid #010101 1px;">
     <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">Subtipo de 
     SolicitudMantenimiento</font></div>
     </td>
-    <td align="left" valign="top" width="75" height="53" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="75" style="border: solid #010101 1px;">
     <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">SI</font></div>
     </td>
-    <td colspan="3" align="left" valign="top" width="159" height="53" style="border: solid #010101 1px;">
+    <td colspan="3" align="left" valign="top" width="159" style="border: solid #010101 1px;">
     <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">Solicitud de mantenimiento </font></div>
     </td></tr>
     <tr>
@@ -1065,6 +1065,8 @@
     <div align="justify"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - La lista es ignorada y se genera un error, ya que en dicho caso la lista de recursos 
     la establece el Director.</font></div>
     <div align="justify"><font face="Calibri" size="1"><br /></font></div><div align="justify"><font face="Calibri" size="1">- Para solicitudes de <u>suministro de material, y si el atributo &quot;inventariable&quot; es CIERTO</u>: </font></div>
+    <div align="justify"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160;&#160; <b>- Si la lista no contiene ning&#250;n recurso, se genera un error de tipo &quot;La lista de 
+    art&#237;culos no puede estar vac&#237;a para suministros de material inventariable&quot;. </b></font></div>
     <div align="justify"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160; - Elimina si los hubiera, los objetos <b>SolSuministroMatUcoRec </b>asociados a la solicitud 
     de mantenimiento;<br />&#160;&#160;&#160;&#160;&#160; - Crea los nuevos objetos <b>SolSuministroMatUcoRec </b>a partir de la lista de RecursoHw. </font></div>
     <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; </font></div>
@@ -1085,8 +1087,8 @@
     la solicitud de suministro, mediante la API &quot;AgregarRecursosReasignacionHw&quot;. 
     Finalmente se ejecuta la reasignaci&#243;n mediante la API &quot;EjecutarReasignacionHw&quot;</font></div>
     <div align="justify"><font face="Calibri" size="1"><br /></font></div><div align="justify"><font face="Calibri" size="1">La reasignaci&#243;n creada debe quedar asociada a la solicitud de suministro.</font></div>
-    <div align="justify"><font face="Calibri" size="1"><br /></font></div><div align="justify"><font face="Calibri" size="1">- Para solicitudes de <u>suministro de material, y si el atributo &quot;inventariable&quot; es FALSO</u>:</font></div>
-    <div align="justify"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160;&#160;&#160; -&#160;&#160; - La lista es ignorada ya que en dicho caso no se requiere establecer lista de 
+    <div align="justify"><font face="Calibri" size="1"><br /></font></div><div align="justify"><font face="Calibri" size="1"><br /></font></div><div align="justify"><font face="Calibri" size="1">- Para solicitudes de <u>suministro de material, y si el atributo &quot;inventariable&quot; es FALSO</u>:</font></div>
+    <div align="justify"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160;&#160;&#160; -&#160;&#160; La lista es ignorada ya que en dicho caso no se requiere establecer lista de 
     recursos.</font></div>
     <div align="justify"><font face="Calibri" size="1"><br /></font></div><div align="justify"><font face="Calibri" size="1">** FIN ARIGIS-1105</font></div>
     <div align="justify">&nbsp;</div>
@@ -2841,10 +2843,7 @@
     <div align="left"><font face="Calibri" size="1">- No puede asociarse m&#225;s de una vez un mismo recurso a la misma solicitud.</font></div>
     <div align="left"><font face="Calibri" color="#0f0f0f" size="1">- El tipoUbicaci&#243;n de los recursos a agregar a la solicitud de mantenimiento debe ser 
     <b><u>distinto </u></b>de &quot;EN TRANSITO&quot;.</font></div>
-    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">** INICIO ARIGIS-1083</font></div>
-    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">- Todos los recursos deben tener un valor NO NULO para el atributo &quot;peso&quot;</font></div>
-    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">** FIN ARIGIS-1083</font></div>
-    <div align="left">&nbsp;</div>
+    <div align="left"><font face="Calibri" size="1"><br /></font></div><div align="left">&nbsp;</div>
     </td></tr>
     <tr>
     <td colspan="2" align="left" valign="middle" width="159" style="border: solid #010101 1px;">
@@ -3105,490 +3104,6 @@
     </td></tr>
 </table>
 <div align="left"><font size="2"><br /></font></div><div align="left"><font size="2"><br /></font></div><br clear='all' style='page-break-before:always' />
-<div align="left"><br/>&nbsp;</div>
-<table width="612" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
-    <colgroup>
-        <col width="144"></col>
-        <col width="115"></col>
-        <col width="78"></col>
-        <col width="83"></col>
-        <col width="20"></col>
-        <col width="52"></col>
-        <col width="120"></col>
-    </colgroup>
-    <tr>
-    <td align="left" valign="top" width="135" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>NOMBRE</b></font></div>
-    </td>
-    <td colspan="3" align="left" valign="top" width="267" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f">AgregarRecursosEntregadosAdaptativo</font></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="63" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>Versi&#243;n</b></font></div>
-    </td>
-    <td align="left" valign="top" width="111" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f">1 (ARIGIS-1105)</font></div>
-    </td></tr>
-    <tr>
-    <td align="left" valign="top" width="135" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DESCRIPCI&#211;N</b></font></div>
-    </td>
-    <td colspan="6" align="left" valign="top" width="459" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">Agrega una lista de recursos a entregar a una solicitud existente de mantenimiento 
-    adaptativo</font></div>
-    </td></tr>
-    <tr>
-    <td rowspan="8" align="left" valign="top" width="135" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DATOS ENTRADA</b></font></div>
-    </td>
-    <td align="left" valign="top" width="106" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>NOMBRE</b></font></div>
-    </td>
-    <td align="left" valign="top" width="69" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>TIPO</b></font></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="94" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>REQUERIDO</b></font></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="163" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DESCRIPCION</b></font></div>
-    </td></tr>
-    <tr>
-    <td align="left" valign="top" width="106" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">solicitud</font></div>
-    </td>
-    <td align="left" valign="top" width="69" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">String</font></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="94" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">SI</font></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="163" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" size="1">ID de la solicitud de 
-    mantenimiento</font></div>
-    </td></tr>
-    <tr>
-    <td align="left" valign="top" width="106" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" size="1">recursos</font></div>
-    </td>
-    <td align="left" valign="top" width="69" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" size="1">Array de 
-    String</font></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="94" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">SI</font></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="163" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" size="1">Array de identificadores de 
-    recursoHW que deben asociarse 
-    a la solicitud como &quot;recursos 
-    entregados&quot;</font></div>
-    </td></tr>
-    <tr>
-    <td align="left" valign="top" width="106" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td align="left" valign="top" width="69" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="94" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="163" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td></tr>
-    <tr>
-    <td align="left" valign="top" width="106" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td align="left" valign="top" width="69" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="94" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="163" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td></tr>
-</table>
-<table width="144" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
-    <colgroup>
-        <col width="144"></col>
-    </colgroup>
-    <tr>
-    <td align="left" valign="top" width="135" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 11pt;"></span></div>
-    </td></tr>
-    <tr>
-    </tr>
-    <tr>
-    </tr>
-</table>
-<table width="612" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
-    <colgroup>
-        <col width="144"></col>
-        <col width="115"></col>
-        <col width="78"></col>
-        <col width="275"></col>
-    </colgroup>
-    <tr>
-    <td rowspan="7" align="left" valign="top" width="135" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DATOS SALIDA</b></font></div>
-    </td>
-    <td align="left" valign="top" width="106" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>NOMBRE</b></font></div>
-    </td>
-    <td align="left" valign="top" width="69" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>TIPO</b></font></div>
-    </td>
-    <td align="left" valign="top" width="266" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DESCRIPCION</b></font></div>
-    </td></tr>
-    <tr>
-    <td align="left" valign="top" width="106" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td align="left" valign="top" width="69" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td align="left" valign="top" width="266" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td></tr>
-    <tr>
-    <td align="left" valign="top" width="106" height="18" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td align="left" valign="top" width="69" height="18" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td align="left" valign="top" width="266" height="18" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td></tr>
-    <tr>
-    <td align="left" valign="top" width="106" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td align="left" valign="top" width="69" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td align="left" valign="top" width="266" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td></tr>
-</table>
-<table width="144" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
-    <colgroup>
-        <col width="144"></col>
-    </colgroup>
-    <tr>
-    <td align="left" valign="top" width="135" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 11pt;"></span></div>
-    </td></tr>
-    <tr>
-    </tr>
-    <tr>
-    </tr>
-</table>
-<table width="612" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
-    <colgroup>
-        <col width="144"></col>
-        <col width="24"></col>
-        <col width="444"></col>
-    </colgroup>
-    <tr>
-    <td align="left" valign="top" width="135" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>PROCESO</b></font></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="459" style="border: solid #010101 1px;">
-    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
-    <li style="margin-left: 18pt; margin-right: 0pt; padding-left: 0pt; font-size: 9pt;  color: #010101;  "><font face="Calibri" size="1">Una vez validadas las precondiciones, </font><font face="Calibri" color="#0f0f0f" size="1">se asocian los recursos a la solicitud, creando 
-    objetos de tipo &quot;<b>SolicitudAdaptativoRecEntregado</b>&quot;.</font></li>
-    </ul>
-    <div align="justify">&nbsp;</div>
-    </td></tr>
-    <tr>
-    <td align="left" valign="top" width="135" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DEPENDENCIAS</b></font></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="459" style="border: solid #010101 1px;">
-    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
-    <li style="margin-left: 18pt; margin-right: 0pt; padding-left: 0pt; "></li>
-    </ul>
-    </td></tr>
-    <tr>
-    <td colspan="3" align="left" valign="middle" width="603" style="border: solid #010101 1px;">
-    <div align="left"><font face="Calibri" color="#0f0f0f"><b>RESTRICCIONES</b></font></div>
-    </td></tr>
-    <tr>
-    <td colspan="2" align="left" valign="middle" width="159" style="border: solid #010101 1px;">
-    <div align="left"><font face="Calibri" color="#0f0f0f"><b>PRECONDICIONES</b></font></div>
-    </td>
-    <td align="left" valign="middle" width="435" style="border: solid #010101 1px;"><font face="Calibri" size="1">- El usuario debe tener el rol DIRECTOR</font>
-    <div align="left"><font face="Calibri" size="1">- La solicitud de mantenimiento debe existir y estar en estado NUEVA o TRAMITADA A 
-    DIRECTOR POR SUBDIRECTOR.</font></div>
-    <div align="left"><font face="Calibri" size="1">- Todos los identificadores de recurso deben de ser v&#225;lidos.</font></div>
-    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">- Los recursos a agregar a la solicitud de mantenimiento deben&#160; debe encontrarse en 
-    estado ALTA</font></div>
-    <div align="left"><font face="Calibri" size="1">- No puede asociarse m&#225;s de una vez un mismo recurso a la misma solicitud como 
-    recurso entregado.</font></div>
-    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">- El tipoUbicaci&#243;n de los recursos a agregar a la solicitud de mantenimiento debe ser 
-    <b><u>distinto </u></b>de &quot;EN TRANSITO&quot;.</font></div>
-    <div align="left">&nbsp;</div>
-    </td></tr>
-    <tr>
-    <td colspan="2" align="left" valign="middle" width="159" style="border: solid #010101 1px;">
-    <div align="left"><font face="Calibri" color="#0f0f0f"><b>POSTCONDICIONES</b></font></div>
-    </td>
-    <td align="left" valign="middle" width="435" style="border: solid #010101 1px;">
-    <div align="left"><span style="font-size: 9pt;"></span></div>
-    </td></tr>
-    <tr>
-    <td colspan="2" align="left" valign="middle" width="159" style="border: solid #010101 1px;">
-    <div align="left"><font face="Calibri" color="#0f0f0f"><b>INVARIANTES</b></font></div>
-    </td>
-    <td align="left" valign="middle" width="435" style="border: solid #010101 1px;">
-    <div align="left"><span style="font-size: 9pt;"></span></div>
-    </td></tr>
-</table>
-<div align="left"><font size="2"><br /></font></div><div align="left"><font size="2"><br /></font></div><div align="left"><font size="2"><br /></font></div><br clear='all' style='page-break-before:always' />
-<div align="left"><br/>&nbsp;</div>
-<table width="612" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
-    <colgroup>
-        <col width="144"></col>
-        <col width="115"></col>
-        <col width="78"></col>
-        <col width="65"></col>
-        <col width="38"></col>
-        <col width="40"></col>
-        <col width="132"></col>
-    </colgroup>
-    <tr>
-    <td align="left" valign="top" width="135" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>NOMBRE</b></font></div>
-    </td>
-    <td colspan="3" align="left" valign="top" width="249" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f">QuitarRecursosEntregadosAdaptativo</font></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="69" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>Versi&#243;n</b></font></div>
-    </td>
-    <td align="left" valign="top" width="123" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f">1 (ARIGIS-1105)</font></div>
-    </td></tr>
-    <tr>
-    <td align="left" valign="top" width="135" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DESCRIPCI&#211;N</b></font></div>
-    </td>
-    <td colspan="6" align="left" valign="top" width="459" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">Quita una lista de recursos entregados de una solicitud existente de mantenimiento 
-    adaptativo</font></div>
-    </td></tr>
-    <tr>
-    <td rowspan="8" align="left" valign="top" width="135" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DATOS ENTRADA</b></font></div>
-    </td>
-    <td align="left" valign="top" width="106" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>NOMBRE</b></font></div>
-    </td>
-    <td align="left" valign="top" width="69" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>TIPO</b></font></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="94" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>REQUERIDO</b></font></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="163" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DESCRIPCION</b></font></div>
-    </td></tr>
-    <tr>
-    <td align="left" valign="top" width="106" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">solicitud</font></div>
-    </td>
-    <td align="left" valign="top" width="69" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">String</font></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="94" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">SI</font></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="163" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" size="1">ID de la solicitud de 
-    mantenimiento</font></div>
-    </td></tr>
-    <tr>
-    <td align="left" valign="top" width="106" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" size="1">recursos</font></div>
-    </td>
-    <td align="left" valign="top" width="69" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" size="1">Array de 
-    String</font></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="94" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f" size="1">SI</font></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="163" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" size="1">Array de identificadores de 
-    recursoHW que deben 
-    eliminarse de la solicitud, como 
-    recursos entregados.</font></div>
-    </td></tr>
-    <tr>
-    <td align="left" valign="top" width="106" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td align="left" valign="top" width="69" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="94" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="163" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td></tr>
-    <tr>
-    <td align="left" valign="top" width="106" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td align="left" valign="top" width="69" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="94" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="163" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td></tr>
-</table>
-<table width="144" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
-    <colgroup>
-        <col width="144"></col>
-    </colgroup>
-    <tr>
-    <td align="left" valign="top" width="135" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 11pt;"></span></div>
-    </td></tr>
-    <tr>
-    </tr>
-    <tr>
-    </tr>
-</table>
-<table width="612" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
-    <colgroup>
-        <col width="144"></col>
-        <col width="115"></col>
-        <col width="78"></col>
-        <col width="275"></col>
-    </colgroup>
-    <tr>
-    <td rowspan="7" align="left" valign="top" width="135" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DATOS SALIDA</b></font></div>
-    </td>
-    <td align="left" valign="top" width="106" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>NOMBRE</b></font></div>
-    </td>
-    <td align="left" valign="top" width="69" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>TIPO</b></font></div>
-    </td>
-    <td align="left" valign="top" width="266" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DESCRIPCION</b></font></div>
-    </td></tr>
-    <tr>
-    <td align="left" valign="top" width="106" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td align="left" valign="top" width="69" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td align="left" valign="top" width="266" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td></tr>
-    <tr>
-    <td align="left" valign="top" width="106" height="18" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td align="left" valign="top" width="69" height="18" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td align="left" valign="top" width="266" height="18" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td></tr>
-    <tr>
-    <td align="left" valign="top" width="106" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td align="left" valign="top" width="69" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td>
-    <td align="left" valign="top" width="266" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 9pt;"></span></div>
-    </td></tr>
-</table>
-<table width="144" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
-    <colgroup>
-        <col width="144"></col>
-    </colgroup>
-    <tr>
-    <td align="left" valign="top" width="135" style="border: solid #010101 1px;">
-    <div align="justify"><span style="font-size: 11pt;"></span></div>
-    </td></tr>
-    <tr>
-    </tr>
-    <tr>
-    </tr>
-</table>
-<table width="612" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
-    <colgroup>
-        <col width="144"></col>
-        <col width="24"></col>
-        <col width="444"></col>
-    </colgroup>
-    <tr>
-    <td align="left" valign="top" width="135" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>PROCESO</b></font></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="459" style="border: solid #010101 1px;">
-    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
-    <li style="margin-left: 18pt; margin-right: 0pt; padding-left: 0pt; font-size: 9pt;  color: #010101;  "><font face="Calibri" size="1">Una vez validadas las precondiciones, </font><font face="Calibri" color="#0f0f0f" size="1">se eliminan los objetos de tipo 
-    &quot;<b>SolicitudAdaptativoRecEntregado</b>&quot; que correspondan con la solicitud y la lista de 
-    recursos pasados como entrada.</font></li>
-    </ul>
-    <div align="justify">&nbsp;</div>
-    </td></tr>
-    <tr>
-    <td align="left" valign="top" width="135" style="border: solid #010101 1px;">
-    <div align="justify"><font face="Calibri" color="#0f0f0f"><b>DEPENDENCIAS</b></font></div>
-    </td>
-    <td colspan="2" align="left" valign="top" width="459" style="border: solid #010101 1px;">
-    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
-    <li style="margin-left: 18pt; margin-right: 0pt; padding-left: 0pt; "></li>
-    </ul>
-    </td></tr>
-    <tr>
-    <td colspan="3" align="left" valign="middle" width="603" style="border: solid #010101 1px;">
-    <div align="left"><font face="Calibri" color="#0f0f0f"><b>RESTRICCIONES</b></font></div>
-    </td></tr>
-    <tr>
-    <td colspan="2" align="left" valign="middle" width="159" style="border: solid #010101 1px;">
-    <div align="left"><font face="Calibri" color="#0f0f0f"><b>PRECONDICIONES</b></font></div>
-    </td>
-    <td align="left" valign="middle" width="435" style="border: solid #010101 1px;"><font face="Calibri" size="1">- El usuario debe tener el rol DIRECTOR</font>
-    <div align="left"><font face="Calibri" size="1">- La solicitud de mantenimiento debe existir y estar en estado NUEVA o TRAMITADA A 
-    DIRECTOR POR SUBDIRECTOR.</font></div>
-    <div align="left">&nbsp;</div>
-    </td></tr>
-    <tr>
-    <td colspan="2" align="left" valign="middle" width="159" style="border: solid #010101 1px;">
-    <div align="left"><font face="Calibri" color="#0f0f0f"><b>POSTCONDICIONES</b></font></div>
-    </td>
-    <td align="left" valign="middle" width="435" style="border: solid #010101 1px;">
-    <div align="left"><span style="font-size: 9pt;"></span></div>
-    </td></tr>
-    <tr>
-    <td colspan="2" align="left" valign="middle" width="159" style="border: solid #010101 1px;">
-    <div align="left"><font face="Calibri" color="#0f0f0f"><b>INVARIANTES</b></font></div>
-    </td>
-    <td align="left" valign="middle" width="435" style="border: solid #010101 1px;">
-    <div align="left"><span style="font-size: 9pt;"></span></div>
-    </td></tr>
-</table>
-<div align="left"><font size="2"><br /></font></div><br clear='all' style='page-break-before:always' />
 <div align="left"><font size="2"><br /></font></div><div align="left"><font size="2"><br /></font></div><div align="left"><br/>&nbsp;</div>
 <table width="612" cellpadding="4" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 1px; border-color: #010101; ">
     <colgroup>
@@ -3821,10 +3336,7 @@
     <div align="left"><font face="Calibri" size="1">- No puede asociarse m&#225;s de una vez un mismo recurso a la misma solicitud.</font></div>
     <div align="left"><font face="Calibri" color="#0f0f0f" size="1">- El tipoUbicaci&#243;n de los recursos a agregar a la solicitud de mantenimiento debe ser 
     <b><u>distinto </u></b>de &quot;EN TRANSITO&quot;.</font></div>
-    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">** INICIO ARIGIS-1083</font></div>
-    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">- Todos los recursos deben tener un valor NO NULO para el atributo &quot;peso&quot;</font></div>
-    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">** FIN ARIGIS-1083</font></div>
-    <div align="left">&nbsp;</div>
+    <div align="left"><font face="Calibri" size="1"><br /></font></div><div align="left">&nbsp;</div>
     </td></tr>
     <tr>
     <td colspan="2" align="left" valign="middle" width="159" style="border: solid #010101 1px;">
@@ -4316,10 +3828,7 @@
     <div align="left"><font face="Calibri" size="1">- No puede asociarse m&#225;s de una vez un mismo recurso a la misma solicitud.</font></div>
     <div align="left"><font face="Calibri" color="#0f0f0f" size="1">- El tipoUbicaci&#243;n de los recursos a agregar a la solicitud de mantenimiento debe ser 
     <b><u>distinto </u></b>de &quot;EN TRANSITO&quot;.</font></div>
-    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">** INICIO ARIGIS-1083</font></div>
-    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">- Todos los recursos deben tener un valor NO NULO para el atributo &quot;peso&quot;</font></div>
-    <div align="left"><font face="Calibri" color="#0f0f0f" size="1">** FIN ARIGIS-1083</font></div>
-    <div align="left">&nbsp;</div>
+    <div align="left"><font face="Calibri" size="1"><br /></font></div><div align="left">&nbsp;</div>
     </td></tr>
     <tr>
     <td colspan="2" align="left" valign="middle" width="159" style="border: solid #010101 1px;">

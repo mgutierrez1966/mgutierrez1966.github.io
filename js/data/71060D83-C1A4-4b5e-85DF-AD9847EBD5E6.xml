@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.5.1.2.4.1", "1", "Consulta de Inventario HW", "EARoot/EA5/EA1/EA2/EA4/EA1/EA1359.htm", "4.png", "", "", "{E5FD9684-B647-4e18-B2C5-8B1A3EF9FFE3}", "Package");
-tocTab[tocTab.length] = new Array("0.5.1.2.4.2", "1", "Expedientes de adquisición", "EARoot/EA5/EA1/EA2/EA4/EA2/EA1535.htm", "4.png", "", "", "{98C09B5F-89C6-4481-9C11-A98EF511B97E}", "Package");
-tocTab[tocTab.length] = new Array("0.5.1.2.4.3", "1", "Expedientes de baja HW", "EARoot/EA5/EA1/EA2/EA4/EA3/EA1555.htm", "4.png", "", "", "{D77959BB-9FC8-4c56-B377-69859F507DB6}", "Package");
-tocTab[tocTab.length] = new Array("0.5.1.2.4.4", "1", "Reasignaciones recursos HW", "EARoot/EA5/EA1/EA2/EA4/EA4/EA1573.htm", "4.png", "", "", "{81AA0626-CD2F-464b-A7F3-01288F86ECAC}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.2.4.1", "1", "Consulta de Inventario HW", "EARoot/EA3/EA1/EA2/EA4/EA1/EA248.htm", "4.png", "", "", "{E5FD9684-B647-4e18-B2C5-8B1A3EF9FFE3}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.2.4.2", "1", "Expedientes de adquisición", "EARoot/EA3/EA1/EA2/EA4/EA2/EA424.htm", "4.png", "", "", "{98C09B5F-89C6-4481-9C11-A98EF511B97E}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.2.4.3", "1", "Expedientes de baja HW", "EARoot/EA3/EA1/EA2/EA4/EA3/EA444.htm", "4.png", "", "", "{D77959BB-9FC8-4c56-B377-69859F507DB6}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1.2.4.4", "1", "Reasignaciones recursos HW", "EARoot/EA3/EA1/EA2/EA4/EA4/EA462.htm", "4.png", "", "", "{81AA0626-CD2F-464b-A7F3-01288F86ECAC}", "Package");

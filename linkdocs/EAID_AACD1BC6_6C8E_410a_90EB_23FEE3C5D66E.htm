@@ -12,33 +12,40 @@
     <colgroup>
         <col width="120"></col>
         <col width="48"></col>
-        <col width="102"></col>
-        <col width="84"></col>
-        <col width="210"></col>
+        <col width="114"></col>
+        <col width="90"></col>
+        <col width="192"></col>
     </colgroup>
     <tr>
     <td align="left" valign="top" width="113" height="52" style="border: solid #010101 1px;"><font face="Arial Narrow"><b>NOMBRE</b></font>
     <div align="left"><font face="Arial Narrow"><b><br /></b></font></div><div align="left">&nbsp;</div>
     </td>
-    <td colspan="2" align="left" valign="top" width="143" height="52" style="border: solid #010101 1px;">
+    <td colspan="2" align="left" valign="top" width="155" height="52" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow">FormSeleccionRecursosHw</font></div>
     </td>
-    <td align="left" valign="top" width="77" height="52" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="83" height="52" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow"><b>VERSION</b></font></div>
     </td>
-    <td align="left" valign="top" width="203" height="52" style="border: solid #010101 1px;">
-    <div align="left"><font face="Arial Narrow" size="1">1.0</font></div>
+    <td align="left" valign="top" width="185" height="52" style="border: solid #010101 1px;">
+    <div align="left"><font face="Arial Narrow">2 (ARIGIS-1276)</font></div>
     </td></tr>
     <tr>
-    <td align="left" valign="top" width="113" height="236" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="113" height="321" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow"><b>OBSERVACIONES</b></font></div>
     </td>
-    <td colspan="4" align="left" valign="top" width="437" height="236" style="border: solid #010101 1px;"><font face="Arial Narrow">Formulario para seleccionar recursos HW, permitiendo filtrado y busqueda de 
+    <td colspan="4" align="left" valign="top" width="437" height="321" style="border: solid #010101 1px;"><font face="Arial Narrow">Formulario para seleccionar recursos, permitiendo filtrado y busqueda de 
     recursos por diversos criterios.</font>
-    <div align="left"><font face="Arial Narrow">Utiliza la vista <b>PnInventarioHw</b>, pero adaptada para el modo de unicamente 
-    seleccion.</font></div>
-    <div align="left"><font face="Arial Narrow">Devuelve los recursos seleccionados en la configuraci&#243;n &quot;seleccion&quot;.</font></div>
+    <div align="left"><font face="Arial Narrow">Utiliza la vista <b>PnInventarioHw</b>, pero adaptada para el modo de &#250;nicamente 
+    selecci&#243;n.</font></div>
+    <div align="left"><font face="Arial Narrow">Devuelve los recursos seleccionados en la configuraci&#243;n &quot;selecci&#243;n&quot;.</font></div>
     <div align="left"><font face="Arial Narrow"><br /></font></div><div align="left"><font face="Arial Narrow">Par&#225;metros de entrada:</font></div>
+    <div align="left"><font face="Arial Narrow">** INICIO ARIGIS-1276</font></div>
+    <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
+    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow"><b>familia</b>: Opcional. Indica la familia de los recursos que se pueden 
+    seleccionar. Valores posibles seg&#250;n enumerado CodigoFamilia (HW o 
+    ESYL). Si no viene informado, no se aplica ning&#250;n filtro por familia.</font></li>
+    </ul>
+    <div align="left"><font face="Arial Narrow">** FIN ARIGIS-1276</font></div>
     <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
     <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Arial Narrow"><b>admiteSeleccionMultiple</b>: booleano. Cierto si el formulario permite la 
     selecci&#243;n m&#250;ltiple de registros. Por defecto &quot;falso&quot;.</font></li>
@@ -70,8 +77,7 @@
     <div align="left"><span style="font-size: 11pt;"></span></div>
     </td></tr>
 </table>
-<div align="left"><font face="Arial Narrow"><b><u>?</u></b></font></div>
-<div align="left"><font face="Arial Narrow"><b><u>ELEMENTOS VISUALES </u></b></font></div>
+<div align="left"><font face="Arial Narrow"><b><u><br /></u></b></font></div><div align="left"><font face="Arial Narrow"><b><u>ELEMENTOS VISUALES </u></b></font></div>
 <div align="left"><br/>&nbsp;</div>
 <table width="576" cellpadding="3" cellspacing="0" style="table-layout: fixed; border-collapse: collapse; border-width: 0px; border-color: #010101; ">
     <colgroup>
@@ -180,21 +186,27 @@
     <div align="center"><font face="Arial Narrow"><b>&#160;DESCRIPCION DEL PROCESO A EJECUTAR</b></font></div>
     </td></tr>
     <tr>
-    <td align="left" valign="top" width="71" height="169" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="71" height="203" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow">Mostrar</font></div>
     </td>
-    <td align="left" valign="top" width="83" height="169" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="83" height="203" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow">Vista</font></div>
     </td>
-    <td align="left" valign="top" width="401" height="169" style="border: solid #010101 1px;"><font face="Arial Narrow">Adem&#225;s de lo especificado para la vista PnInventarioHw, en caso de que 
+    <td align="left" valign="top" width="401" height="203" style="border: solid #010101 1px;"><font face="Arial Narrow">Adem&#225;s de lo especificado para la vista PnInventarioHw, en caso de que 
     se haya especificado </font><font face="Arial Narrow" color="#0f0f0f">el par&#225;metro &quot;</font><font face="Arial Narrow">nodoRaizFiltroOrganica</font><font face="Arial Narrow" color="#0f0f0f">&quot;,</font><font face="Arial Narrow"> se debe de 
     seleccionar autom&#225;ticamente el nodo raiz al inicializar la vista. </font>
     <div align="left"><font face="Arial Narrow">De esta forma se aplicar&#225; autom&#225;ticamente el filtro, de forma que solo se 
-    muestren los recursos HW ubicados en el nodo especificado o en nodos 
+    muestren los recursos ubicados en el nodo especificado o en nodos 
     dependientes.</font></div>
     <div align="left"><font face="Arial Narrow"><br /></font></div><div align="left"><font face="Arial Narrow">Si se ha especificado el par&#225;metro &quot;filtroPorEstado&quot;, las llamadas a los 
     servicios REST de RecursoHw incluir&#225;n siempre un filtro adicional para 
     restringir el atributo &quot;estado&quot; a los valores especificados (operador IN).</font></div>
+    <div align="left"><font face="Arial Narrow"><br /></font></div><div align="left"><font face="Arial Narrow"><br /></font></div><div align="left"><font face="Arial Narrow">** INICIO ARIGIS-1276</font></div>
+    <div align="left"><font face="Arial Narrow">Si se ha especificado el par&#225;metro &quot;familia&quot;, las llamadas a los servicios 
+    REST de <strike>RecursoHw</strike> Recurso incluir&#225;n siempre un filtro adicional para 
+    obtener solo los recursos asociados a articulos de la familia 
+    correspondiente.</font></div>
+    <div align="left"><font face="Arial Narrow">** FIN ARIGIS-1276</font></div>
     </td></tr>
     <tr>
     <td align="left" valign="top" width="71" style="border: solid #010101 1px;">

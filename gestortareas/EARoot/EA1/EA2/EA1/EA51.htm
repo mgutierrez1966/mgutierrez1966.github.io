@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>CU.006: Guardar un tablero como plantilla </title>
+<title>CU.005: Eliminar un tablero</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.006: Guardar un tablero como plantilla ", " : "))</script>  : Public   UseCase</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.005: Eliminar un tablero", " : "))</script>  : Public   UseCase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02/03/2021 19:29:00</td>
+			<td width="85%" class="ObjectDetailsValue">02/03/2021 19:28:27</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">03/03/2021 14:02:00</td>
+			<td class="ObjectDetailsValue">07/03/2021 11:48:53</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{E1477B12-83A1-4182-908B-7833FA06803A}</td>
+			<td class="ObjectDetailsValue">{6F92EA3E-1DBA-4c70-B5AF-387EE8C058CD}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA40.htm">GESTION DE TABLEROS</a>, <a href="../../EA3/EA1/EA134.htm">Detalle de tablero</a></td>
+			<td class="ObjectDetailsValue"><a href="EA41.htm">GESTION DE TABLEROS</a>, <a href="../../EA3/EA1/EA135.htm">Detalle de tablero</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado &lt;br/&gt;- El usuario es el propietario del tablero&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- El usuario selecciona la opción &quot;Guardar como plantilla&quot; en la vista de tablero&lt;br/&gt;- El sistema solicita:&lt;br/&gt;	- Nombre para la plantilla&lt;br/&gt;	- Si se desea incluir en la plantilla los autorizados en cada lista (por defecto SI)&lt;br/&gt;- El usuario introduce el nombre &lt;br/&gt;- El sistema crea la plantilla a partir de la información actual del tablero &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- Se ha creado la plantilla de tablero con la información de nombre, listas y autorizados (en su caso)&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado &lt;br/&gt;- El usuario es el propietario del tablero&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- Un usuario solicita eliminar el tablero desde la vista de tablero&lt;br/&gt;- El sistema solicita confirmación antes de su eliminación, indicando que la eliminación será permanente. Informa también de que existe la opción &quot;Archivar tablero&quot; para retirar el tablero de la lista y poder recuperarlo posteriormente.&lt;br/&gt;- Si el usuario confirma la operación:&lt;br/&gt;	- El sistema elimina el tablero y todas las listas y tarjetas asociadas&lt;br/&gt;	- El sistema envía una notificación de tipo &quot;TABLERO_ELIMINADO&quot; a:&lt;br/&gt;		- Grupo propietario&lt;br/&gt;		- Responsables de las tarjetas&lt;br/&gt;		- Grupos colaboradores de tarjetas&lt;br/&gt;		- Grupos autorizados en listas del tablero&lt;br/&gt;		- Grupos con los que se ha compartido el tablero&lt;br/&gt;		- Grupos informados del tablero&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- El tablero ha sido eliminado con todas sus listas y tarjetas&lt;br/&gt;- El sistema ha actualizado las vistas relativas a tableros disponibles.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -110,21 +110,21 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA26.htm">PROPIETARIO TABLERO</a></td>
-					<td width="10%" class="TableRow" valign="top">Actor</td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA54.htm">CU.009: Visualizar un tablero</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA55.htm">CU.009: Visualizar un tablero</a></td>
 					<td width="10%" class="TableRow" valign="top">UseCase</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA4/EA323.htm">FormGuardarPlantillaTablero</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA27.htm">PROPIETARIO TABLERO</a></td>
+					<td width="10%" class="TableRow" valign="top">Actor</td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA4/EA313.htm">PnTablero </a></td>
 					<td width="10%" class="TableRow" valign="top">Screen</td>
 					<td width="10%" class="TableRow" valign="top">Realization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>

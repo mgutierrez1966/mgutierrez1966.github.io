@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.1.2.4:1", "", "NOTIFICACIONES", "EARoot/EA1/EA2/EA4/EA103.htm", "180.png", "3017", "0", "", "Use Case diagram0","{042379DC-6232-44b4-A2B2-8E59CDD30C44}");
-tocTab[tocTab.length] = new Array("0.1.2.4:2", "", "CU.034: Notificar límite de fecha de actuación", "EARoot/EA1/EA2/EA4/EA106.htm", "7.png", "E23400", "0", "", "UseCase0","{2428E71F-CC5E-4980-B64B-B7940595906E}");
-tocTab[tocTab.length] = new Array("0.1.2.4:3", "", "CU.035: Notificar vencimiento de fechas de tarjetas ", "EARoot/EA1/EA2/EA4/EA107.htm", "7.png", "E23399", "0", "", "UseCase0","{13A96552-2EFD-4bdd-BE34-7BD89EAEBB1B}");
+tocTab[tocTab.length] = new Array("0.1.2.4:1", "", "NOTIFICACIONES", "EARoot/EA1/EA2/EA4/EA104.htm", "180.png", "3017", "0", "", "Use Case diagram0","{042379DC-6232-44b4-A2B2-8E59CDD30C44}");
+tocTab[tocTab.length] = new Array("0.1.2.4:2", "", "CU.034: Notificar límite de fecha de actuación", "EARoot/EA1/EA2/EA4/EA107.htm", "7.png", "E23400", "0", "", "UseCase0","{2428E71F-CC5E-4980-B64B-B7940595906E}");
+tocTab[tocTab.length] = new Array("0.1.2.4:3", "", "CU.035: Notificar vencimiento de fechas de tarjetas ", "EARoot/EA1/EA2/EA4/EA108.htm", "7.png", "E23399", "0", "", "UseCase0","{13A96552-2EFD-4bdd-BE34-7BD89EAEBB1B}");

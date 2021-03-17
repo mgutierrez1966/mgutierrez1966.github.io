@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>CU.029: Modificar datos básicos de una tarjeta</title>
+<title>CU.028: Guardar una tarjeta como plantilla</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.029: Modificar datos básicos de una tarjeta", " : "))</script>  : Public   UseCase</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.028: Guardar una tarjeta como plantilla", " : "))</script>  : Public   UseCase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02/03/2021 19:42:40</td>
+			<td width="85%" class="ObjectDetailsValue">02/03/2021 19:42:36</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">07/03/2021 14:03:07</td>
+			<td class="ObjectDetailsValue">07/03/2021 18:42:05</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{AA87038B-3CB3-4ab3-9DB4-B5989CE1B49B}</td>
+			<td class="ObjectDetailsValue">{287EE9B9-00C5-45c3-92D5-0C8C140DE779}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA73.htm">TRABAJO CON TARJETAS</a>, <a href="../../EA3/EA1/EA136.htm">Editar tarjeta</a></td>
+			<td class="ObjectDetailsValue"><a href="EA74.htm">TRABAJO CON TARJETAS</a>, <a href="../../EA3/EA1/EA137.htm">Editar tarjeta</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado&lt;br/&gt;- El usuario es propietario del tablero donde se ubica la tarjeta, o es el responsable de la tarea superior.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- Un usuario accede al formulario de la tarea&lt;br/&gt;- El usuario pulsa sobre alguno de los datos básicos:&lt;br/&gt;	- Titulo&lt;br/&gt;	- Descripción&lt;br/&gt;	- Fechas de inicio, de vencimiento o límite de actuación&lt;br/&gt;- El sistema muestra el dato y permite su modificación.&lt;br/&gt;- El usuario modifica el dato&lt;br/&gt;- El sistema actualiza los datos básicos de la tarea.&lt;br/&gt;- El sistema actualiza el formulario con los nuevos datos y la actividad&lt;br/&gt;- El sistema actualiza las vistas asociadas donde se muestra la tarea (tablero o lista de tareas)&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- El sistema ha registrado la actividad en la tarea&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado&lt;br/&gt;- El usuario es propietario del tablero donde se ubica la tarjeta&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- El usuario selecciona la opción &quot;Guardar como plantilla&quot; del menú de la tarjeta&lt;br/&gt;- El sistema solicita:&lt;br/&gt;	- Nombre para la plantilla: por defecto será el título de la tarjeta&lt;br/&gt;	- Si se desea incluir en la plantilla las etiquetas (por defecto SI)&lt;br/&gt;	- Si se desea incluir en la plantilla el responsable (por defecto SI)&lt;br/&gt;	- Si se desea incluir en la plantilla los colaboradores (por defecto SI)&lt;br/&gt;&lt;br/&gt;- El usuario introduce el nombre &lt;br/&gt;- El sistema crea la plantilla a partir de la información actual de la tarjeta &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- Se ha creado la plantilla de tarjeta con la información de nombre, etiquetas, responsable y colaboradores (en su caso)&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -110,23 +110,23 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA26.htm">PROPIETARIO TABLERO</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA93.htm">CU.054: Visualizar datos de una tarjeta</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA27.htm">PROPIETARIO TABLERO</a></td>
 					<td width="10%" class="TableRow" valign="top">Actor</td>
 					<td width="10%" class="TableRow" valign="top">UseCase</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA5/EA343.htm">FormTarjeta</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA5/EA349.htm">FormGuardarPlantillaTarjeta</a></td>
 					<td width="10%" class="TableRow" valign="top">Screen</td>
 					<td width="10%" class="TableRow" valign="top">Realization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA92.htm">CU.054: Visualizar datos de una tarjeta</a></td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>

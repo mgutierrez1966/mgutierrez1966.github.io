@@ -1,0 +1,12 @@
+tocTab[tocTab.length] = new Array("0.1.2.2:1", "", "TRABAJO CON LISTAS", "EARoot/EA1/EA2/EA2/EA59.htm", "180.png", "3015", "0", "", "Use Case diagram0","{3D8AE6A0-C340-4be5-884B-D54E5E1AD9E7}");
+tocTab[tocTab.length] = new Array("0.1.2.2:2", "", "CU.010: Agregar un autorizado a una lista", "EARoot/EA1/EA2/EA2/EA62.htm", "7.png", "E23375", "0", "", "UseCase0","{03EFFCA8-F5C5-4266-9EB1-53D9B118174A}");
+tocTab[tocTab.length] = new Array("0.1.2.2:3", "", "CU.011: Crear una lista", "EARoot/EA1/EA2/EA2/EA63.htm", "7.png", "E23372", "0", "", "UseCase0","{B71D1587-F4B2-47f7-A207-CDEC3E3778F0}");
+tocTab[tocTab.length] = new Array("0.1.2.2:4", "", "CU.012: Dejar de seguir una lista", "EARoot/EA1/EA2/EA2/EA64.htm", "7.png", "E23397", "0", "", "UseCase0","{4D4BB5F9-C9E6-4fc6-90EB-72ED641CF93E}");
+tocTab[tocTab.length] = new Array("0.1.2.2:5", "", "CU.013: Eliminar un autorizado de una lista ", "EARoot/EA1/EA2/EA2/EA65.htm", "7.png", "E23376", "0", "", "UseCase0","{FDFD4C84-9ADB-4b77-A630-2326F0BC60DB}");
+tocTab[tocTab.length] = new Array("0.1.2.2:6", "", "CU.014: Eliminar una lista ", "EARoot/EA1/EA2/EA2/EA66.htm", "7.png", "E23377", "0", "", "UseCase0","{8FC914DD-0DBC-4770-8AB1-EEBA39894A0E}");
+tocTab[tocTab.length] = new Array("0.1.2.2:7", "", "CU.015: Establecer orígenes permitidos de una lista", "EARoot/EA1/EA2/EA2/EA67.htm", "7.png", "E23374", "0", "", "UseCase0","{3BC79E25-A511-4f93-A23E-81B6CBC866F4}");
+tocTab[tocTab.length] = new Array("0.1.2.2:8", "", "CU.016: Modificar el orden de una lista", "EARoot/EA1/EA2/EA2/EA68.htm", "7.png", "E23402", "0", "", "UseCase0","{73A34786-D586-4d8c-B53C-D808FFDC510B}");
+tocTab[tocTab.length] = new Array("0.1.2.2:9", "", "CU.017: Modificar los datos básicos de una lista", "EARoot/EA1/EA2/EA2/EA69.htm", "7.png", "E23373", "0", "", "UseCase0","{B8171299-9732-4cb9-80A9-614A2215CB6A}");
+tocTab[tocTab.length] = new Array("0.1.2.2:10", "", "CU.018: Seguir una lista", "EARoot/EA1/EA2/EA2/EA70.htm", "7.png", "E23396", "0", "", "UseCase0","{BE8BDD46-FB4A-4b86-9A66-A6F9239E756A}");
+tocTab[tocTab.length] = new Array("0.1.2.2:11", "", "CU.056: Añadir seguidor a una lista", "EARoot/EA1/EA2/EA2/EA71.htm", "7.png", "E23438", "0", "", "UseCase0","{E3AFCB5C-15A5-4d60-AA33-3A789890E5C8}");
+tocTab[tocTab.length] = new Array("0.1.2.2:12", "", "CU.057: Eliminar seguidor de una lista", "EARoot/EA1/EA2/EA2/EA72.htm", "7.png", "E23439", "0", "", "UseCase0","{17420E8A-8F94-4686-BC08-4EFFB6CE4294}");

@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>MODELO DE DOMINIO COMPLETO</title>
+<link href="../../css/ea.css" rel="stylesheet" type="text/css" />
+<script>
+function initPage(src) {	
+	if(parent==this&&(this.location+"").indexOf('EARoot')!=-1)
+		document.location=(this.location+"").substring(0,(this.location+"").indexOf('EARoot'))+"index"+(this.location+"").substring((this.location+"").lastIndexOf('.'))+"?goto="+((this.location+"").substring((this.location+"").indexOf('EARoot')+7,(this.location+"").lastIndexOf('.')).replace(/\//g,':').replace(/EA/g,""));
+	else
+		parent.initPage(src);
+}
+
+function nameClassifier(name, separator)
+{
+  var str = name;
+  var classifierName;
+  var node = document.getElementById('name_classifier');
+  if(node != null)
+  {
+    classifierName = node.innerHTML;
+  }
+  if(classifierName != "")
+  {
+   str += separator + classifierName;
+  }
+  
+  return str;
+}
+</script>
+</head>
+<body onload="initPage(this);" class="Content">
+<div class="PageBody">
+	
+<img src="EA140.png" usemap="#EA140" border="0" />
+
+<MAP NAME="EA140">
+<area shape="rect" coords="1405,363,1495,435" href="./EA2/EA186.htm" target="_self">
+<area shape="rect" coords="530,102,620,172" href="./EA4/EA235.htm" target="_self">
+<area shape="rect" coords="10,722,144,792" href="./EA4/EA232.htm" target="_self">
+<area shape="rect" coords="103,615,193,685" href="./EA4/EA233.htm" target="_self">
+<area shape="rect" coords="550,847,691,945" href="./EA4/EA247.htm" target="_self">
+<area shape="rect" coords="280,661,370,731" href="./EA4/EA231.htm" target="_self">
+<area shape="rect" coords="447,650,559,738" href="./EA4/EA224.htm" target="_self">
+<area shape="rect" coords="87,283,215,353" href="./EA4/EA239.htm" target="_self">
+<area shape="rect" coords="121,160,211,258" href="./EA4/EA248.htm" target="_self">
+<area shape="rect" coords="1438,164,1528,249" href="./EA4/EA250.htm" target="_self">
+<area shape="rect" coords="1233,114,1368,215" href="./EA4/EA243.htm" target="_self">
+<area shape="rect" coords="741,898,891,1230" href="./EA4/EA249.htm" target="_self">
+<area shape="rect" coords="63,461,202,531" href="./EA4/EA227.htm" target="_self">
+<area shape="rect" coords="151,821,241,891" href="./EA4/EA225.htm" target="_self">
+<area shape="rect" coords="105,945,281,1111" href="./EA3/EA221.htm" target="_self">
+<area shape="rect" coords="337,815,490,885" href="./EA4/EA229.htm" target="_self">
+<area shape="rect" coords="1089,764,1267,819" href="EA167.htm" target="_self">
+<area shape="rect" coords="1007,869,1135,939" href="./EA3/EA217.htm" target="_self">
+<area shape="rect" coords="531,234,621,304" href="./EA4/EA244.htm" target="_self">
+<area shape="rect" coords="1279,506,1438,576" href="./EA4/EA251.htm" target="_self">
+<area shape="rect" coords="713,315,862,385" href="./EA4/EA242.htm" target="_self">
+<area shape="rect" coords="530,10,620,80" href="./EA4/EA230.htm" target="_self">
+<area shape="rect" coords="530,519,620,589" href="./EA4/EA228.htm" target="_self">
+<area shape="rect" coords="531,331,621,401" href="./EA4/EA226.htm" target="_self">
+<area shape="rect" coords="1184,369,1333,439" href="./EA4/EA238.htm" target="_self">
+<area shape="rect" coords="762,778,872,848" href="./EA4/EA240.htm" target="_self">
+<area shape="rect" coords="929,79,1078,167" href="./EA4/EA241.htm" target="_self">
+<area shape="rect" coords="1017,264,1166,334" href="./EA4/EA234.htm" target="_self">
+<area shape="rect" coords="1040,504,1199,574" href="./EA4/EA237.htm" target="_self">
+<area shape="rect" coords="265,416,442,569" href="./EA4/EA246.htm" target="_self">
+<area shape="rect" coords="290,249,451,363" href="./EA4/EA236.htm" target="_self">
+<area shape="rect" coords="286,75,444,202" href="./EA4/EA245.htm" target="_self">
+<area shape="rect" coords="978,736,1302,956" href="EA169.htm" target="_self">
+</MAP>
+
+	<div class="ObjectTitle">MODELO DE DOMINIO COMPLETO : Class diagram</div>
+	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Created:</td>
+			<td width="85%" class="ObjectDetailsValue">21/02/2017 0:00:00</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic">Modified:</td>
+			<td width="85%" class="ObjectDetailsValue">17/03/2021 12:16:59</td>
+		</tr>
+		<tr style="padding-top: 10px;">
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="proj" onclick="parent.toggleData(this.id)" />Project:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="proj00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
+			<td width="85%" class="ObjectDetailsValue">rarrvil</td>
+		</tr>
+		<tr id="proj01" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
+			<td width="85%" class="ObjectDetailsValue">1.0.0</td>
+		</tr>
+		<tr>
+			<td width="15%" class="ObjectDetailsTopic"><img src="../../images/plus03.gif" align="absmiddle" id="adv" onclick="parent.toggleData(this.id)" />Advanced:</td>
+			<td width="85%" class="ObjectDetailsValue"></td>			
+		</tr>
+		<tr id="adv00" style="display: none;">
+			<td width="15%" class="ObjectDetailsTopic" style="padding-left: 18px;">ID:</td>
+			<td width="85%" class="ObjectDetailsValue">{DE15D2DD-FBCD-4e31-9F27-62F0DA0882C5}</td>
+		</tr>
+	</table>
+	
+</div>
+ 
+</body>
+</html>

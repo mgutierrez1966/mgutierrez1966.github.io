@@ -244,20 +244,14 @@
     </td></tr>
     <tr>
     <td align="center" valign="top" width="51" style="border: solid #010101 1px;">
-    <div align="center"><span style="font-size: 11pt;"></span></div>
-    </td>
-    <td align="left" valign="top" width="516" style="border: solid #010101 1px;">
-    <div align="left"><font face="Calibri" size="1">Se aplica la restriccion #1</font></div>
-    </td></tr>
-    <tr>
-    <td align="center" valign="top" width="51" style="border: solid #010101 1px;">
     <div align="center"><font face="Calibri"><b>#2</b></font></div>
     </td>
     <td align="left" valign="top" width="516" style="border: solid #010101 1px;"><font face="Calibri" size="1">El orden asignado a una nueva lista es:</font>
     <div align="left"><font face="Calibri" size="1">- Si es de tipo BORRADOR, el orden es 0 (cero)</font></div>
     <div align="left"><font face="Calibri" size="1">- Si es de tipo FINALIZADO, el orden es 999</font></div>
-    <div align="left"><font face="Calibri" size="1">- Si es de tipo NORMAL, se le asigna el orden de la &#250;ltima lista de tipo NORMAL, incrementado en 1. Es 
-    decir, las nuevas listas quedan a la derecha del tablero (antes de Finalizado, si existe).</font></div>
+    <div align="left"><font face="Calibri" size="1">- Si es de tipo NORMAL o LIBRE, se le asigna el orden de la &#250;ltima lista de tipo NORMAL o LIBRE, 
+    incrementado en 1. Es decir, las nuevas listas quedan a la derecha del tablero (antes de Finalizado, si 
+    existe).</font></div>
     </td></tr>
     <tr>
     <td align="center" valign="middle" width="51" height="21" bgcolor="#deeaf6" style="border: solid #010101 1px;">
@@ -327,10 +321,10 @@
     <td align="left" valign="top" width="516" style="border: solid #010101 1px;"><font face="Calibri" size="1">- Si se ha modificado el tipo de lista, el orden debe ser recalculado:</font>
     <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160; - Si el nuevo tipo es BORRADOR, el orden es 0 (cero)</font></div>
     <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160; - Si el nuevo tipo es FINALIZADO, el orden es 999</font></div>
-    <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160; - Si el nuevo tipo es NORMAL y el anterior era BORRADOR, la lista debe quedar en el orden = 1, 
+    <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160; - Si el nuevo tipo es NORMAL o LIBRE y el anterior era BORRADOR, la lista debe quedar en el orden = 1, 
     reordenando el resto.</font></div>
-    <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160; - Si el nuevo tipo es NORMAL y el anterior era FINALIZADO, la lista debe quedar con el orden de la 
-    &#250;ltima lista de tipo NORMAL del tablero, incrementado en 1.</font></div>
+    <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160; - Si el nuevo tipo es NORMAL o LIBRE y el anterior era FINALIZADO, la lista debe quedar con el orden 
+    de la &#250;ltima lista de tipo NORMAL o LIBRE del tablero, incrementado en 1.</font></div>
     </td></tr>
     <tr>
     <td align="center" valign="middle" width="51" height="21" bgcolor="#deeaf6" style="border: solid #010101 1px;">

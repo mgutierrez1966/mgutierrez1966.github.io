@@ -347,13 +347,12 @@
     <div align="center"><font face="Calibri"><b>RESTRICCIONES</b></font></div>
     </td></tr>
     <tr>
-    <td colspan="5" align="center" valign="top" width="161" height="44" bgcolor="#c0c0c0" style="border: solid #010101 1px;">
+    <td colspan="5" align="center" valign="top" width="161" height="33" bgcolor="#c0c0c0" style="border: solid #010101 1px;">
     <div align="center"><font face="Calibri"><b>PRECONDICIONES</b></font></div>
     </td>
-    <td colspan="9" align="left" valign="top" width="491" height="44" style="border: solid #010101 1px;">
+    <td colspan="9" align="left" valign="top" width="491" height="33" style="border: solid #010101 1px;">
     <ul style="margin-top: 0mm; margin-bottom: 0mm; padding-left: 0; margin-left: 0; list-style-type: disc; ">
     <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 9pt;  color: #010101;  "><font face="Calibri" size="1">La plantilla debe ser de tipo TABLERO</font></li>
-    <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 9pt;  color: #010101;  "><font face="Calibri" size="1">El usuario debe pertenecer al grupo indicado, con el tipo AUTORIDAD</font></li>
     <li style="margin-left: 9pt; margin-right: 0pt; padding-left: 0pt; font-size: 11pt;  color: #010101;  "><font face="Calibri" size="1">El grupo debe pertenecer a la organizaci&#243;n del usuario</font></li>
     </ul>
     </td></tr>
@@ -588,13 +587,12 @@
     <div align="center"><span style="font-size: 8pt;"></span></div>
     </td></tr>
     <tr>
-    <td colspan="2" align="center" valign="top" width="107" height="288" bgcolor="#c0c0c0" style="border: solid #010101 1px;">
+    <td colspan="2" align="center" valign="top" width="107" height="268" bgcolor="#c0c0c0" style="border: solid #010101 1px;">
     <div align="center"><font face="Calibri"><b>PROCESO</b></font></div>
     </td>
-    <td colspan="12" align="left" valign="top" width="545" height="288" style="border: solid #010101 1px;">
+    <td colspan="12" align="left" valign="top" width="545" height="268" style="border: solid #010101 1px;">
     <div align="justify"><font face="Calibri">Determinar los roles en los que est&#225; el usuario respecto al tablero:&#160;&#160;&#160;&#160;</font></div>
-    <div align="justify"><font face="Calibri">- PROPIETARIO: El usuario pertenece al grupo propietario del tablero, y es de tipo 
-    AUTORIDAD.</font></div>
+    <div align="justify"><font face="Calibri">- PROPIETARIO: El usuario pertenece al grupo propietario del tablero.</font></div>
     <div align="justify"><font face="Calibri">- COMPARTIDO: El usuario pertenece a alguno de los grupos con los que se ha 
     compartido el tablero</font></div>
     <div align="justify"><font face="Calibri">- RESPONSABLE: El usuario es responsable de alguna tarea del tablero, o es miembro 
@@ -1044,7 +1042,7 @@
     <div align="justify"><font face="Calibri"><b>NOMBRE OPERACI&#211;N</b></font></div>
     </td>
     <td colspan="5" align="left" valign="top" width="214" style="border: solid #010101 1px;">
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f"><b>leerTablero</b></font></div>
+    <div align="left"><font face="Arial Narrow" color="#ff0000"><b>leerTablero</b></font></div>
     </td>
     <td colspan="2" align="left" valign="top" width="63" bgcolor="#c0c0c0" style="border: solid #010101 1px;">
     <div align="justify"><font face="Calibri"><b>M&#233;todo</b></font></div>
@@ -3323,7 +3321,7 @@
     <div align="justify"><font face="Calibri">- PROPIETARIO: El usuario pertenece al grupo propietario del tablero donde se ubica la 
     tarjeta.</font></div>
     <div align="justify"><font face="Calibri">- AUTORIZADO: El usuario es autorizado (directo o por su grupo) de alguna lista del 
-    tablero donde se ubica la tarjeta. </font></div>
+    tablero donde se ubica la tarjeta, y es AUTORIDAD en el grupo.</font></div>
     <div align="justify"><font face="Calibri">- RESPONSABLE: El usuario es directamente responsable de la tarjeta, o pertenece al 
     grupo responsable.</font></div>
     <div align="justify"><font face="Calibri">- COLABORADOR: El usuario es directamente colaborador de la tarjeta, o es miembro 
@@ -5451,11 +5449,11 @@
     como par&#225;metro, se devuelve una lista vac&#237;a.</font></div>
     <div align="justify"><font face="Calibri"><br /></font></div><div align="justify"><font face="Calibri">- Se obtiene una lista de los siguientes tableros:</font></div>
     <div align="justify"><font face="Calibri">&#160;&#160;&#160;&#160;&#160; - Si &#233;l tipo de usuario es USUARIO:</font></div>
+    <div align="justify"><font face="Calibri">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Tableros cuyo propietario es el grupo indicado</font></div>
     <div align="justify"><font face="Calibri">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Tableros compartidos con el grupo indicado</font></div>
     <div align="justify"><font face="Calibri">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Tableros en los que colabora el usuario o el grupo indicado</font></div>
     <div align="justify"><font face="Calibri">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Tableros en los que el usuario o el grupo indicado es responsable de tarjetas </font></div>
     <div align="justify"><font face="Calibri">&#160;&#160;&#160;&#160;&#160; - ADEMAS, si el tipo de usuario es AUTORIDAD:</font></div>
-    <div align="justify"><font face="Calibri">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Tableros cuyo propietario es el grupo indicado</font></div>
     <div align="justify"><font face="Calibri">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Tableros en los que el usuario o el grupo indicado son autoridades informadas</font></div>
     <div align="justify"><font face="Calibri">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Tableros en los que el usuario o el grupo indicado son autorizados en listas</font></div>
     <div align="justify"><font face="Calibri">&#160;</font></div>

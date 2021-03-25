@@ -8,5 +8,5 @@ tocTab[tocTab.length] = new Array("0.2:7", "", "Roles en listas", "EARoot/EA2/EA
 tocTab[tocTab.length] = new Array("0.2:8", "", "Roles en tareas", "EARoot/EA2/EA154.htm", "175.png", "3054", "0", "", "Logical diagram0","{B16986B0-0DC7-4133-A10B-0C538907E2B4}");
 tocTab[tocTab.length] = new Array("0.2.1", "1", "MODELO DOMINIO UBICACION", "EARoot/EA2/EA1/EA177.htm", "4.png", "", "", "{3D106159-5901-463d-9259-1270AD7EB75F}", "Package");
 tocTab[tocTab.length] = new Array("0.2.2", "1", "TIPOS DE DATOS", "EARoot/EA2/EA2/EA186.htm", "4.png", "", "", "{89F2863A-3F5D-4b72-BF29-AC60A48568CB}", "Package");
-tocTab[tocTab.length] = new Array("0.2.3", "1", "MODELO DOMINIO LIBRERIA", "EARoot/EA2/EA3/EA214.htm", "4.png", "", "", "{BF27DDB9-5B14-468d-A0C7-A6EC45F4C33F}", "Package");
-tocTab[tocTab.length] = new Array("0.2.4", "1", "OBJETOS DE DOMINIO", "EARoot/EA2/EA4/EA224.htm", "4.png", "", "", "{219AF4CB-1EB3-4c47-B8F2-A04007ED5EFB}", "Package");
+tocTab[tocTab.length] = new Array("0.2.3", "1", "MODELO DOMINIO LIBRERIA", "EARoot/EA2/EA3/EA213.htm", "4.png", "", "", "{BF27DDB9-5B14-468d-A0C7-A6EC45F4C33F}", "Package");
+tocTab[tocTab.length] = new Array("0.2.4", "1", "OBJETOS DE DOMINIO", "EARoot/EA2/EA4/EA223.htm", "4.png", "", "", "{219AF4CB-1EB3-4c47-B8F2-A04007ED5EFB}", "Package");

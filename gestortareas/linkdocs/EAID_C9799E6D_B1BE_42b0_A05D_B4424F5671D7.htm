@@ -306,14 +306,16 @@
     <div align="center"><font face="Arial Narrow"><b>&#160;DESCRIPCION DEL PROCESO A EJECUTAR</b></font></div>
     </td></tr>
     <tr>
-    <td align="left" valign="top" width="89" height="186" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="89" height="203" style="border: solid #010101 1px;">
     <div align="left"><font face="Arial Narrow" color="#0f0f0f">Iniciar vista</font></div>
     </td>
-    <td align="left" valign="top" width="89" height="186" style="border: solid #010101 1px;">
+    <td align="left" valign="top" width="89" height="203" style="border: solid #010101 1px;">
     <div align="left"><span style="font-size: 11pt;"></span></div>
     </td>
-    <td align="left" valign="top" width="377" height="186" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Se recuperar&#225;n en sucesivas llamadas al backend:</font>
+    <td align="left" valign="top" width="377" height="203" style="border: solid #010101 1px;"><font face="Arial Narrow" color="#0f0f0f">Se recuperar&#225;n en sucesivas llamadas al backend:</font>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">- Datos b&#225;sicos del tablero (<b>REST Tablero</b>)</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">- Listas del tablero (<b>REST Lista</b>)</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">- Tarjetas del tablero (<b>REST de Tarjeta</b>)</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">- Roles del usuario actual respecto al tablero (<b>API 
     TableroAPI/rolesUsuarioEnTablero</b>)</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">- Total de Participantes compartidos del tablero (<b>REST</b> 
@@ -323,13 +325,11 @@
     <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">- Roles del usuario en las listas del tablero 
     (<b>TableroAPI/rolesUsuarioEnLista</b>, pasando el id del tablero): usar 
     para mostrar &quot;marca de seguimiento&quot; en cabecera de lista.</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">- Movimientos permitidos entre listas del tablero (<b>REST de 
-    MovimientoListaPermitido</b>, filtrado por destino.tablero)</font></div>
+    <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">- Movimientos permitidos entre listas del tablero (<b>API 
+    TablerosAPI/leerMovimientosPermitidosTablero</b>)</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">- Total de autorizados por lista (<b>REST de AutorizadoLista</b>, filtrado por 
     lista.tablero): usar para mostrar icono de &quot;Existen autorizados&quot; en 
     cabecera de lista.</font></div>
-    <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">- Listas y tarjetas del tablero (<b>API TableroAPI/leerTablero</b>), para su 
-    uso por el store del tablero kanban.</font></div>
     <div align="left"><font face="Arial Narrow" color="#0f0f0f"><br /></font></div><div align="left"><font face="Arial Narrow" color="#0f0f0f">Se inicializar&#225;n la cabecera, los men&#250;s superior, listas y tarjetas con la 
     informaci&#243;n recuperada.</font></div>
     <div align="left">&nbsp;</div>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>CU.005: Eliminar un tablero</title>
+<title>CU.009: Visualizar un tablero</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.005: Eliminar un tablero", " : "))</script>  : Public   UseCase</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.009: Visualizar un tablero", " : "))</script>  : Public   UseCase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02/03/2021 19:28:27</td>
+			<td width="85%" class="ObjectDetailsValue">02/03/2021 19:28:34</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">07/03/2021 11:48:53</td>
+			<td class="ObjectDetailsValue">10/03/2021 17:36:28</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{6F92EA3E-1DBA-4c70-B5AF-387EE8C058CD}</td>
+			<td class="ObjectDetailsValue">{2B73EE4D-A9C0-4945-A003-1001A2FBBF79}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA41.htm">GESTION DE TABLEROS</a>, <a href="../../EA3/EA1/EA135.htm">Detalle de tablero</a></td>
+			<td class="ObjectDetailsValue"><a href="EA41.htm">GESTION DE TABLEROS</a>, <a href="../../EA3/EA1/EA126.htm">Detalle de tablero</a>, <a href="../../../EA5/EA378.htm">Mostrar tablero kanban</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado &lt;br/&gt;- El usuario es el propietario del tablero&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- Un usuario solicita eliminar el tablero desde la vista de tablero&lt;br/&gt;- El sistema solicita confirmación antes de su eliminación, indicando que la eliminación será permanente. Informa también de que existe la opción &quot;Archivar tablero&quot; para retirar el tablero de la lista y poder recuperarlo posteriormente.&lt;br/&gt;- Si el usuario confirma la operación:&lt;br/&gt;	- El sistema elimina el tablero y todas las listas y tarjetas asociadas&lt;br/&gt;	- El sistema envía una notificación de tipo &quot;TABLERO_ELIMINADO&quot; a:&lt;br/&gt;		- Grupo propietario&lt;br/&gt;		- Responsables de las tarjetas&lt;br/&gt;		- Grupos colaboradores de tarjetas&lt;br/&gt;		- Grupos autorizados en listas del tablero&lt;br/&gt;		- Grupos con los que se ha compartido el tablero&lt;br/&gt;		- Grupos informados del tablero&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- El tablero ha sido eliminado con todas sus listas y tarjetas&lt;br/&gt;- El sistema ha actualizado las vistas relativas a tableros disponibles.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">&lt;b&gt;- Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado&lt;br/&gt;- Acceso al tablero como propietario, visor (compartido), colaborador, responsable de tarjeta o informado.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- Un usuario accede al tablero a través de la vista Tableros, o desde un enlace directo.&lt;br/&gt;- El sistema muestra la vista &quot;Tablero&quot; con la siguiente información:&lt;br/&gt;	- El nombre del tablero&lt;br/&gt;	- Las listas de tarjetas en modo columna, mostrando:&lt;br/&gt;		- Nombre de la lista&lt;br/&gt;		- Marca de seguimiento (en su caso)&lt;br/&gt;	- Las tarjetas en modo miniatura, mostrando:&lt;br/&gt;		- Nombre&lt;br/&gt;		- Responsable&lt;br/&gt;		- Número de colaboradores&lt;br/&gt;		- Barra de color según la lista&lt;br/&gt;		- Fecha de vencimiento: Se mostrará con diferente color de fondo según la fecha actual y la lista en la que se encuentre:&lt;br/&gt;			- Faltan más de 2 días (48 horas): Sin fondo&lt;br/&gt;			- Faltan ménos de 2 días: Fondo naranja&lt;br/&gt;			- Se ha sobrepasado: Fondo rojo&lt;br/&gt;			- Si la tarea se encuentra en una lista de tipo &quot;Finalizado&quot;, se usará fondo verde en cualquier caso.&lt;br/&gt;&lt;br/&gt;- El usuario puede abrir una tarjeta pulsando sobre su miniatura (ver CU.054: Visualizar datos de una tarjeta)&lt;br/&gt;- El usuario puede mover una tarjeta dentro de su propia lista, cambiando el orden relativo (ver CU.031: Mover una tarjeta a una lista)&lt;br/&gt;- El usuario puede mover una tarjeta a otra lista (ver CU.031: Mover una tarjeta a una lista)&lt;br/&gt;- El usuario puede modificar los datos básicos del tablero, si es propietario del mismo (CU.007: Modificar los datos básicos de un tablero)&lt;br/&gt;- El usuario puede compartir el tablero con otros grupos, si es propietario del mismo (CU.002: Compartir un tablero )&lt;br/&gt;- El usuario puede crear una nueva tarjeta, si es el propietario del tablero (CU.026: Crear una tarjeta )&lt;br/&gt;- El usuario puede añadir una lista al tablero, si es el propietario del tablero (CU.011: Crear una lista)&lt;br/&gt;- El usuario puede guardar el tablero como plantilla, si es el propietario (CU.006: Guardar un tablero como plantilla)&lt;br/&gt;- El usuario puede archivar el tablero, si es el propietario (CU.001: Archivar un tablero)&lt;br/&gt;- El usuario puede eliminar el tablero, si es el propietario (CU.005: Eliminar un tablero)&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;N/A&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -110,24 +110,150 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA55.htm">CU.009: Visualizar un tablero</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA44.htm">CU.001: Archivar un tablero </a></td>
 					<td width="10%" class="TableRow" valign="top">UseCase</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA27.htm">PROPIETARIO TABLERO</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA30.htm">USUARIO</a></td>
 					<td width="10%" class="TableRow" valign="top">Actor</td>
 					<td width="10%" class="TableRow" valign="top">UseCase</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA4/EA313.htm">PnTablero </a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA65.htm">CU.018: Seguir una lista</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA61.htm">CU.014: Eliminar una lista </a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA59.htm">CU.012: Dejar de seguir una lista</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA58.htm">CU.011: Crear una lista</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA48.htm">CU.006: Guardar un tablero como plantilla </a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA50.htm">CU.008: Ver la lista de tableros disponibles</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA60.htm">CU.013: Eliminar un autorizado de una lista </a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA45.htm">CU.002: Compartir un tablero </a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA63.htm">CU.016: Modificar el orden de una lista</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA49.htm">CU.007: Modificar los datos básicos de un tablero</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA4/EA304.htm">PnTablero </a></td>
 					<td width="10%" class="TableRow" valign="top">Screen</td>
 					<td width="10%" class="TableRow" valign="top">Realization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA84.htm">CU.054: Visualizar datos de una tarjeta</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA81.htm">CU.031: Mover una tarjeta a una lista</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA47.htm">CU.005: Eliminar un tablero</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA64.htm">CU.017: Modificar los datos básicos de una lista</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA57.htm">CU.010: Agregar un autorizado a una lista</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA53.htm">CU.058: Agregar autoridades informadas al tablero</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA2/EA62.htm">CU.015: Establecer orígenes permitidos de una lista</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA3/EA78.htm">CU.026: Crear una tarjeta </a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

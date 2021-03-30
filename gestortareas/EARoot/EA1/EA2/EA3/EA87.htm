@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>CU.028: Guardar una tarjeta como plantilla</title>
+<title>CU.061: Eliminar una subtarea de una tarea</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.028: Guardar una tarjeta como plantilla", " : "))</script>  : Public   UseCase</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.061: Eliminar una subtarea de una tarea", " : "))</script>  : Public   UseCase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02/03/2021 19:42:36</td>
+			<td width="85%" class="ObjectDetailsValue">07/03/2021 13:07:14</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">07/03/2021 18:42:05</td>
+			<td class="ObjectDetailsValue">14/03/2021 19:33:49</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{287EE9B9-00C5-45c3-92D5-0C8C140DE779}</td>
+			<td class="ObjectDetailsValue">{AB489DB5-2119-40bc-AF20-7256DB993501}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA74.htm">TRABAJO CON TARJETAS</a>, <a href="../../EA3/EA1/EA137.htm">Editar tarjeta</a></td>
+			<td class="ObjectDetailsValue"><a href="EA68.htm">TRABAJO CON TARJETAS</a>, <a href="../../EA3/EA1/EA128.htm">Editar tarjeta</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado&lt;br/&gt;- El usuario es propietario del tablero donde se ubica la tarjeta&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- El usuario selecciona la opción &quot;Guardar como plantilla&quot; del menú de la tarjeta&lt;br/&gt;- El sistema solicita:&lt;br/&gt;	- Nombre para la plantilla: por defecto será el título de la tarjeta&lt;br/&gt;	- Si se desea incluir en la plantilla las etiquetas (por defecto SI)&lt;br/&gt;	- Si se desea incluir en la plantilla el responsable (por defecto SI)&lt;br/&gt;	- Si se desea incluir en la plantilla los colaboradores (por defecto SI)&lt;br/&gt;&lt;br/&gt;- El usuario introduce el nombre &lt;br/&gt;- El sistema crea la plantilla a partir de la información actual de la tarjeta &lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- Se ha creado la plantilla de tarjeta con la información de nombre, etiquetas, responsable y colaboradores (en su caso)&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado&lt;br/&gt;- El usuario es responsable de la tarjeta&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- Un usuario habilita la opción &quot;Subtareas&quot;, si no lo está.&lt;br/&gt;- El usuario selecciona la opción &quot;Eliminar&quot; de la subtarea&lt;br/&gt;- El sistema solicita confirmación al usuario.&lt;br/&gt;- El sistema elimina la subtarea y actualiza la lista de subtareas&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- El sistema ha enviado una notificación de tipo &quot;TARJETA_ELIMINADA&quot; al responsable de la subtarea eliminada.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -110,21 +110,14 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA93.htm">CU.054: Visualizar datos de una tarjeta</a></td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA27.htm">PROPIETARIO TABLERO</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA28.htm">RESPONSABLE TARJETA</a></td>
 					<td width="10%" class="TableRow" valign="top">Actor</td>
 					<td width="10%" class="TableRow" valign="top">UseCase</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA5/EA349.htm">FormGuardarPlantillaTarjeta</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA5/EA334.htm">FormTarjeta</a></td>
 					<td width="10%" class="TableRow" valign="top">Screen</td>
 					<td width="10%" class="TableRow" valign="top">Realization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>

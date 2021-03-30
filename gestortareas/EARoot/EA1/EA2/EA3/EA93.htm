@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>CU.054: Visualizar datos de una tarjeta</title>
+<title>CU.067: Consultar la lista de tareas</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.054: Visualizar datos de una tarjeta", " : "))</script>  : Public   UseCase</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.067: Consultar la lista de tareas", " : "))</script>  : Public   UseCase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">03/03/2021 10:44:50</td>
+			<td width="85%" class="ObjectDetailsValue">08/03/2021 14:27:02</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">14/03/2021 12:20:44</td>
+			<td class="ObjectDetailsValue">08/03/2021 14:49:48</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,7 +51,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">mgutierrez</td>
+			<td class="ObjectDetailsValue">mgutca1</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{6B3725F5-93A2-4742-A11B-9F4E82A90C7D}</td>
+			<td class="ObjectDetailsValue">{4D176023-0F50-4be8-968D-B8A12936C31E}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA74.htm">TRABAJO CON TARJETAS</a>, <a href="../../EA3/EA1/EA137.htm">Editar tarjeta</a>, <a href="../../../EA5/EA401.htm">Tarjeta - Datos básicos y botones</a></td>
+			<td class="ObjectDetailsValue"><a href="EA68.htm">TRABAJO CON TARJETAS</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado &lt;br/&gt;- El usuario es propietario del tablero, visor compartido, responsable de la tarjeta, colaborador, autorizado en alguna lista del tablero, o informado del tablero.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- Un usuario solicita ver el detalle de una tarjeta desde un tablero o desde una lista de tareas, o bien accede a la misma a través de un enlace directo.&lt;br/&gt;	- Si el usuario no cumple las precondiciones no se permite el acceso a los detalles de la tarjeta&lt;br/&gt;- El sistema muestra el formulario con los detalles de la tarjeta:&lt;br/&gt;	- Título&lt;br/&gt;	- Lista en la que se encuentra&lt;br/&gt;	- Tarea superior (en su caso)&lt;br/&gt;	- Descripción&lt;br/&gt;	- Fecha de inicio&lt;br/&gt;	- Fechas de vencimiento y de límite de actuación. Se muestran con un código de color en función de la fecha actual:&lt;br/&gt;		- Faltan más de 2 días (48 horas): Sin fondo&lt;br/&gt;		- Faltan ménos de 2 días: Fondo naranja&lt;br/&gt;		- Se ha sobrepasado: Fondo rojo&lt;br/&gt;		- Si la tarea se encuentra en una lista de tipo &quot;Finalizado&quot;, se usará fondo verde en cualquier caso.&lt;br/&gt;	- Finalizada (Si / No)&lt;br/&gt;	- Comentarios&lt;br/&gt;	- Actividad&lt;br/&gt;	- Adjuntos (en tarea y en subtareas)&lt;br/&gt;	- Subtareas&lt;br/&gt;&lt;br/&gt;- El usuario puede modificar los datos básicos de la tarjeta, si es propietario del tablero (CU.029: Modificar datos básicos de una tarjeta)&lt;br/&gt;- El usuario puede archivar una tarjeta, si es propietario del tablero (CU.019: Archivar una tarjeta)&lt;br/&gt;- El usuario puede guardar una tarjeta como plantilla, si es propietario del tablero (CU.028: Guardar una tarjeta como plantilla)&lt;br/&gt;- El usuario puede asignar responsable a una tarjeta, si es propietario del tablero (CU.020: Asignar responsable a una tarjeta)&lt;br/&gt;- El usuario puede añadir o quitar colaboradores de la tarjeta, si es responsable de la misma (CU.023: Añadir un colaborador a una tarjeta / CU.032: Quitar a un colaborador de una tarjeta )&lt;br/&gt;- El usuario puede añadir adjuntos a la tarjeta, si es propietario del tablero, responsable de la misma, o colaborador ( CU.022: Añadir un adjunto a una tarjeta )&lt;br/&gt;- El usuario puede eliminar un adjunto de la tarjeta, si es propietario del tablero, responsable de la misma, o colaborador (en este caso el adjunto debe ser propiedad del colaborador) (CU.033: Quitar un adjunto de una tarjeta )&lt;br/&gt;- El usuario puede añadir comentarios a la tarjeta, si es propietario del tablero, responsable de la misma, colaborador o autorizado en alguna lista del tablero (CU.024: Añadir un comentario a una tarjeta)&lt;br/&gt;- El usuario puede eliminar un comentario de la tarjeta, si es propietario del tablero, responsable de la misma, colaborador o autorizado en alguna lista del tablero (en estos 2 casos, colaborador o autorizado, debe ser el autor del comentario) (CU.059: Eliminar comentario de tarjeta)&lt;br/&gt;- El usuario puede crear o eliminar una subtarea de la tarea, si es el responsable de la tarjeta (CU.060: Crear una subtarea de una tarea / CU.061: Eliminar una subtarea de una tarea)&lt;br/&gt;- El usuario puede enviar una tarjeta a otro tablero de su propiedad, si es el responsable de la tarjeta (CU.062: Enviar una tarjeta a un tablero)&lt;br/&gt;- El usuario puede eliminar la tarjeta, si es el propietario del tablero, o responsable de la tarea superior (CU.063: Eliminar una tarea)&lt;br/&gt;- El usuario puede añadir o quitar etiquetas de la tarjeta, si es el propietario del tablero o el responsable de la tarjeta (CU.064: Añadir una etiqueta a una tarjeta / CU.065: Quitar una etiqueta de una tarjeta)&lt;br/&gt;	&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;N/A&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- Un usuario accede a la vista &quot;Lista de Tareas&quot;&lt;br/&gt;- El sistema muestra la lista de tareas que afectan al usuario:&lt;br/&gt;	- Tareas propias:&lt;br/&gt;		- Tareas en las que es responsable&lt;br/&gt;		- Tareas en las que es colaborador&lt;br/&gt;	- Otras:&lt;br/&gt;		- Tareas que se encuentran en listas que sigue&lt;br/&gt;		- Tareas en las que figura como autoridad informada&lt;br/&gt;&lt;br/&gt;- El sistema muestra de cada tarea:&lt;br/&gt;	- Titulo&lt;br/&gt;	- Responsable&lt;br/&gt;	- Tablero&lt;br/&gt;	- Lista en la que se encuentra&lt;br/&gt;	- Finalizada (Si / No)&lt;br/&gt;	- Etiquetas&lt;br/&gt;	- Titulo de la tarea superior&lt;br/&gt;	- Responsable de la tarea superior&lt;br/&gt;	- Fecha de vencimiento&lt;br/&gt;	- Fecha límite de colaboración&lt;br/&gt;&lt;br/&gt;- La tarea se mostrará con un código de colores en base a la fecha de vencimiento o fecha límite de actuación.&lt;br/&gt;- El usuario puede cambiar la información mostrada en la lista:&lt;br/&gt;	- Filtrar por titulo de la tarea&lt;br/&gt;	- Filtrar por etiquetas&lt;br/&gt;	- Mostrar solo tareas de primer nivel (sin tarea superior)&lt;br/&gt;	- Ordenar por fecha de inicio / fecha de vencimiento / fecha limite de actuación&lt;br/&gt;&lt;br/&gt;- El usuario puede mostrar el detalle de una tarea de la lista&lt;br/&gt;- El usuario puede abrir el tablero asociado a una tarea&lt;br/&gt;- El usuario puede abrir la tarea superior de una tarea&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;N/A&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -110,107 +110,9 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA91.htm">CU.032: Quitar a un colaborador de una tarjeta </a></td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA92.htm">CU.033: Quitar un adjunto de una tarjeta </a></td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
 					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA30.htm">USUARIO</a></td>
 					<td width="10%" class="TableRow" valign="top">Actor</td>
 					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA87.htm">CU.028: Guardar una tarjeta como plantilla</a></td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA82.htm">CU.023: Añadir un colaborador a una tarjeta</a></td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA86.htm">CU.027: Eliminar un ítem de checklist de una tarjeta</a></td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA79.htm">CU.019: Archivar una tarjeta </a></td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA81.htm">CU.022: Añadir un adjunto a una tarjeta </a></td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA84.htm">CU.025: Añadir un ítem de checklist a una tarjeta </a></td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA80.htm">CU.020: Asignar responsable a una tarjeta</a></td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA55.htm">CU.009: Visualizar un tablero</a></td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA89.htm">CU.030: Modificar el estado de un ítem de checklist de una tarjeta</a></td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA83.htm">CU.024: Añadir un comentario a una tarjeta</a></td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA88.htm">CU.029: Modificar datos básicos de una tarjeta</a></td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA5/EA343.htm">FormTarjeta</a></td>
-					<td width="10%" class="TableRow" valign="top">Screen</td>
-					<td width="10%" class="TableRow" valign="top">Realization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>CU.002: Compartir un tablero </title>
+<title>CU.007: Modificar los datos básicos de un tablero</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.002: Compartir un tablero ", " : "))</script>  : Public   UseCase</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.007: Modificar los datos básicos de un tablero", " : "))</script>  : Public   UseCase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02/03/2021 19:28:39</td>
+			<td width="85%" class="ObjectDetailsValue">02/03/2021 19:28:23</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">09/03/2021 14:21:17</td>
+			<td class="ObjectDetailsValue">03/03/2021 14:01:49</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{AF4C9DDE-4822-4ec7-9C22-23B003F5667A}</td>
+			<td class="ObjectDetailsValue">{956EFDE6-DEDA-4530-ACD9-A81E47723497}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA41.htm">GESTION DE TABLEROS</a>, <a href="../../EA3/EA1/EA135.htm">Detalle de tablero</a></td>
+			<td class="ObjectDetailsValue"><a href="EA41.htm">GESTION DE TABLEROS</a>, <a href="../../EA3/EA1/EA126.htm">Detalle de tablero</a>, <a href="../../../EA5/EA380.htm">Editar datos básicos</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Incluye también dejar de compartir.&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado &lt;br/&gt;- El usuario es el propietario del tablero&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- El usuario selecciona la opción de &quot;Compartido (X)&quot; desde la vista de tablero.&lt;br/&gt;- El sistema muestra la lista de grupos con los que se ha compartido ya el tablero, y solicita al usuario los grupos con los que desea compartirlo.&lt;br/&gt;- El usuario selecciona en una lista el grupo a compartir&lt;br/&gt;- El sistema añade al grupo a la lista de compartidos&lt;br/&gt;- El usuario puede añadir más grupos de la misma forma.&lt;br/&gt;- El usuario selecciona un grupo de la lista de compartidos y selecciona &quot;Dejar de compartir&quot;&lt;br/&gt;- El sistema elimina el grupo de la lista de compartidos&lt;br/&gt;- El usuario confirma la operación&lt;br/&gt;- El sistema actualiza la información de grupos con los que se ha compartido el tablero&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- Se ha actualizado la información de grupos compartidos del tablero.&lt;br/&gt;- El sistema ha enviado una notificación de tipo &quot;TABLERO_COMPARTIDO&quot; a los miembros de los nuevos grupos con los que se ha compartido el tablero.&lt;br/&gt;- El sistema ha enviado una notificación de tipo &quot;TABLERO_NO_COMPARTIDO&quot; a los miembros de los grupos con los que se ha dejado de compartir el tablero.&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado &lt;br/&gt;- El usuario es el propietario del tablero&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- El sistema muestra al usuario los datos básicos del tablero: nombre.&lt;br/&gt;- El usuario modifica los datos básicos &lt;br/&gt;- El sistema actualiza los datos básicos.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- Los datos básicos del tablero han sido actualizados&lt;br/&gt;- El sistema ha actualizado las vistas en las que aparece el tablero para reflejar los cambios.&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -110,13 +110,6 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA55.htm">CU.009: Visualizar un tablero</a></td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
 					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA27.htm">PROPIETARIO TABLERO</a></td>
 					<td width="10%" class="TableRow" valign="top">Actor</td>
 					<td width="10%" class="TableRow" valign="top">UseCase</td>
@@ -124,7 +117,14 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA4/EA317.htm">FormInteresadosTablero</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA51.htm">CU.009: Visualizar un tablero</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA4/EA307.htm">FormDatosTablero</a></td>
 					<td width="10%" class="TableRow" valign="top">Screen</td>
 					<td width="10%" class="TableRow" valign="top">Realization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>

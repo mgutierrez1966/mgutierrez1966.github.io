@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>GESTION DE TABLEROS</title>
+<title>CU.005: Eliminar un tablero</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("GESTION DE TABLEROS", " : "))</script>  : Public   Package</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.005: Eliminar un tablero", " : "))</script>  : Public   UseCase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02/03/2021 19:27:18</td>
+			<td width="85%" class="ObjectDetailsValue">02/03/2021 19:28:27</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">02/03/2021 19:27:18</td>
+			<td class="ObjectDetailsValue">07/03/2021 11:48:53</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -63,7 +63,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj03" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
-			<td class="ObjectDetailsValue">Proposed</td>
+			<td class="ObjectDetailsValue">Propuesto</td>
 		</tr>
 		<tr id="proj04" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
@@ -87,14 +87,53 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{DD5E1C25-6A08-4c33-B331-A994CBBF9318}</td>
+			<td class="ObjectDetailsValue">{6F92EA3E-1DBA-4c70-B5AF-387EE8C058CD}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA33.htm">CASOS DE USO</a></td>
+			<td class="ObjectDetailsValue"><a href="EA41.htm">GESTION DE TABLEROS</a>, <a href="../../EA3/EA1/EA126.htm">Detalle de tablero</a></td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado &lt;br/&gt;- El usuario es el propietario del tablero&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- Un usuario solicita eliminar el tablero desde la vista de tablero&lt;br/&gt;- El sistema solicita confirmación antes de su eliminación, indicando que la eliminación será permanente. Informa también de que existe la opción &quot;Archivar tablero&quot; para retirar el tablero de la lista y poder recuperarlo posteriormente.&lt;br/&gt;- Si el usuario confirma la operación:&lt;br/&gt;	- El sistema elimina el tablero y todas las listas y tarjetas asociadas&lt;br/&gt;	- El sistema envía una notificación de tipo &quot;TABLERO_ELIMINADO&quot; a:&lt;br/&gt;		- Grupo propietario&lt;br/&gt;		- Responsables de las tarjetas&lt;br/&gt;		- Grupos colaboradores de tarjetas&lt;br/&gt;		- Grupos autorizados en listas del tablero&lt;br/&gt;		- Grupos con los que se ha compartido el tablero&lt;br/&gt;		- Grupos informados del tablero&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- El tablero ha sido eliminado con todas sus listas y tarjetas&lt;br/&gt;- El sistema ha actualizado las vistas relativas a tableros disponibles.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA27.htm">PROPIETARIO TABLERO</a></td>
+					<td width="10%" class="TableRow" valign="top">Actor</td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="EA51.htm">CU.009: Visualizar un tablero</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA4/EA304.htm">PnTablero </a></td>
+					<td width="10%" class="TableRow" valign="top">Screen</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
 <div class="pageFooter"></div>
  
 </body>

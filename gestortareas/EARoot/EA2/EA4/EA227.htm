@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>OBJETOS DE DOMINIO::ColaboradorTarjeta</title>
+<title>Miembro</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("ColaboradorTarjeta", " : "))</script>  : Public   Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("Miembro", " : "))</script>  : Public   Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02/03/2021 13:49:39</td>
+			<td width="85%" class="ObjectDetailsValue">01/03/2021 20:47:01</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">19/03/2021 19:18:10</td>
+			<td class="ObjectDetailsValue">19/03/2021 19:18:53</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -63,7 +63,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj03" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
-			<td class="ObjectDetailsValue"></td>
+			<td class="ObjectDetailsValue">Proposed</td>
 		</tr>
 		<tr id="proj04" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
@@ -87,19 +87,20 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{A2D7FB86-D901-4d60-BED7-9104ED25DE93}</td>
+			<td class="ObjectDetailsValue">{DD1E8FE0-1D4A-4fa9-8946-7225AB165EC8}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA140.htm">MODELO DE DOMINIO COMPLETO</a>, <a href="../EA154.htm">Roles en tareas</a></td>
+			<td class="ObjectDetailsValue"><a href="../EA131.htm">MODELO DE DOMINIO COMPLETO</a>, <a href="../EA133.htm">Organización</a>, <a href="../EA135.htm">Participantes (miembros y grupos)</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Colaboradores en tarjetas&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Usuarios que son miembros de algun grupo&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
+			<li onClick="parent.toggleItem('AssociationsFrom');" id="AssociationsFromTitle">Associations From</li>
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
@@ -109,50 +110,60 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Private GUID</i><br /><strong>&nbsp;&nbsp;id</strong>
+					<i>Private NOMBRE_LARGO</i><br /><strong>&nbsp;&nbsp;nombreVisible</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes177')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes177" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes222')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes222" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes177_00" style="display: none;">
+						<tr id="DetailsImageAttributes222_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes177_01" style="display: none;">
+						<tr id="DetailsImageAttributes222_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes177_02" style="display: none;">
+						<tr id="DetailsImageAttributes222_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes177_03" style="display: none;">
+						<tr id="DetailsImageAttributes222_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes177_04" style="display: none;">
+						<tr id="DetailsImageAttributes222_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes177_05" style="display: none;">
+						<tr id="DetailsImageAttributes222_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes177_06" style="display: none;">
+						<tr id="DetailsImageAttributes222_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes177_07" style="display: none;">
+							<tr id="DetailsImageAttributes222_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
-						<td>True</td>
+						<td>False</td>
 						</tr>
 					</table>
 					
 					
-						&nbsp;
+						<div class="ObjectDetailsNotes"><table>
+	<tr>
+		<td valign="top">
+			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		</td>
+		<td>
+			Nombre que aparecerá para representar al usuario en tableros y tarjetas. Puede ser modificado por el usuario o los administradores. Por defecto se inicaliza con:&lt;br/&gt;- Empleo abreviado&lt;br/&gt;- Nombre y apellidos&lt;br/&gt;&lt;br/&gt;
+		</td>
+	</tr>
+</table></div>
+
 						
 				</td>
 			</tr>
@@ -167,7 +178,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA241.htm">Participante</a><br />
+						<a href="EA242.htm">Usuario</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -181,8 +192,41 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink178" onclick="parent.toggleDiv('detailsDIVLink178','DetailsImageLink178')" />Details:
-							<div id="detailsDIVLink178" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink223" onclick="parent.toggleDiv('detailsDIVLink223','DetailsImageLink223')" />Details:
+							<div id="detailsDIVLink223" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+		<div class="ItemBody" id="AssociationsFromTable">
+			<table border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="40%" class="TableHeading">Element</td>
+					<td width="30%" class="TableHeading">Source Role</td>
+					<td width="30%" class="TableHeading">Target Role</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA215.htm">Actividad</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> autor<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink224" onclick="parent.toggleDiv('detailsDIVLink224','DetailsImageLink224')" />Details:
+							<div id="detailsDIVLink224" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -190,7 +234,7 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA245.htm">Tarjeta</a><br />
+						<a href="EA228.htm">MiembroGrupo</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
@@ -204,8 +248,31 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink179" onclick="parent.toggleDiv('detailsDIVLink179','DetailsImageLink179')" />Details:
-							<div id="detailsDIVLink179" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink225" onclick="parent.toggleDiv('detailsDIVLink225','DetailsImageLink225')" />Details:
+							<div id="detailsDIVLink225" class="DetailsDiv" >
+							&nbsp;
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td width="40%" class="TableRow" valign="top">
+						<a href="EA219.htm">Comentario</a><br />
+						Class &nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> &nbsp;<br />
+						&nbsp;
+					</td>
+					<td width="30%" class="TableRow" valign="top">
+						<strong>Name:</strong> autor<br />
+						&nbsp;	
+					</td>
+				</tr>
+				<tr>
+					<td class="TableRowBottomDashed"  colspan="3">
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink226" onclick="parent.toggleDiv('detailsDIVLink226','DetailsImageLink226')" />Details:
+							<div id="detailsDIVLink226" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
@@ -224,16 +291,16 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA241.htm">Participante</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA228.htm">MiembroGrupo</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
 					<td width="10%" class="TableRow" valign="top">Strong</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA245.htm">Tarjeta</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA232.htm">Participante</a></td>
 					<td width="10%" class="TableRow" valign="top">Class</td>
-					<td width="10%" class="TableRow" valign="top">Strong</td>
+					<td width="10%" class="TableRow" valign="top">Generalization</td>
 					<td width="10%" class="TableRow" valign="top">To</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>

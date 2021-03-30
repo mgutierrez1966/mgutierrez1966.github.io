@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>TRABAJO CON LISTAS</title>
+<title>CU.014: Eliminar una lista </title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("TRABAJO CON LISTAS", " : "))</script>  : Public   Package</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.014: Eliminar una lista ", " : "))</script>  : Public   UseCase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02/03/2021 19:36:41</td>
+			<td width="85%" class="ObjectDetailsValue">02/03/2021 19:37:43</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">02/03/2021 20:20:01</td>
+			<td class="ObjectDetailsValue">07/03/2021 12:10:36</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -63,7 +63,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj03" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
-			<td class="ObjectDetailsValue">Proposed</td>
+			<td class="ObjectDetailsValue">Propuesto</td>
 		</tr>
 		<tr id="proj04" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
@@ -87,14 +87,46 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{90E81AB1-228A-404f-8175-0C2D0A1A706C}</td>
+			<td class="ObjectDetailsValue">{8FC914DD-0DBC-4770-8AB1-EEBA39894A0E}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA32.htm">CASOS DE USO</a></td>
+			<td class="ObjectDetailsValue"><a href="EA54.htm">TRABAJO CON LISTAS</a></td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado &lt;br/&gt;- El usuario es el propietario del tablero&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- El usuario selecciona la opción &quot;Eliminar&quot; del menú contextual de la lista&lt;br/&gt;- El sistema solicita la confirmación del usuario. Le informa de que la lista y todas sus tarjetas serán eliminadas permanentemente, y que si desea conservar las tarjetas, deberá moverlas a otra lista.&lt;br/&gt;- El sistema elimina la lista y todos los elementos asociados.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- El sistema envia notificaciones del tipo &quot;LISTA_ELIMINADA&quot; a:&lt;br/&gt;	- Los autorizados (usuarios y grupos) de la lista&lt;br/&gt;	- Los propietarios, responsables y colaboradores de las tarjetas de la lista.&lt;br/&gt;&lt;br/&gt;</div>
+
+	<div class="TableGroup" id="TableGroup">
+		<ul class="ItemTitle">
+			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
+		</ul>
+		<div class="ItemBody" id="LinksTable">
+			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
+				<tr>
+					<td width="30%" class="TableHeading">Object</td>
+					<td width="10%" class="TableHeading">Type</td>
+					<td width="10%" class="TableHeading">Connection</td>
+					<td width="10%" class="TableHeading">Direction</td>
+					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA51.htm">CU.009: Visualizar un tablero</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA27.htm">PROPIETARIO TABLERO</a></td>
+					<td width="10%" class="TableRow" valign="top">Actor</td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+
+			</table>
+		</div>
+	</div>
 <div class="pageFooter"></div>
  
 </body>

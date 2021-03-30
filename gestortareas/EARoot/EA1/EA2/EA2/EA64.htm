@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>CU.011: Crear una lista</title>
+<title>CU.017: Modificar los datos básicos de una lista</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.011: Crear una lista", " : "))</script>  : Public   UseCase</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.017: Modificar los datos básicos de una lista", " : "))</script>  : Public   UseCase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02/03/2021 19:37:18</td>
+			<td width="85%" class="ObjectDetailsValue">02/03/2021 19:37:23</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">12/03/2021 12:18:22</td>
+			<td class="ObjectDetailsValue">07/03/2021 12:10:13</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{B71D1587-F4B2-47f7-A207-CDEC3E3778F0}</td>
+			<td class="ObjectDetailsValue">{B8171299-9732-4cb9-80A9-614A2215CB6A}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA60.htm">TRABAJO CON LISTAS</a>, <a href="../../EA3/EA1/EA135.htm">Detalle de tablero</a>, <a href="../../../EA5/EA391.htm">Añadir,  editar y eliminar listas</a></td>
+			<td class="ObjectDetailsValue"><a href="EA54.htm">TRABAJO CON LISTAS</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado &lt;br/&gt;- El usuario es el propietario del tablero&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- El usuario selecciona la opción &quot;Añadir lista&quot;&lt;br/&gt;- El sistema solicita al usuario:&lt;br/&gt;	- Nombre de la lista &lt;br/&gt;	- Color de los elementos de la lista. Por defecto blanco.&lt;br/&gt;	- Tipo de lista: normal (por defecto), borrador o finalizado&lt;br/&gt;- El sistema crea la lista.&lt;br/&gt;	- Si ya existe una lista con el nombre indicado se notifica al usuario&lt;br/&gt;	- Si ya existe una lista de tipo Borrador o Finalizado, y se ha especificado dicho tipo, se notifica al usuario que solo puede haber una lista del tipo Borrador o Finalizado en un tablero.&lt;br/&gt;	- Las listas de tipo &quot;Borrador&quot; tiene el orden 0 (aparecen a la izquierda del tablero, como primera lista).&lt;br/&gt;	- Las listas de tipo &quot;Finalizada&quot; tienen el orden 999 (aparecen a la derecha del tablero, como última lista).&lt;br/&gt;- El sistema actualiza la vista del tablero para mostrar la nueva lista.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- Se ha creado la nueva lista.&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado &lt;br/&gt;- El usuario es el propietario del tablero&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- El usuario selecciona la opción &quot;Editar&quot; del menú contextual de la lista&lt;br/&gt;- El sistema muestra los datos actuales de la lista: nombre, color de los elementos, tipo de lista.&lt;br/&gt;- El usuario modifica los datos básicos&lt;br/&gt;- El sistema guarda los datos de la lista&lt;br/&gt;	- Si ya existe una lista con el nombre indicado se notifica al usuario&lt;br/&gt;	- Si ya existe una lista de tipo Borrador o Finalizado, y se ha especificado dicho tipo, se notifica al usuario que solo puede haber una lista del tipo Borrador o Finalizado en un tablero.&lt;br/&gt;- El sistema actualiza la vista del tablero (nombre y color de la lista)&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;N/A&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -110,13 +110,6 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA55.htm">CU.009: Visualizar un tablero</a></td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
 					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA27.htm">PROPIETARIO TABLERO</a></td>
 					<td width="10%" class="TableRow" valign="top">Actor</td>
 					<td width="10%" class="TableRow" valign="top">UseCase</td>
@@ -124,9 +117,9 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA4/EA318.htm">FormCrearLista</a></td>
-					<td width="10%" class="TableRow" valign="top">Screen</td>
-					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA51.htm">CU.009: Visualizar un tablero</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>

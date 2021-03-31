@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>CU.063: Eliminar una tarea</title>
+<title>CU.062: Enviar una tarea a un tablero</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.063: Eliminar una tarea", " : "))</script>  : Public   UseCase</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.062: Enviar una tarea a un tablero", " : "))</script>  : Public   UseCase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">07/03/2021 13:20:14</td>
+			<td width="85%" class="ObjectDetailsValue">07/03/2021 13:15:02</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">14/03/2021 10:27:29</td>
+			<td class="ObjectDetailsValue">15/03/2021 13:52:38</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{9D43F71F-070C-4d79-B57B-60FD314BA0D1}</td>
+			<td class="ObjectDetailsValue">{DC718C6F-964F-4f80-9250-E0B4F278BA06}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA68.htm">TRABAJO CON TARJETAS</a></td>
+			<td class="ObjectDetailsValue"><a href="EA69.htm">TRABAJO CON TARJETAS</a>, <a href="../../EA3/EA1/EA136.htm">Editar tarjeta</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado&lt;br/&gt;- El usuario es propietario del tablero donde se ubica la tarjeta, o es el responsable de la tarea superior.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- Un usuario accede al formulario de la tarea&lt;br/&gt;- El usuario pulsa sobre la opción &quot;Eliminar tarea&quot;&lt;br/&gt;- El sistema solicita confirmación al usuario. Le informa que la eliminación de la tarjeta será permanente. Le informa de que puede archivar la tarea en lugar de eliminarla, lo que le permitirá recuperarla posteriormente.&lt;br/&gt;- Si el usuario confirma la operación, el sistema elimina la tarjeta y todos los datos asociados.&lt;br/&gt;- El sistema cierra el formulario de la tarjeta y actualiza las vistas asociadas del tablero o de la lista de tareas.&lt;br/&gt;- El sistema envía una notificación de tipo &quot;TARJETA_ELIMINADA&quot; a los grupos o personas colaboradores de la tarjeta.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;N/A&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado&lt;br/&gt;- El usuario es responsable de la tarea a modificar&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- Un usuario selecciona la opción &quot;Enviar a un tablero&quot; &lt;br/&gt;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;- Del menú del formulario de visualización de una tarjeta&lt;br/&gt;	- &lt;font color=&quot;#ff0000&quot;&gt;De una subtarea en la vista Tarea&lt;/font&gt;&lt;br/&gt;	- De una tarea en la lista de tareas&lt;br/&gt;- El sistema muestra el tablero actual de la tarea&lt;br/&gt;- El sistema muestra al usuario los tableros que son propiedad del grupo del usuario.&lt;br/&gt;- El usuario selecciona el tablero de destino&lt;br/&gt;- El sistema muestra las listas del tablero de destino&lt;br/&gt;- El usuario selecciona la lista donde quiere agregar la tarea (por defecto la primera lista del tablero)&lt;br/&gt;- El sistema añade la tarea a la lista seleccionada del tablero de destino.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;N/A&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -110,9 +110,16 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA27.htm">PROPIETARIO TABLERO</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA28.htm">RESPONSABLE TARJETA</a></td>
 					<td width="10%" class="TableRow" valign="top">Actor</td>
 					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA5/EA347.htm">FormEnviarTarjetaTablero</a></td>
+					<td width="10%" class="TableRow" valign="top">Screen</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>

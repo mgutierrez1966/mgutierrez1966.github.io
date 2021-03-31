@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>CU.022: Añadir un adjunto a una tarjeta </title>
+<title>CU.020: Asignar responsable a una tarjeta</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.022: Añadir un adjunto a una tarjeta ", " : "))</script>  : Public   UseCase</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.020: Asignar responsable a una tarjeta", " : "))</script>  : Public   UseCase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02/03/2021 19:43:11</td>
+			<td width="85%" class="ObjectDetailsValue">02/03/2021 19:42:47</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">08/03/2021 13:25:45</td>
+			<td class="ObjectDetailsValue">13/03/2021 19:04:16</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{B5BF9C26-D439-45d0-8B45-F39B64183153}</td>
+			<td class="ObjectDetailsValue">{C2953677-F043-42f2-833F-6B6FBC05D8FF}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA68.htm">TRABAJO CON TARJETAS</a>, <a href="../../EA3/EA1/EA128.htm">Editar tarjeta</a></td>
+			<td class="ObjectDetailsValue"><a href="EA69.htm">TRABAJO CON TARJETAS</a>, <a href="../../EA3/EA1/EA136.htm">Editar tarjeta</a>, <a href="../../../EA5/EA402.htm">Asignar responsable a tarea</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado&lt;br/&gt;- El usuario es propietario del tablero, responsable de la tarjeta, autorizado de alguna lista del tablero donde se encuentra la tarjeta, colaborador de la tarjeta, o responsable de alguna subtarea de la tarjeta.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- Un usuario selecciona &quot;Añadir adjunto&quot; en el menú de la tarjeta&lt;br/&gt;- El sistema solicita la ubicación del documento&lt;br/&gt;	- Si el tamaño del adjunto excede de 10 MB, el sistema informa del límite de tamaño&lt;br/&gt;- El sistema guarda el documento en el espacio de trabajo de la tarea.	&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;N/A&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado&lt;br/&gt;- El usuario es propietario del tablero donde se ubica la tarjeta&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- Un usuario selecciona la opción &quot;Asignar a responsable&quot; del menú de la tarjeta&lt;br/&gt;- El sistema muestra el responsable actual.&lt;br/&gt;- El usuario selecciona un grupo subordinado, o un miembro de su grupo, como nuevo responsable&lt;br/&gt;- El sistema actualiza el responsable de la tarjeta&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- El sistema ha enviado notificaciones del tipo &quot;TARJETA_ASIGNADA&quot; al miembro o grupo asignado como responsable.&lt;br/&gt;- El sistema ha enviado notificaciones del tipo &quot;TARJETA_NO_ASIGNADA&quot; al miembro o grupo asignado &lt;u&gt;anteriormente&lt;/u&gt; como responsable.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -117,37 +117,16 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA25.htm">COLABORADOR TARJETA</a></td>
-					<td width="10%" class="TableRow" valign="top">Actor</td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA24.htm">AUTORIZADO LISTA</a></td>
-					<td width="10%" class="TableRow" valign="top">Actor</td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA5/EA334.htm">FormTarjeta</a></td>
-					<td width="10%" class="TableRow" valign="top">Screen</td>
-					<td width="10%" class="TableRow" valign="top">Realization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA84.htm">CU.054: Visualizar datos de una tarjeta</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA85.htm">CU.054: Visualizar datos de una tarjeta</a></td>
 					<td width="10%" class="TableRow" valign="top">UseCase</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA28.htm">RESPONSABLE TARJETA</a></td>
-					<td width="10%" class="TableRow" valign="top">Actor</td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA4/EA314.htm">FormAsignarResponsable</a></td>
+					<td width="10%" class="TableRow" valign="top">Screen</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>

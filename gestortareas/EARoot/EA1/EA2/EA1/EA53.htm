@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>CU.058: Agregar autoridades informadas al tablero</title>
+<title>CU.055: Recuperar un tablero archivado</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.058: Agregar autoridades informadas al tablero", " : "))</script>  : Public   UseCase</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.055: Recuperar un tablero archivado", " : "))</script>  : Public   UseCase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">07/03/2021 11:50:59</td>
+			<td width="85%" class="ObjectDetailsValue">03/03/2021 13:48:47</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">07/03/2021 11:55:58</td>
+			<td class="ObjectDetailsValue">07/03/2021 12:05:17</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{134E87E8-4B56-4dc6-9584-9EA25720D888}</td>
+			<td class="ObjectDetailsValue">{D8B18D18-51AF-49af-826A-631E913F802A}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA41.htm">GESTION DE TABLEROS</a>, <a href="../../EA3/EA1/EA126.htm">Detalle de tablero</a></td>
+			<td class="ObjectDetailsValue"><a href="EA42.htm">GESTION DE TABLEROS</a>, <a href="../EA6/EA107.htm">ADMINISTRACION</a>, <a href="../../EA3/EA1/EA132.htm">Listado de tableros</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Incluye también eliminar informados del tablero&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado &lt;br/&gt;- El usuario es el propietario del tablero&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- El usuario selecciona la opción de &quot;Autoridades informadas&quot; desde la vista de tablero.&lt;br/&gt;- El sistema muestra la lista de personas y grupos informados actualmente, y solicita al usuario la persona o grupo que quiere añadir.&lt;br/&gt;- El usuario selecciona en una lista la persona o el grupo a añadir&lt;br/&gt;- El sistema añade a la persona o grupo a la lista de informados&lt;br/&gt;- El usuario puede añadir más informados de la misma forma.&lt;br/&gt;- El usuario selecciona una persona o grupo de la lista de informados y selecciona &quot;Quitar de la lista&quot;&lt;br/&gt;- El sistema elimina al informado de la lista&lt;br/&gt;- El usuario confirma la operación&lt;br/&gt;- El sistema actualiza la información de las personas y grupos informados del tablero.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- Se ha actualizado la información de personas y grupos informados del tablero.&lt;br/&gt;- El sistema ha enviado una notificación de tipo &quot;TABLERO_INFORMADO&quot; a los miembros de los nuevos informados.&lt;br/&gt;- El sistema ha enviado una notificación de tipo &quot;TABLERO_NO_INFORMADO&quot; a los miembros de los informados que han sido eliminados de la lista.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado &lt;br/&gt;- El usuario es miembro de la organización&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- Un usuario selecciona la opción &quot;Recuperar tablero archivado&quot; desde la vista de tableros disponibles.&lt;br/&gt;- El sistema muestra una lista de tableros archivados disponibles para recuperar por el usuario:&lt;br/&gt;	- Si es usuario es un admninistrador de organización, se muestran todos los tableros propiedad de grupos de la organización.&lt;br/&gt;	- Si el usuario no es administrador, se muestran los tableros archivados, propiedad de grupos del usuario&lt;br/&gt;- El usuario selecciona un tablero&lt;br/&gt;- El sistema actualiza el estado del tablero a &quot;No Archivado&quot;.&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- El estado del tablero ha sido actualizado&lt;br/&gt;- El sistema actualiza las vistas relativas a los tableros.&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -110,6 +110,13 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA3/EA283.htm">FormTablerosArchivados</a></td>
+					<td width="10%" class="TableRow" valign="top">Screen</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
 					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA27.htm">PROPIETARIO TABLERO</a></td>
 					<td width="10%" class="TableRow" valign="top">Actor</td>
 					<td width="10%" class="TableRow" valign="top">UseCase</td>
@@ -117,16 +124,16 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA4/EA308.htm">FormInteresadosTablero</a></td>
-					<td width="10%" class="TableRow" valign="top">Screen</td>
-					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="30%" class="TableRow" valign="top"><a href="EA51.htm">CU.008: Ver la lista de tableros disponibles</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA51.htm">CU.009: Visualizar un tablero</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA23.htm">ADMINISTRADOR ORGANIZACION</a></td>
+					<td width="10%" class="TableRow" valign="top">Actor</td>
 					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Dependency</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>

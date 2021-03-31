@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>CU.018: Seguir una lista</title>
+<title>CU.017: Modificar los datos básicos de una lista</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.018: Seguir una lista", " : "))</script>  : Public   UseCase</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.017: Modificar los datos básicos de una lista", " : "))</script>  : Public   UseCase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02/03/2021 20:20:14</td>
+			<td width="85%" class="ObjectDetailsValue">02/03/2021 19:37:23</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">12/03/2021 18:54:29</td>
+			<td class="ObjectDetailsValue">07/03/2021 12:10:13</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{BE8BDD46-FB4A-4b86-9A66-A6F9239E756A}</td>
+			<td class="ObjectDetailsValue">{B8171299-9732-4cb9-80A9-614A2215CB6A}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA54.htm">TRABAJO CON LISTAS</a></td>
+			<td class="ObjectDetailsValue"><a href="EA55.htm">TRABAJO CON LISTAS</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado &lt;br/&gt;- El usuario es el propietario del tablero&lt;br/&gt;- El usuario es miembro de algun grupo con el que se ha compartido el tablero.&lt;br/&gt;- El usuario es autorizado a alguna de las listas del tablero&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- El usuario selecciona la opción &quot;Seguir lista&quot; del menú contextual de la lista&lt;br/&gt;- El sistema solicita confirmación al usuario. Le informa que al seguir la lista se le notificará cada vez que una tarjeta se mueva a dicha lista.&lt;br/&gt;- El sistema añade al usuario como seguidor de la lista&lt;br/&gt;	- Si el usuario ya es seguidor de la lista, directamente o a través de alguno de sus grupos, el sistema informa de ello al usuario.&lt;br/&gt;- El sistema añade una marca de seguimiento en la cabecera de la lista&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;N/A&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado &lt;br/&gt;- El usuario es el propietario del tablero&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- El usuario selecciona la opción &quot;Editar&quot; del menú contextual de la lista&lt;br/&gt;- El sistema muestra los datos actuales de la lista: nombre, color de los elementos, tipo de lista.&lt;br/&gt;- El usuario modifica los datos básicos&lt;br/&gt;- El sistema guarda los datos de la lista&lt;br/&gt;	- Si ya existe una lista con el nombre indicado se notifica al usuario&lt;br/&gt;	- Si ya existe una lista de tipo Borrador o Finalizado, y se ha especificado dicho tipo, se notifica al usuario que solo puede haber una lista del tipo Borrador o Finalizado en un tablero.&lt;br/&gt;- El sistema actualiza la vista del tablero (nombre y color de la lista)&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;N/A&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -110,23 +110,16 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA51.htm">CU.009: Visualizar un tablero</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA27.htm">PROPIETARIO TABLERO</a></td>
+					<td width="10%" class="TableRow" valign="top">Actor</td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA52.htm">CU.009: Visualizar un tablero</a></td>
 					<td width="10%" class="TableRow" valign="top">UseCase</td>
 					<td width="10%" class="TableRow" valign="top">Dependency</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA26.htm">GRUPO</a></td>
-					<td width="10%" class="TableRow" valign="top">Actor</td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA31.htm">USUARIO GRUPO</a></td>
-					<td width="10%" class="TableRow" valign="top">Actor</td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>

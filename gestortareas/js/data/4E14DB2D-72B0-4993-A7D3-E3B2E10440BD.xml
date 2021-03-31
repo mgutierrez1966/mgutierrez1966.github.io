@@ -1,2 +1,2 @@
-tocTab[tocTab.length] = new Array("0.3.1", "1", "1. PROTOTIPO INTERFAZ INTERACTIVA", "EARoot/EA3/EA1/EA246.htm", "4.png", "", "", "{9ECDD274-F510-4c15-8137-6339CF9FA764}", "Package");
-tocTab[tocTab.length] = new Array("0.3.2", "1", "2. PROTOTIPO INTERFAZ DE IMPRESIÓN", "EARoot/EA3/EA2/EA341.htm", "4.png", "", "", "{607704A4-5439-489b-A8E6-9AB8D8238675}", "Package");
+tocTab[tocTab.length] = new Array("0.3.1", "1", "1. PROTOTIPO INTERFAZ INTERACTIVA", "EARoot/EA3/EA1/EA254.htm", "4.png", "", "", "{9ECDD274-F510-4c15-8137-6339CF9FA764}", "Package");
+tocTab[tocTab.length] = new Array("0.3.2", "1", "2. PROTOTIPO INTERFAZ DE IMPRESIÓN", "EARoot/EA3/EA2/EA349.htm", "4.png", "", "", "{607704A4-5439-489b-A8E6-9AB8D8238675}", "Package");

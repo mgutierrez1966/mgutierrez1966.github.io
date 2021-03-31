@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>CU.068: Transferir una tarea</title>
+<title>CU.067: Consultar la lista de tareas</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.068: Transferir una tarea", " : "))</script>  : Public   UseCase</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.067: Consultar la lista de tareas", " : "))</script>  : Public   UseCase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">09/03/2021 11:24:27</td>
+			<td width="85%" class="ObjectDetailsValue">08/03/2021 14:27:02</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">09/03/2021 11:37:12</td>
+			<td class="ObjectDetailsValue">08/03/2021 14:49:48</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{D89031AD-84E0-4d2c-A9B4-6656315F2CDF}</td>
+			<td class="ObjectDetailsValue">{4D176023-0F50-4be8-968D-B8A12936C31E}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA68.htm">TRABAJO CON TARJETAS</a>, <a href="../../EA3/EA1/EA128.htm">Editar tarjeta</a></td>
+			<td class="ObjectDetailsValue"><a href="EA69.htm">TRABAJO CON TARJETAS</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado&lt;br/&gt;- El usuario es propietario del tablero donde se ubica la tarjeta o responsable de la tarjeta&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- El usuario selecciona la opción &quot;Transferir a...&quot; de la tarjeta&lt;br/&gt;- El sistema muestra la lista de personas y grupos a las que se puede transferir la tarea como responsable.&lt;br/&gt;	- Si el usuario el el propietario del tablero, el sistema muestra a todos los grupos y personas de la organización.&lt;br/&gt;	- Si el usuario es el responsable de la tarea, el sistema muestra a los miembros de sus grupos, y a los grupos subordinados a estos.&lt;br/&gt;- El usuario selecciona el nuevo responsable de la tarea.&lt;br/&gt;- El sistema solicita confirmación. La operación no se puede deshacer.&lt;br/&gt;- El sistema actualiza la información de responsable de la tarea y actualiza las vistas asociadas a la misma.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- El sistema ha enviado una notificación de tipo &quot;TARJETA_ASIGNADA&quot; al nuevo responsable de la tarjeta.&lt;br/&gt;- El sistema ha enviado una notificación de tipo &quot;TARJETA_TRANSFERIDA&quot; al responsable de la tarea superior, y si esta no existe, al propietario del tablero.&lt;br/&gt;- El sistema ha anotado la actividad de la tarjeta&lt;br/&gt;&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- Un usuario accede a la vista &quot;Lista de Tareas&quot;&lt;br/&gt;- El sistema muestra la lista de tareas que afectan al usuario:&lt;br/&gt;	- Tareas propias:&lt;br/&gt;		- Tareas en las que es responsable&lt;br/&gt;		- Tareas en las que es colaborador&lt;br/&gt;	- Otras:&lt;br/&gt;		- Tareas que se encuentran en listas que sigue&lt;br/&gt;		- Tareas en las que figura como autoridad informada&lt;br/&gt;&lt;br/&gt;- El sistema muestra de cada tarea:&lt;br/&gt;	- Titulo&lt;br/&gt;	- Responsable&lt;br/&gt;	- Tablero&lt;br/&gt;	- Lista en la que se encuentra&lt;br/&gt;	- Finalizada (Si / No)&lt;br/&gt;	- Etiquetas&lt;br/&gt;	- Titulo de la tarea superior&lt;br/&gt;	- Responsable de la tarea superior&lt;br/&gt;	- Fecha de vencimiento&lt;br/&gt;	- Fecha límite de colaboración&lt;br/&gt;&lt;br/&gt;- La tarea se mostrará con un código de colores en base a la fecha de vencimiento o fecha límite de actuación.&lt;br/&gt;- El usuario puede cambiar la información mostrada en la lista:&lt;br/&gt;	- Filtrar por titulo de la tarea&lt;br/&gt;	- Filtrar por etiquetas&lt;br/&gt;	- Mostrar solo tareas de primer nivel (sin tarea superior)&lt;br/&gt;	- Ordenar por fecha de inicio / fecha de vencimiento / fecha limite de actuación&lt;br/&gt;&lt;br/&gt;- El usuario puede mostrar el detalle de una tarea de la lista&lt;br/&gt;- El usuario puede abrir el tablero asociado a una tarea&lt;br/&gt;- El usuario puede abrir la tarea superior de una tarea&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;N/A&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -110,21 +110,7 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA28.htm">RESPONSABLE TARJETA</a></td>
-					<td width="10%" class="TableRow" valign="top">Actor</td>
-					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA5/EA338.htm">FormTransferirTarea</a></td>
-					<td width="10%" class="TableRow" valign="top">Screen</td>
-					<td width="10%" class="TableRow" valign="top">Realization</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA27.htm">PROPIETARIO TABLERO</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA30.htm">USUARIO</a></td>
 					<td width="10%" class="TableRow" valign="top">Actor</td>
 					<td width="10%" class="TableRow" valign="top">UseCase</td>
 					<td width="10%" class="TableRow" valign="top">From</td>

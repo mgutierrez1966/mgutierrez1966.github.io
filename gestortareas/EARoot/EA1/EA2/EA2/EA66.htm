@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>CU.056: Añadir seguidor a una lista</title>
+<title>CU.018: Seguir una lista</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.056: Añadir seguidor a una lista", " : "))</script>  : Public   UseCase</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.018: Seguir una lista", " : "))</script>  : Public   UseCase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">03/03/2021 20:08:02</td>
+			<td width="85%" class="ObjectDetailsValue">02/03/2021 20:20:14</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">07/03/2021 12:10:40</td>
+			<td class="ObjectDetailsValue">12/03/2021 18:54:29</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -87,14 +87,14 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{E3AFCB5C-15A5-4d60-AA33-3A789890E5C8}</td>
+			<td class="ObjectDetailsValue">{BE8BDD46-FB4A-4b86-9A66-A6F9239E756A}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA54.htm">TRABAJO CON LISTAS</a></td>
+			<td class="ObjectDetailsValue"><a href="EA55.htm">TRABAJO CON LISTAS</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Incluye CU.056: Añadir seguidor a una lista&lt;br/&gt;&lt;b&gt;&lt;br/&gt;&lt;/b&gt;&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado &lt;br/&gt;- El usuario es el propietario del tablero&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- El usuario selecciona la opción &quot;Seguidores...&quot; del menú contextual de la lista&lt;br/&gt;- El sistema muestra la lista de seguidores (usuarios y grupos) de la lista. &lt;br/&gt;- El usuario puede:&lt;br/&gt;	- Seleccionar un usuario de la lista &quot;Usuarios&quot; y añade el usuario&lt;br/&gt;	- Seleccionar un grupo de la lista &quot;Grupos&quot; y añade el grupo&lt;br/&gt;	- Seleccionar un usuario o grupo de la lista &quot;Seguidores&quot; y quitarlo de la lista.&lt;br/&gt;- El sistema guarda la información de los seguidores de la lista&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- El sistema envia notificaciones del tipo &quot;SEGUIDOR_LISTA&quot; a los usuarios o miembros de los grupos añadidos como seguidores.&lt;br/&gt;- El sistema envia notificaciones del tipo &quot;NO_SEGUIDOR_LISTA&quot; a los usuarios o miembros de los grupos eliminados como seguidores.&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado &lt;br/&gt;- El usuario es el propietario del tablero&lt;br/&gt;- El usuario es miembro de algun grupo con el que se ha compartido el tablero.&lt;br/&gt;- El usuario es autorizado a alguna de las listas del tablero&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- El usuario selecciona la opción &quot;Seguir lista&quot; del menú contextual de la lista&lt;br/&gt;- El sistema solicita confirmación al usuario. Le informa que al seguir la lista se le notificará cada vez que una tarjeta se mueva a dicha lista.&lt;br/&gt;- El sistema añade al usuario como seguidor de la lista&lt;br/&gt;	- Si el usuario ya es seguidor de la lista, directamente o a través de alguno de sus grupos, el sistema informa de ello al usuario.&lt;br/&gt;- El sistema añade una marca de seguimiento en la cabecera de la lista&lt;br/&gt;&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;N/A&lt;br/&gt;&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
@@ -110,17 +110,24 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA27.htm">PROPIETARIO TABLERO</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../EA1/EA52.htm">CU.009: Visualizar un tablero</a></td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">Dependency</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA26.htm">GRUPO</a></td>
 					<td width="10%" class="TableRow" valign="top">Actor</td>
 					<td width="10%" class="TableRow" valign="top">UseCase</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="EA67.htm">CU.057: Eliminar seguidor de una lista</a></td>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA31.htm">USUARIO GRUPO</a></td>
+					<td width="10%" class="TableRow" valign="top">Actor</td>
 					<td width="10%" class="TableRow" valign="top">UseCase</td>
-					<td width="10%" class="TableRow" valign="top">Includes</td>
-					<td width="10%" class="TableRow" valign="top">To</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 

@@ -249,7 +249,7 @@
     <td align="left" valign="top" width="516" style="border: solid #010101 1px;"><font face="Calibri" size="1">El orden asignado a una nueva lista es:</font>
     <div align="left"><font face="Calibri" size="1">- Si es de tipo BORRADOR, el orden es 0 (cero)</font></div>
     <div align="left"><font face="Calibri" size="1">- Si es de tipo FINALIZADO, el orden es 999</font></div>
-    <div align="left"><font face="Calibri" size="1">- Si es de tipo TAREAS o LIBRE, se le asigna el orden de la &#250;ltima lista de tipo NORMAL o LIBRE, 
+    <div align="left"><font face="Calibri" size="1">- Si es de tipo TAREAS o LIBRE, se le asigna el orden de la &#250;ltima lista de tipo TAREAS o LIBRE, 
     incrementado en 1. Es decir, las nuevas listas quedan a la derecha del tablero (antes de Finalizado, si 
     existe).</font></div>
     </td></tr>
@@ -383,9 +383,11 @@
     <td align="center" valign="top" width="51" style="border: solid #010101 1px;">
     <div align="center"><font face="Calibri"><b>#7</b></font></div>
     </td>
-    <td align="left" valign="top" width="516" style="border: solid #010101 1px;"><font face="Calibri" size="1">Se debe enviar notificaci&#243;n del tipo LISTA_ELIMINADA a los siguientes usuarios y grupos:</font>
-    <div align="left"><font face="Calibri" size="1">- Autorizados de la lista eliminada, si los hay.</font></div>
-    <div align="left"><font face="Calibri" size="1">- Responsables y colaboradores de las tarjetas de la lista, si las hay.</font></div>
+    <td align="left" valign="top" width="516" style="border: solid #010101 1px;"><font face="Calibri" size="1">- Si la columna eliminada es de tipo TAREAS o LIBRE, el resto de columnas de tipo TAREAS o LIBRE debe 
+    reordenarse de forma secuencial.</font>
+    <div align="left"><font face="Calibri" size="1"><br /></font></div><div align="left"><font face="Calibri" size="1">- Se debe enviar notificaci&#243;n del tipo LISTA_ELIMINADA a los siguientes usuarios y grupos:</font></div>
+    <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160; - Autorizados de la lista eliminada, si los hay.</font></div>
+    <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160; - Responsables y colaboradores de las tarjetas de la lista, si las hay.</font></div>
     </td></tr>
     <tr>
     <td align="center" valign="middle" width="51" height="21" bgcolor="#deeaf6" style="border: solid #010101 1px;">

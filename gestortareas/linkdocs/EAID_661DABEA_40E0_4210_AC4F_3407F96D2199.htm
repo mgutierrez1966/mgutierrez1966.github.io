@@ -47,6 +47,17 @@
     <div align="left"><font face="Calibri">1: Nombre del tablero</font></div>
     </td></tr>
     <tr>
+    <td align="left" valign="top" width="177" style="border: solid #010101 1px;"><font face="Calibri"><b>TARJETA_NO_ASIGNADA / </b></font>
+    <div align="left"><font face="Calibri">Anulaci&#243;n de asignaci&#243;n de 
+    tarea</font></div>
+    </td>
+    <td align="left" valign="top" width="567" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" size="2">Se ha anulado la asignaci&#243;n como responsable de la tarea </font><font face="Calibri">&quot;{0}&quot; del tablero &quot;{1}&quot;</font></div>
+    </td>
+    <td align="left" valign="top" width="195" style="border: solid #010101 1px;"><font face="Calibri">0: Titulo de la tarea</font>
+    <div align="left"><font face="Calibri">1: Nombre del tablero</font></div>
+    </td></tr>
+    <tr>
     <td align="left" valign="top" width="177" style="border: solid #010101 1px;"><font face="Calibri"><b>LISTA_ELIMINADA / </b></font>
     <div align="left"><font face="Calibri">Eliminaci&#243;n de lista</font></div>
     </td>
@@ -83,7 +94,7 @@
     <td align="left" valign="top" width="177" style="border: solid #010101 1px;"><font face="Calibri"><b>TARJETA_EN_LISTA / </b></font>
     <div align="left"><font face="Calibri">Tarea ha cambiado de lista</font></div>
     </td>
-    <td align="left" valign="top" width="567" style="border: solid #010101 1px;"><font face="Calibri" size="2">La tarea {0} del tablero {1} ha sido movida a la lista {2}.</font>
+    <td align="left" valign="top" width="567" style="border: solid #010101 1px;"><font face="Calibri" size="2">La tarea &quot;{0}&quot; del tablero &quot;{1}&quot; ha sido movida a la lista &quot;{2}&quot;.</font>
     <div align="left">&nbsp;</div>
     </td>
     <td align="left" valign="top" width="195" style="border: solid #010101 1px;"><font face="Calibri">0: Titulo de tarjeta</font>
@@ -92,11 +103,22 @@
     </td></tr>
     <tr>
     <td align="left" valign="top" width="177" style="border: solid #010101 1px;"><font face="Calibri"><b>COLABORADOR_TARJETA / </b></font>
+    <div align="left"><font face="Calibri">Anulaci&#243;n colaboraci&#243;n en 
+    tarea</font></div>
+    </td>
+    <td align="left" valign="top" width="567" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri">Ha sido retirado como colaborador en la tarea &quot;{0}&quot; del tablero &quot;{1}&quot;.</font></div>
+    </td>
+    <td align="left" valign="top" width="195" style="border: solid #010101 1px;"><font face="Calibri">0: Titulo de la tarjeta</font>
+    <div align="left"><font face="Calibri">1: Nombre del tablero</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="177" style="border: solid #010101 1px;"><font face="Calibri"><b>NO_COLABORADOR_TARJETA / </b></font>
     <div align="left"><font face="Calibri">Nombrado colaborador en 
     tarea</font></div>
     </td>
     <td align="left" valign="top" width="567" style="border: solid #010101 1px;">
-    <div align="left"><font face="Calibri">Usted o su grupo ha sido designado como colaborador en la tarea {0} del tablero {1}.</font></div>
+    <div align="left"><font face="Calibri">Usted o su grupo ha sido designado como colaborador en la tarea &quot;{0}&quot; del tablero &quot;{1}&quot;.</font></div>
     </td>
     <td align="left" valign="top" width="195" style="border: solid #010101 1px;"><font face="Calibri">0: Titulo de la tarjeta</font>
     <div align="left"><font face="Calibri">1: Nombre del tablero</font></div>
@@ -105,7 +127,7 @@
     <td align="left" valign="top" width="177" style="border: solid #010101 1px;"><font face="Calibri"><b>SEGUIDOR_LISTA / </b></font>
     <div align="left"><font face="Calibri">Seguimiento de lista</font></div>
     </td>
-    <td align="left" valign="top" width="567" style="border: solid #010101 1px;"><font face="Calibri" size="2">Le han incluido a usted o a su grupo como seguidor de la lista {0} del tablero {1}</font>
+    <td align="left" valign="top" width="567" style="border: solid #010101 1px;"><font face="Calibri" size="2">Le han incluido a usted o a su grupo como seguidor de la lista &quot;{0}&quot; del tablero &quot;{1}&quot;</font>
     <div align="left">&nbsp;</div>
     </td>
     <td align="left" valign="top" width="195" style="border: solid #010101 1px;"><font face="Calibri">0: Nombre de la lista</font>
@@ -115,11 +137,135 @@
     <td align="left" valign="top" width="177" style="border: solid #010101 1px;"><font face="Calibri"><b>NO_SEGUIDOR_LISTA / </b></font>
     <div align="left"><font face="Calibri">No seguimiento de lista</font></div>
     </td>
-    <td align="left" valign="top" width="567" style="border: solid #010101 1px;"><font face="Calibri" size="2">Le han retirado a usted o a su grupo como seguidor de la lista {0} del tablero {1}</font>
+    <td align="left" valign="top" width="567" style="border: solid #010101 1px;"><font face="Calibri" size="2">Le han retirado a usted o a su grupo como seguidor de la lista &quot;{0}&quot; del tablero &quot;{1}&quot;</font>
     <div align="left">&nbsp;</div>
     </td>
     <td align="left" valign="top" width="195" style="border: solid #010101 1px;"><font face="Calibri">0: Nombre de la lista</font>
     <div align="left"><font face="Calibri">1: Nombre del tablero</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="177" style="border: solid #010101 1px;"><font face="Calibri"><b>TARJETA_ELIMINADA / </b></font>
+    <div align="left"><font face="Calibri">Tarea ha sido eliminada</font></div>
+    </td>
+    <td align="left" valign="top" width="567" style="border: solid #010101 1px;"><font face="Calibri" size="2">La tarea &quot;{0}&quot; del tablero &quot;{1}&quot;, de la que era responsable o colaborador, ha sido eliminada por {2}</font>
+    <div align="left">&nbsp;</div>
+    </td>
+    <td align="left" valign="top" width="195" style="border: solid #010101 1px;"><font face="Calibri">0: Titulo de tarjeta</font>
+    <div align="left"><font face="Calibri">1: Nombre del tablero</font></div>
+    <div align="left"><font face="Calibri">2: Nombre y apellidos del 
+    usuario que elimina la tarjeta</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="177" style="border: solid #010101 1px;"><font face="Calibri"><b>TABLERO_COMPARTIDO / </b></font>
+    <div align="left"><font face="Calibri">Se ha compartido un tablero</font></div>
+    </td>
+    <td align="left" valign="top" width="567" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" size="2">Se ha compartido con su grupo ({0}) el tablero &quot;{1}&quot; del grupo {2}.</font></div>
+    </td>
+    <td align="left" valign="top" width="195" style="border: solid #010101 1px;"><font face="Calibri">0: Nombre del grupo con el que 
+    se ha compartido</font>
+    <div align="left"><font face="Calibri">1: Nombre del tablero </font></div>
+    <div align="left"><font face="Calibri">2: Nombre del grupo 
+    propietario del tablero</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="177" style="border: solid #010101 1px;"><font face="Calibri"><b>TABLERO_NO_COMPARTIDO / </b></font>
+    <div align="left"><font face="Calibri">Se ha dejado de compartir 
+    un tablero</font></div>
+    </td>
+    <td align="left" valign="top" width="567" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" size="2">Se ha dejado de compartir con su grupo ({0}) el tablero &quot;{1}&quot; del grupo {2}.</font></div>
+    </td>
+    <td align="left" valign="top" width="195" style="border: solid #010101 1px;"><font face="Calibri">0: Nombre del grupo con el que 
+    se ha compartido</font>
+    <div align="left"><font face="Calibri">1: Nombre del tablero </font></div>
+    <div align="left"><font face="Calibri">2: Nombre del grupo 
+    propietario del tablero</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="177" style="border: solid #010101 1px;"><font face="Calibri"><b>TABLERO_INFORMADO / </b></font>
+    <div align="left"><font face="Calibri">Autoridad informada de un 
+    tablero</font></div>
+    </td>
+    <td align="left" valign="top" width="567" style="border: solid #010101 1px;"><font face="Calibri" size="2">Se le ha incluido como autoridad informada del tablero &quot;{0}&quot; del grupo {1}. </font>
+    <div align="left">&nbsp;</div>
+    </td>
+    <td align="left" valign="top" width="195" style="border: solid #010101 1px;"><font face="Calibri">0: Nombre del tablero</font>
+    <div align="left"><font face="Calibri">1: Nombre del grupo 
+    propietario</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="177" style="border: solid #010101 1px;"><font face="Calibri"><b>TABLERO_NO_INFORMADO 
+    / </b></font>
+    <div align="left"><font face="Calibri">Revocaci&#243;n como autoridad 
+    informada de un tablero</font></div>
+    </td>
+    <td align="left" valign="top" width="567" style="border: solid #010101 1px;"><font face="Calibri" size="2">Se le ha retirado como autoridad informada del tablero &quot;{0}&quot; del grupo {1}. </font>
+    <div align="left">&nbsp;</div>
+    </td>
+    <td align="left" valign="top" width="195" style="border: solid #010101 1px;"><font face="Calibri">0: Nombre del tablero</font>
+    <div align="left"><font face="Calibri">1: Nombre del grupo 
+    propietario</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="177" style="border: solid #010101 1px;"><font face="Calibri"><b>SUBTAREA_ASIGNADA / </b></font>
+    <div align="left"><font face="Calibri">Asignaci&#243;n de subtarea</font></div>
+    </td>
+    <td align="left" valign="top" width="567" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" size="2">Se le ha asignado como responsable de la subtarea &quot;{0}&quot; de la tarea &quot;{1}&quot;, que est&#225; asignada a {2}.</font></div>
+    </td>
+    <td align="left" valign="top" width="195" style="border: solid #010101 1px;"><font face="Calibri">0: Titulo de la subtarea</font>
+    <div align="left"><font face="Calibri">1: Titulo de la tarea superior</font></div>
+    <div align="left"><font face="Calibri">2: Nombre del responsable de 
+    la tarea superior</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="177" style="border: solid #010101 1px;"><font face="Calibri"><b>SUBTAREA_ASIGNADA / </b></font>
+    <div align="left"><font face="Calibri">Anulaci&#243;n de asignaci&#243;n de 
+    subtarea</font></div>
+    </td>
+    <td align="left" valign="top" width="567" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" size="2">Se ha anulado la asignaci&#243;n de la subtarea &quot;{0}&quot; de la tarea &quot;{1}&quot;, que est&#225; asignada a {2}.</font></div>
+    </td>
+    <td align="left" valign="top" width="195" style="border: solid #010101 1px;"><font face="Calibri">0: Titulo de la subtarea</font>
+    <div align="left"><font face="Calibri">1: Titulo de la tarea superior</font></div>
+    <div align="left"><font face="Calibri">2: Nombre del responsable de 
+    la tarea superior</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="177" style="border: solid #010101 1px;"><font face="Calibri"><b>TARJETA_TRANSFERIDA / </b></font>
+    <div align="left"><font face="Calibri">Transferencia de tarea</font></div>
+    </td>
+    <td align="left" valign="top" width="567" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" size="2">La tarea &quot;{0}&quot;, asignada por usted a {1}, ha sido transferida por dicho responsable a {2}</font></div>
+    </td>
+    <td align="left" valign="top" width="195" style="border: solid #010101 1px;"><font face="Calibri" size="2">0: Titulo de la tarea transferida</font>
+    <div align="left"><font face="Calibri" size="2">1: Nombre del responsable 
+    anterior</font></div>
+    <div align="left"><font face="Calibri" size="2">2: Nombre del responsable actual</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="177" style="border: solid #010101 1px;"><font face="Calibri"><b>TARJETA_ACTUALIZADA / </b></font>
+    <div align="left"><font face="Calibri">Una tarea se ha actualizado</font></div>
+    </td>
+    <td align="left" valign="top" width="567" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" size="2">Se han modificado los datos de la tarea &quot;{0}&quot; (titulo, descripcion o fechas) del tablero &quot;{1}&quot;, asignada a 
+    usted o a su grupo como responsable.</font></div>
+    </td>
+    <td align="left" valign="top" width="195" style="border: solid #010101 1px;"><font face="Calibri">0: Titulo de la tarea</font>
+    <div align="left"><font face="Calibri">1: Nombre del tablero</font></div>
+    </td></tr>
+    <tr>
+    <td align="left" valign="top" width="177" style="border: solid #010101 1px;"><font face="Calibri"><b>SUBTAREAS_COMPLETADAS / </b></font>
+    <div align="left"><font face="Calibri">Subtareas completadas en 
+    un tarea</font></div>
+    </td>
+    <td align="left" valign="top" width="567" style="border: solid #010101 1px;">
+    <div align="left"><font face="Calibri" size="2">Se han completado todas las subtareas de la tarea &quot;{0}&quot; del tablero &quot;{1}&quot;.</font></div>
+    </td>
+    <td align="left" valign="top" width="195" style="border: solid #010101 1px;"><font face="Calibri">0: Titulo de la tarea superior</font>
+    <div align="left"><font face="Calibri">1: Nombre del tablero de la 
+    tarea superior</font></div>
     </td></tr>
 </table>
 </div>

@@ -4015,20 +4015,19 @@
     <div align="left">&nbsp;</div>
     </td></tr>
     <tr>
-    <td colspan="5" align="center" valign="top" width="161" height="278" bgcolor="#c0c0c0" style="border: solid #010101 1px;">
+    <td colspan="5" align="center" valign="top" width="161" height="263" bgcolor="#c0c0c0" style="border: solid #010101 1px;">
     <div align="center"><font face="Calibri"><b>POSTCONDICIONES</b></font></div>
     </td>
-    <td colspan="9" align="left" valign="top" width="491" height="278" style="border: solid #010101 1px;"><font face="Calibri" size="1">- Si la lista de destino es de tipo <b>distinto</b> <b>de BORRADOR</b>:</font>
+    <td colspan="9" align="left" valign="top" width="491" height="263" style="border: solid #010101 1px;"><font face="Calibri" size="1">- Si la lista de destino es de tipo <b>distinto</b> <b>de BORRADOR</b>:</font>
     <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Se env&#237;a una notificaci&#243;n del tipo &quot;TARJETA_EN_LISTA&quot; a:</font></div>
     <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Los responsables de la tarjeta</font></div>
     <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Los colaboradores de la tarjeta</font></div>
     <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Los seguidores de la lista de destino (si los hay).<br />&#160;&#160;&#160;&#160;&#160;&#160;&#160; - Se registra una actividad de tipo &quot;TARJETA_CAMBIO_ESTADO&quot; en la tarjeta. </font></div>
     <div align="left"><font face="Calibri" size="1"><br /></font></div><div align="left"><font face="Calibri" size="1">- Si la lista de destino es de <b>tipo FINALIZADO</b>, se actualiza el atributo &quot;finalizada&quot; de la tarjeta a 
-    TRUE. Esta operaci&#243;n debe realizarse a trav&#233;s del CRUD de Tarjeta, para que active las 
-    postcondiciones definidas para esta entidad.</font></div>
+    TRUE. <b>Se deberan cumplir tambi&#233;n las postcondiciones del REST de Tarjeta para el caso de 
+    actualizacion del atributo &quot;finalizada&quot;.</b></font></div>
     <div align="left"><font face="Calibri" size="1"><br /></font></div><div align="left"><font face="Calibri" size="1">- Si la lista de destino es de tipo <b>distinto de FINALIZADO</b>, se actualiza el atributo &quot;finalizada&quot; de la 
-    tarjeta a FALSE. Esta operaci&#243;n debe realizarse a trav&#233;s del CRUD de Tarjeta, para que active las 
-    postcondiciones definidas para esta entidad.</font></div>
+    tarjeta a FALSE. </font></div>
     <div align="left"><font face="Calibri" size="1"><br /></font></div><div align="left"><font face="Calibri" size="1">- Si la <b>lista de </b><b><u>origen</u></b><b> es de tipo BORRADOR</b>, se deber&#225;n enviar notificaciones:</font></div>
     <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160; - de tipo TARJETA_ASIGNADA al responsable (si lo hay)</font></div>
     <div align="left"><font face="Calibri" size="1">&#160;&#160;&#160;&#160;&#160; - de tipo COLABORADOR_TARJETA a los colaboradores (si los hay)</font></div>
@@ -5244,12 +5243,15 @@
     <div align="left">&nbsp;</div>
     </td></tr>
     <tr>
-    <td colspan="5" align="center" valign="top" width="161" height="44" bgcolor="#c0c0c0" style="border: solid #010101 1px;">
+    <td colspan="5" align="center" valign="top" width="161" height="103" bgcolor="#c0c0c0" style="border: solid #010101 1px;">
     <div align="center"><font face="Calibri"><b>POSTCONDICIONES</b></font></div>
     </td>
-    <td colspan="9" align="left" valign="top" width="491" height="44" style="border: solid #010101 1px;"><font face="Calibri" size="1">Si el responsable de la tarjeta est&#225; informado, se env&#237;a una notificacion de tipo TARJETA_ASIGNADA 
-    al responsable (participante).</font>
-    <div align="left">&nbsp;</div>
+    <td colspan="9" align="left" valign="top" width="491" height="103" style="border: solid #010101 1px;"><font face="Calibri" size="1">- Si el responsable de la tarjeta est&#225; informado, y <b>la lista asignada es nula o de tipo DISTINTO de 
+    BORRADOR</b>, se env&#237;a una notificacion de tipo TARJETA_ASIGNADA al responsable (participante).</font>
+    <div align="left"><font face="Calibri" size="1">- Se registra una actividad de tipo TARJETA_CREADA en la nueva tarjeta</font></div>
+    <div align="left"><font face="Calibri" size="1">- Si la tarjeta tiene asignada una tarea superior, se registra una actividad de tipo 
+    SUBTAREA_CREADA en la tarjeta superior.</font></div>
+    <div align="left"><font face="Calibri" size="1"><br /></font></div><div align="left">&nbsp;</div>
     </td></tr>
     <tr>
     <td colspan="5" align="center" valign="top" width="161" height="33" bgcolor="#c0c0c0" style="border: solid #010101 1px;">

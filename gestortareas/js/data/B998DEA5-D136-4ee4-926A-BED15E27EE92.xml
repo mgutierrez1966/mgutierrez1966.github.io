@@ -1,3 +1,3 @@
-tocTab[tocTab.length] = new Array("0.4.1:1", "", "«Servicio REST» ServicioRest", "EARoot/EA4/EA1/EA377.htm", "10.png", "E23429", "0", "", "Component0","{3736CC45-5834-4235-91F0-164ADF41F8AA}");
-tocTab[tocTab.length] = new Array("0.4.1:2", "", "«Servicio API» Servicio API", "EARoot/EA4/EA1/EA378.htm", "10.png", "E23431", "0", "", "Component0","{E5758F99-0B9A-40ec-B756-B5919158FA3C}");
-tocTab[tocTab.length] = new Array("0.4.1:3", "", "«Servicio» Servicio interno", "EARoot/EA4/EA1/EA379.htm", "10.png", "E23430", "0", "", "Component0","{227BE319-9DAD-42f1-8BAC-7688E8606403}");
+tocTab[tocTab.length] = new Array("0.4.1:1", "", "«Servicio REST» ServicioRest", "EARoot/EA4/EA1/EA378.htm", "10.png", "E23429", "0", "", "Component0","{3736CC45-5834-4235-91F0-164ADF41F8AA}");
+tocTab[tocTab.length] = new Array("0.4.1:2", "", "«Servicio API» Servicio API", "EARoot/EA4/EA1/EA379.htm", "10.png", "E23431", "0", "", "Component0","{E5758F99-0B9A-40ec-B756-B5919158FA3C}");
+tocTab[tocTab.length] = new Array("0.4.1:3", "", "«Servicio» Servicio interno", "EARoot/EA4/EA1/EA380.htm", "10.png", "E23430", "0", "", "Component0","{227BE319-9DAD-42f1-8BAC-7688E8606403}");

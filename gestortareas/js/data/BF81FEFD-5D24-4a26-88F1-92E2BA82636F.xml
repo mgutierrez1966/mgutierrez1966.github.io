@@ -21,3 +21,4 @@ tocTab[tocTab.length] = new Array("0.1.2.3:20", "", "CU.065: Quitar una etiqueta
 tocTab[tocTab.length] = new Array("0.1.2.3:21", "", "CU.066: Modificar una subtarea de una tarea", "EARoot/EA1/EA2/EA3/EA93.htm", "7.png", "E23450", "0", "", "UseCase0","{BDE0BFA6-2C62-4ca2-880A-25642E5DD648}");
 tocTab[tocTab.length] = new Array("0.1.2.3:22", "", "CU.067: Consultar la lista de tareas", "EARoot/EA1/EA2/EA3/EA94.htm", "7.png", "E23452", "0", "", "UseCase0","{4D176023-0F50-4be8-968D-B8A12936C31E}");
 tocTab[tocTab.length] = new Array("0.1.2.3:23", "", "CU.068: Transferir una tarea", "EARoot/EA1/EA2/EA3/EA95.htm", "7.png", "E23472", "0", "", "UseCase0","{D89031AD-84E0-4d2c-A9B4-6656315F2CDF}");
+tocTab[tocTab.length] = new Array("0.1.2.3:24", "", "CU.069: Recuperar tarjeta archivada", "EARoot/EA1/EA2/EA3/EA96.htm", "7.png", "E23772", "0", "", "UseCase0","{A245F4BB-E66B-4c98-BA29-F04986A2E910}");

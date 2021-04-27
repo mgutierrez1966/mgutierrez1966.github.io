@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>CU.045: Modificar datos básicos de una organización</title>
+<title>CU.048: Quitar a un usuario de una organización</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.045: Modificar datos básicos de una organización", " : "))</script>  : Public   UseCase</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.048: Quitar a un usuario de una organización", " : "))</script>  : Public   UseCase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02/03/2021 20:37:32</td>
+			<td width="85%" class="ObjectDetailsValue">02/03/2021 20:39:35</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">02/03/2021 20:37:32</td>
+			<td class="ObjectDetailsValue">26/04/2021 17:50:57</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -63,7 +63,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj03" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
-			<td class="ObjectDetailsValue">Proposed</td>
+			<td class="ObjectDetailsValue">Propuesto</td>
 		</tr>
 		<tr id="proj04" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
@@ -87,14 +87,15 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{00E8AD32-8D32-4e01-A38D-FBEB0084D250}</td>
+			<td class="ObjectDetailsValue">{A60B32BD-15D2-41ce-B590-641CDB107195}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA108.htm">ADMINISTRACION</a></td>
+			<td class="ObjectDetailsValue"><a href="EA108.htm">ADMINISTRACION</a>, <a href="../../EA3/EA3/EA148.htm">Usuarios</a></td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado&lt;br/&gt;- El usuario es administrador general o administrador de la organización&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- Un usuario accede a la opción &quot;Quitar usuario&quot; de la lista de usuarios de la organización.&lt;br/&gt;- El sistema solicita confirmación para realizar la operación.&lt;br/&gt;- El sistema elimina el rol USUARIO asociado a la organización (pero no elimina al usuario del sistema)&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- El sistema ha enviado un mensaje de correo al usuario informándole de la baja en el Gestor de Tareas de la organización.&lt;br/&gt;&lt;br/&gt;</div>
+
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
@@ -107,6 +108,20 @@ function nameClassifier(name, separator)
 					<td width="10%" class="TableHeading">Connection</td>
 					<td width="10%" class="TableHeading">Direction</td>
 					<td width="40%" class="TableHeading">Notes</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA8/EA421.htm">PnUsuarios</a></td>
+					<td width="10%" class="TableRow" valign="top">Screen</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA23.htm">ADMINISTRADOR ORGANIZACION</a></td>
+					<td width="10%" class="TableRow" valign="top">Actor</td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 				<tr>
 					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA22.htm">ADMINISTRADOR GENERAL</a></td>

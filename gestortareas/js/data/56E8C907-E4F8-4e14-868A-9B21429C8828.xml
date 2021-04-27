@@ -1,4 +1,4 @@
-tocTab[tocTab.length] = new Array("0.1.3.1:1", "", "Listado de tableros", "EARoot/EA1/EA3/EA1/EA134.htm", "184.png", "3024", "0", "", "Collaboration diagram0","{23F212D4-5FB6-4fcb-B4DA-41C6E795A230}");
-tocTab[tocTab.length] = new Array("0.1.3.1:2", "", "Detalle de tablero", "EARoot/EA1/EA3/EA1/EA136.htm", "184.png", "3028", "0", "", "Collaboration diagram0","{614BE558-4540-41cf-BB2C-7A62876BA8F7}");
-tocTab[tocTab.length] = new Array("0.1.3.1:3", "", "Consulta de tareas", "EARoot/EA1/EA3/EA1/EA138.htm", "184.png", "3091", "0", "", "Collaboration diagram0","{60AA5BD8-58D7-400e-AA66-44EDE2484DBC}");
-tocTab[tocTab.length] = new Array("0.1.3.1:4", "", "Editar tarjeta", "EARoot/EA1/EA3/EA1/EA140.htm", "184.png", "3041", "0", "", "Collaboration diagram0","{BCA04C20-C080-4d96-82BD-86012F1E41E7}");
+tocTab[tocTab.length] = new Array("0.1.3.1:1", "", "Listado de tableros", "EARoot/EA1/EA3/EA1/EA136.htm", "184.png", "3024", "0", "", "Collaboration diagram0","{23F212D4-5FB6-4fcb-B4DA-41C6E795A230}");
+tocTab[tocTab.length] = new Array("0.1.3.1:2", "", "Detalle de tablero", "EARoot/EA1/EA3/EA1/EA138.htm", "184.png", "3028", "0", "", "Collaboration diagram0","{614BE558-4540-41cf-BB2C-7A62876BA8F7}");
+tocTab[tocTab.length] = new Array("0.1.3.1:3", "", "Consulta de tareas", "EARoot/EA1/EA3/EA1/EA140.htm", "184.png", "3091", "0", "", "Collaboration diagram0","{60AA5BD8-58D7-400e-AA66-44EDE2484DBC}");
+tocTab[tocTab.length] = new Array("0.1.3.1:4", "", "Editar tarjeta", "EARoot/EA1/EA3/EA1/EA142.htm", "184.png", "3041", "0", "", "Collaboration diagram0","{BCA04C20-C080-4d96-82BD-86012F1E41E7}");

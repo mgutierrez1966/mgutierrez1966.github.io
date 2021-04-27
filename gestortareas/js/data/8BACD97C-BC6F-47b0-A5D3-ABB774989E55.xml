@@ -1,5 +1,5 @@
-tocTab[tocTab.length] = new Array("0.3.2.1:1", "", "INFORMES", "EARoot/EA3/EA2/EA1/EA380.htm", "176.png", "3086", "0", "", "Package diagram0","{BDDBDA02-58A8-4932-84A7-12F65197B91E}");
-tocTab[tocTab.length] = new Array("0.3.2.1:2", "", "«Document» Informe de Estado de tableros", "EARoot/EA3/EA2/EA1/EA385.htm", "82.png", "E23754", "0", "", "Artifact0","{716042CE-26FA-4804-96E6-7407BBD6351E}");
-tocTab[tocTab.length] = new Array("0.3.2.1:3", "", "«Document» Informe Resumen de Grupo", "EARoot/EA3/EA2/EA1/EA386.htm", "82.png", "E23296", "0", "", "Artifact0","{A846175C-7AE7-404a-8ACF-E4F5614FCFB1}");
-tocTab[tocTab.length] = new Array("0.3.2.1:4", "", "Resumen de tareas de grupos.pdf", "EARoot/EA3/EA2/EA1/EA387.htm", "82.png", "E23751", "E23296", "", "Artifact0","{173A0033-E0FC-42b4-BE8A-4B4C2AE29556}");
-tocTab[tocTab.length] = new Array("0.3.2.1:5", "", "Informe de Estado de tablero.pdf", "EARoot/EA3/EA2/EA1/EA388.htm", "82.png", "E23752", "E23754", "", "Artifact0","{C2EB6B19-1784-4bcd-BA9C-53F4A100B89E}");
+tocTab[tocTab.length] = new Array("0.3.2.1:1", "", "INFORMES", "EARoot/EA3/EA2/EA1/EA424.htm", "176.png", "3086", "0", "", "Package diagram0","{BDDBDA02-58A8-4932-84A7-12F65197B91E}");
+tocTab[tocTab.length] = new Array("0.3.2.1:2", "", "«Document» Informe de Estado de tableros", "EARoot/EA3/EA2/EA1/EA429.htm", "82.png", "E23754", "0", "", "Artifact0","{716042CE-26FA-4804-96E6-7407BBD6351E}");
+tocTab[tocTab.length] = new Array("0.3.2.1:3", "", "«Document» Informe Resumen de Grupo", "EARoot/EA3/EA2/EA1/EA430.htm", "82.png", "E23296", "0", "", "Artifact0","{A846175C-7AE7-404a-8ACF-E4F5614FCFB1}");
+tocTab[tocTab.length] = new Array("0.3.2.1:4", "", "Resumen de tareas de grupos.pdf", "EARoot/EA3/EA2/EA1/EA431.htm", "82.png", "E23751", "E23296", "", "Artifact0","{173A0033-E0FC-42b4-BE8A-4B4C2AE29556}");
+tocTab[tocTab.length] = new Array("0.3.2.1:5", "", "Informe de Estado de tablero.pdf", "EARoot/EA3/EA2/EA1/EA432.htm", "82.png", "E23752", "E23754", "", "Artifact0","{C2EB6B19-1784-4bcd-BA9C-53F4A100B89E}");

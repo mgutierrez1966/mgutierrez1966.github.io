@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>OBJETOS DE DOMINIO::PreferenciasUsuario</title>
+<title>DocumentoBlob</title>
 <link href="../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("PreferenciasUsuario", " : "))</script>  : Public   Class</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("DocumentoBlob", " : "))</script>  : Public   Class</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">20/04/2021 18:59:06</td>
+			<td width="85%" class="ObjectDetailsValue">19/11/2019 12:49:37</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">20/04/2021 19:15:28</td>
+			<td class="ObjectDetailsValue">19/11/2019 12:49:37</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -51,11 +51,11 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Author:</td>
-			<td class="ObjectDetailsValue">mgutierrez</td>
+			<td class="ObjectDetailsValue">rarrvil</td>
 		</tr>
 		<tr id="proj01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Version:</td>
-			<td class="ObjectDetailsValue">1.0</td>
+			<td class="ObjectDetailsValue">1.0.0</td>
 		</tr>
 		<tr id="proj02" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Phase:</td>
@@ -87,20 +87,19 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{928103BD-6C67-4ef0-817B-62845BD509E9}</td>
+			<td class="ObjectDetailsValue">{6015D341-0127-4a0b-9990-B4BF7FB6CF85}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="../EA145.htm">MODELO DE DOMINIO COMPLETO</a>, <a href="../../EA1/EA3/EA2/EA142.htm">INFORMES</a>, <a href="../../EA5/EA427.htm">Informes de seguimiento</a></td>
+			<td class="ObjectDetailsValue"><a href="EA235.htm">MODELO LIBRERIA DOCUMENTO</a></td>
 		</tr>
 	</table>
-	<div class="ObjectDetailsNotes">Almacena las preferencias de cada usuario de la aplicación&lt;br/&gt;</div>
+	<div class="ObjectDetailsNotes">Clase que contendrá los documentos fisicos, el BLOB (byte Array) de cada documento almacenado en la aplicación. Esta relacionado uno a uno con un Documento.&lt;br/&gt;</div>
 
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Attributes');" id="AttributesTitle">Attributes</li>
 			<li onClick="parent.toggleItem('AssociationsTo');" id="AssociationsToTitle">Associations To</li>
-			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
 		</ul>
 <div class="ItemBody" id="AttributesTable">
 	<table border="0" cellspacing="0" cellpadding="0" class="Table">
@@ -109,119 +108,109 @@ function nameClassifier(name, separator)
 		</tr>
 						<tr>
 				<td width="100%" class="TableRow">
-					<i>Private Boolean</i><br /><strong>&nbsp;&nbsp;informesEstadoTableros</strong>
+					<i>Private GUID</i><br /><strong>&nbsp;&nbsp;id</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes264')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes264" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes201')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes201" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes264_00" style="display: none;">
+						<tr id="DetailsImageAttributes201_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes264_01" style="display: none;">
+						<tr id="DetailsImageAttributes201_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
-							<td>true</td>
+							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes264_02" style="display: none;">
+						<tr id="DetailsImageAttributes201_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes264_03" style="display: none;">
+						<tr id="DetailsImageAttributes201_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes264_04" style="display: none;">
+						<tr id="DetailsImageAttributes201_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes264_05" style="display: none;">
+						<tr id="DetailsImageAttributes201_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes264_06" style="display: none;">
+						<tr id="DetailsImageAttributes201_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes264_07" style="display: none;">
+							<tr id="DetailsImageAttributes201_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
-						<td>False</td>
+						<td>True</td>
 						</tr>
 					</table>
 					
-					
-						<div class="ObjectDetailsNotes"><table>
-	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
-		</td>
-		<td>
-			Recibir informes de Estado de Tableros como autoridad informada&lt;br/&gt;
-		</td>
-	</tr>
-</table></div>
-
+					DataMember=true<br>
+						&nbsp;
 						
 				</td>
 			</tr>			<tr>
 				<td width="100%" class="TableRow">
-					<i>Private Boolean</i><br /><strong>&nbsp;&nbsp;informesResumenGrupo</strong>
+					<i>Private BLOB</i><br /><strong>&nbsp;&nbsp;data</strong>
 				</td>
 			</tr>
 			<tr>
 				<td class="TableRowBottomDashed"  colspan="1">										
-					<a href="#" onclick="parent.toggleData('DetailsImageAttributes265')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes265" border="0" />Details:</a>
+					<a href="#" onclick="parent.toggleData('DetailsImageAttributes202')" style="text-decoration: none; color: #000000;"><img src="../../../images/plus03.gif" align="absmiddle" id="DetailsImageAttributes202" border="0" />Details:</a>
 					<table border="0" cellspacing="0" cellpadding="0" class="Table" style="padding: 4px 18px;">
 					
-						<tr id="DetailsImageAttributes265_00" style="display: none;">
+						<tr id="DetailsImageAttributes202_00" style="display: none;">
 							<td width="75"><i>Alias:</i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes265_01" style="display: none;">
+						<tr id="DetailsImageAttributes202_01" style="display: none;">
 							<td width="75"><i>Initial:</i></td>
-							<td>true</td>
+							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes265_02" style="display: none;">
+						<tr id="DetailsImageAttributes202_02" style="display: none;">
 							<td width="75"><i>Stereotype: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes265_03" style="display: none;">
+						<tr id="DetailsImageAttributes202_03" style="display: none;">
 							<td width="75"><i>Ordered: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes265_04" style="display: none;">
+						<tr id="DetailsImageAttributes202_04" style="display: none;">
 							<td width="75"><i>Range: </i></td>
 							<td></td>
 						</tr>
-						<tr id="DetailsImageAttributes265_05" style="display: none;">
+						<tr id="DetailsImageAttributes202_05" style="display: none;">
 							<td width="75"><i>Transient: </i></td>
 							<td>False</td>
 						</tr>
-						<tr id="DetailsImageAttributes265_06" style="display: none;">
+						<tr id="DetailsImageAttributes202_06" style="display: none;">
 							<td width="75"><i>Derived: </i></td>
 							<td>False</td>
 						</tr>
-							<tr id="DetailsImageAttributes265_07" style="display: none;">
+							<tr id="DetailsImageAttributes202_07" style="display: none;">
 							<td width="75"><i>IsID: </i></td>
 						<td>False</td>
 						</tr>
 					</table>
 					
-					
-						<div class="ObjectDetailsNotes"><table>
+					DataMember=true<br>
+						&nbsp;
+						<i>Constraints:</i><br><span style= "margin-left: .5cm;">Invariant Requerido </span>
+<table>
 	<tr>
-		<td valign="top">
-			<i>Notes: </i><span style="margin-left: .4cm;"> </span>
+		<td>
+			<span style= "margin-left: 1.5cm;"> <span>
 		</td>
 		<td>
-			Recibir informes de Resumen de Tareas de Grupo como autoridad de un grupo.&lt;br/&gt;
+			&nbsp;
 		</td>
-	</tr>
-</table></div>
-
-						
+	</td>
+</table> 
 				</td>
 			</tr>
 	</table>
@@ -235,45 +224,26 @@ function nameClassifier(name, separator)
 				</tr>
 				<tr>
 					<td width="40%" class="TableRow" valign="top">
-						<a href="EA257.htm">Usuario</a><br />
+						<a href="EA247.htm">Documento</a><br />
 						Class &nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> preferencias<br />
+						<strong>Name:</strong> documento<br />
 						&nbsp;
 					</td>
 					<td width="30%" class="TableRow" valign="top">
-						<strong>Name:</strong> usuario<br />
+						<strong>Name:</strong> documento<br />
 						&nbsp;	
 					</td>
 				</tr>
 				<tr>
 					<td class="TableRowBottomDashed"  colspan="3">
-						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink266" onclick="parent.toggleDiv('detailsDIVLink266','DetailsImageLink266')" />Details:
-							<div id="detailsDIVLink266" class="DetailsDiv" >
+						<div class="DetailsDivParent"><img src="../../../images/minus03.gif" align="absmiddle" id="DetailsImageLink203" onclick="parent.toggleDiv('detailsDIVLink203','DetailsImageLink203')" />Details:
+							<div id="detailsDIVLink203" class="DetailsDiv" >
 							&nbsp;
 							</div>
 						</div>
 					</td>
-				</tr>
-
-			</table>
-		</div>
-		<div class="ItemBody" id="LinksTable">
-			<table align="center" border="0" cellspacing="0" cellpadding="0" class="Table">
-				<tr>
-					<td width="30%" class="TableHeading">Object</td>
-					<td width="10%" class="TableHeading">Type</td>
-					<td width="10%" class="TableHeading">Connection</td>
-					<td width="10%" class="TableHeading">Direction</td>
-					<td width="40%" class="TableHeading">Notes</td>
-				</tr>
-				<tr>
-					<td width="30%" class="TableRow" valign="top"><a href="../../EA4/EA400.htm">«TareaProgramada» GenerarInformes</a></td>
-					<td width="10%" class="TableRow" valign="top">Component</td>
-					<td width="10%" class="TableRow" valign="top">Abstraction</td>
-					<td width="10%" class="TableRow" valign="top">From</td>
-					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
 
 			</table>

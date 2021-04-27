@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>CU.036: Agregar usuarios a un grupo</title>
+<title>CU.038: Añadir un usuario a una organización</title>
 <link href="../../../../css/ea.css" rel="stylesheet" type="text/css" />
 <script>
 function initPage(src) {	
@@ -34,15 +34,15 @@ function nameClassifier(name, separator)
 <div class="pageHeader"></div>
 <div class="PageBody">
 	<div id="name_classifier" style="display: none;"></div>
-	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.036: Agregar usuarios a un grupo", " : "))</script>  : Public   UseCase</span>
+	<span class="ObjectTitle"><script type="text/javascript">document.write(nameClassifier("CU.038: Añadir un usuario a una organización", " : "))</script>  : Public   UseCase</span>
 	<table border="0" cellpadding="0" cellspacing="0" class="ObjectDetails">
 		<tr>
 			<td width="15%" class="ObjectDetailsTopic">Created:</td>
-			<td width="85%" class="ObjectDetailsValue">02/03/2021 20:38:08</td>
+			<td width="85%" class="ObjectDetailsValue">02/03/2021 20:37:59</td>
 		</tr>
 		<tr>
 			<td class="ObjectDetailsTopic">Modified:</td>
-			<td class="ObjectDetailsValue">02/03/2021 20:38:08</td>
+			<td class="ObjectDetailsValue">26/04/2021 17:51:00</td>
 		</tr>
 		<tr style="height: 10px"><td colspan="2"></td></tr>
 		<tr>
@@ -63,7 +63,7 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="proj03" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Status:</td>
-			<td class="ObjectDetailsValue">Proposed</td>
+			<td class="ObjectDetailsValue">Propuesto</td>
 		</tr>
 		<tr id="proj04" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Complexity:</td>
@@ -87,14 +87,15 @@ function nameClassifier(name, separator)
 		</tr>
 		<tr id="adv00" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">UUID:</td>
-			<td class="ObjectDetailsValue">{5C535A80-EE75-447b-94DD-DB2CA37BD654}</td>
+			<td class="ObjectDetailsValue">{646DA715-415F-4f20-9B46-73548ADD0FD6}</td>
 		</tr>
 		<tr id="adv01" style="display: none;">
 			<td class="ObjectDetailsTopic" style="padding-left: 18px;">Appears In:</td>
-			<td class="ObjectDetailsValue"><a href="EA108.htm">ADMINISTRACION</a></td>
+			<td class="ObjectDetailsValue"><a href="EA108.htm">ADMINISTRACION</a>, <a href="../../EA3/EA3/EA148.htm">Usuarios</a></td>
 		</tr>
 	</table>
-	
+	<div class="ObjectDetailsNotes">&lt;b&gt;Precondiciones:&lt;/b&gt;&lt;br/&gt;- Usuario identificado&lt;br/&gt;- El usuario es administrador general o administrador de la organización&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Escenario principal:&lt;/b&gt;&lt;br/&gt;- Un usuario accede a la opción &quot;Agregar usuario&quot; de la lista de usuarios de la organización.&lt;br/&gt;- El sistema solicita el UID o DNI del usuario a agregar&lt;br/&gt;	- Si el usuario ya está agregado a la organización, el sistema informa de ello al usuario.&lt;br/&gt;- El sistema localiza al usuario en DICODEF y muestra sus datos: uid, empleo, nombre y apellidos, y unidad de destino.&lt;br/&gt;- El usuario confirma el alta en la organización&lt;br/&gt;- Si el usuario no existe en la base de datos, se da de alta como entidad Usuario, con unas preferencias por defecto.&lt;br/&gt;- El sistema le asigna un rol de USUARIO asociado a la organización .&lt;br/&gt;- El sistema muestra la vista de detalle del usuario agregado, por si el administrador quiere modificar algún dato o agregarlo a algún grupo.&lt;br/&gt;&lt;br/&gt;&lt;b&gt;Postcondiciones:&lt;/b&gt;&lt;br/&gt;- El sistema ha enviado un mensaje de correo al usuario informándole del alta en el Gestor de Tareas de la organización.&lt;br/&gt;&lt;br/&gt;</div>
+
 	<div class="TableGroup" id="TableGroup">
 		<ul class="ItemTitle">
 			<li onClick="parent.toggleItem('Links');" id="LinksTitle">Other Links</li>
@@ -109,9 +110,30 @@ function nameClassifier(name, separator)
 					<td width="40%" class="TableHeading">Notes</td>
 				</tr>
 				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA8/EA421.htm">PnUsuarios</a></td>
+					<td width="10%" class="TableRow" valign="top">Screen</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
 					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA23.htm">ADMINISTRADOR ORGANIZACION</a></td>
 					<td width="10%" class="TableRow" valign="top">Actor</td>
 					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../EA1/EA22.htm">ADMINISTRADOR GENERAL</a></td>
+					<td width="10%" class="TableRow" valign="top">Actor</td>
+					<td width="10%" class="TableRow" valign="top">UseCase</td>
+					<td width="10%" class="TableRow" valign="top">From</td>
+					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="30%" class="TableRow" valign="top"><a href="../../../EA3/EA1/EA2/EA8/EA415.htm">FormNuevoUsuario</a></td>
+					<td width="10%" class="TableRow" valign="top">Screen</td>
+					<td width="10%" class="TableRow" valign="top">Realization</td>
 					<td width="10%" class="TableRow" valign="top">From</td>
 					<td width="40%" class="TableRow" valign="top">&nbsp;</td>
 				</tr>
